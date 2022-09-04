@@ -1,4 +1,5 @@
-﻿using Taiizor.Essentials.Maui.Interfaces;
+﻿using Microsoft.Maui.LifecycleEvents;
+using Taiizor.Essentials.Maui.Interfaces;
 using Taiizor.Essentials.Maui.Services;
 
 namespace GamePortal;
@@ -22,6 +23,13 @@ public static class MauiProgram
 #endif
 
         builder.Services.AddSingleton<IDialogService, DialogService>();
+
+        builder.ConfigureLifecycleEvents(events =>
+        {
+
+            // App Lifecycle Events
+
+        });
 
         return builder.Build();
     }
