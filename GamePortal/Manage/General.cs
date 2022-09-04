@@ -15,10 +15,10 @@ namespace GamePortal.Manage
 
         public static Dictionary<AppEnum, string> Keys = new()
         {
-            { AppEnum.iOS, "924e3dce-0595-4988-8a78-eb0e37c80a20" },
-            { AppEnum.macOS, "3e6d36d5-3308-4ac0-aae2-e5d0d10cf7ac" },
-            { AppEnum.Android, "0ac8b703-e673-4b3b-b30b-6cd6a06b948a" },
-            { AppEnum.Windows, "5d1e2152-42b7-491c-9181-96d3e04cac0b" }
+            { AppEnum.iOS, "0b201b30-eafa-4f3d-ae59-2ccc7d7cc92b" },
+            { AppEnum.macOS, "b0773be2-479b-4202-8823-963fd4c5db4b" },
+            { AppEnum.Android, "76c4609d-8ed0-4aad-a590-486b9cf7182f" },
+            { AppEnum.Windows, "65c81568-44ec-46b4-9518-c431dd451f89" }
         };
     }
 }
