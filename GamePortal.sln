@@ -4,7 +4,9 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePortal", "GamePortal\GamePortal.csproj", "{E5D9C548-FE70-43B9-9D85-712886CC7881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePortal.Winforms", "GamePortal.Winforms\GamePortal.Winforms.csproj", "{67FFF7AE-EA90-44A7-A2A3-78A2DFBD8C9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePortal.Winforms", "GamePortal.Winforms\GamePortal.Winforms.csproj", "{67FFF7AE-EA90-44A7-A2A3-78A2DFBD8C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePortal.Wpf", "GamePortal.Wpf\GamePortal.Wpf.csproj", "{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,10 @@ Global
 		{67FFF7AE-EA90-44A7-A2A3-78A2DFBD8C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67FFF7AE-EA90-44A7-A2A3-78A2DFBD8C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67FFF7AE-EA90-44A7-A2A3-78A2DFBD8C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

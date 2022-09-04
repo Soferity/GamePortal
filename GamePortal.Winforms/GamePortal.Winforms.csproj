@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="6.0.486" />
+    <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.0.5" />
   </ItemGroup>
 
 </Project>

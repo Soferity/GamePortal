@@ -11,10 +11,16 @@ namespace GamePortal.Winforms
             InitializeComponent();
 
             var services = new ServiceCollection();
+            
             services.AddWindowsFormsBlazorWebView();
-            blazorWebView1.HostPage = "wwwroot\\index.html";
+            
+#if DEBUG
+            services.AddBlazorWebViewDeveloperTools();
+#endif
+            
+            blazorWebView1.HostPage = "wwwroot\\Root.html";
             blazorWebView1.Services = services.BuildServiceProvider();
-            blazorWebView1.RootComponents.Add<Counter>("#app");
+            blazorWebView1.RootComponents.Add<Main>("#application");
         }
     }
 }
