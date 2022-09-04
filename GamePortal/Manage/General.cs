@@ -7,9 +7,9 @@ namespace GamePortal.Manage
     {
         public static bool First = true;
 
-        public const int WindowWidth = 800;
+        public const int WindowWidth = 1460;
 
-        public const int WindowHeight = 600;
+        public const int WindowHeight = 670;
 
         public static string Title = Project.Name;
 
