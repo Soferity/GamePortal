@@ -8,7 +8,7 @@
         xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="GamePortal.Wpf.MainWindow"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="GamePortal.Wpf" Height="600" Width="800">
+        Title="GamePortal.Wpf" Height="670" Width="1460">
     <Grid>
         <blazor:BlazorWebView HostPage="wwwroot\Root.html" Services="{DynamicResource services}">
             <blazor:BlazorWebView.RootComponents>

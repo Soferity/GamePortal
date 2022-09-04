@@ -25,7 +25,7 @@ namespace GamePortal.Wpf
         {
             InitializeComponent();
 
-            var serviceCollection = new ServiceCollection();
+            ServiceCollection serviceCollection = new ServiceCollection();
             serviceCollection.AddWpfBlazorWebView();
 
 #if DEBUG
