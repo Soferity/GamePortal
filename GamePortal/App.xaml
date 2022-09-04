@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GamePortal"
+             x:Class="GamePortal.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="PageBackgroundColor">#1B1B29</Color>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
