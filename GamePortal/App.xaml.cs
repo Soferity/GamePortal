@@ -1,6 +1,6 @@
 ﻿using GamePortal.Manage;
 using Taiizor.Essentials.Maui.Cross;
-using Taiizor.Essentials.Maui.Services;
+using Taiizor.Essentials.Maui.AppCenter.Services;
 
 namespace GamePortal;
 

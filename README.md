@@ -1,2 +1,2 @@
-# Soferity Game Portal Blazor App
-Soferity Game Portal Blazor App Source Code
+# Soferity Game Portal Blazor Hybrid App
+Soferity Game Portal Blazor Hybrid App Source Code

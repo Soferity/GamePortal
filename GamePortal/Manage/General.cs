@@ -1,4 +1,4 @@
-﻿using Taiizor.Essentials.Maui.Enum;
+﻿using Taiizor.Essentials.Maui.AppCenter.Enum;
 using Taiizor.Essentials.Maui.Extension;
 
 namespace GamePortal.Manage

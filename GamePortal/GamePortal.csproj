@@ -89,6 +89,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GamePortal.Library\GamePortal.Library.csproj" />
   </ItemGroup>
 
