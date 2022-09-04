@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:blazor="clr-namespace:Microsoft.AspNetCore.Components.WebView.Wpf;assembly=Microsoft.AspNetCore.Components.WebView.Wpf"
         xmlns:local="clr-namespace:GamePortal.Wpf"
+        xmlns:library="clr-namespace:GamePortal.Library;assembly=GamePortal.Library"
         xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="GamePortal.Wpf.MainWindow"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
@@ -12,7 +13,7 @@
     <Grid>
         <blazor:BlazorWebView HostPage="wwwroot\Root.html" Services="{DynamicResource services}">
             <blazor:BlazorWebView.RootComponents>
-                <blazor:RootComponent Selector="#application" ComponentType="{x:Type local:Main}" />
+                <blazor:RootComponent Selector="#application" ComponentType="{x:Type library:Main}" />
             </blazor:BlazorWebView.RootComponents>
         </blazor:BlazorWebView>
     </Grid>

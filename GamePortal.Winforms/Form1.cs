@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.WebView.WindowsForms;
+﻿using GamePortal.Library;
+using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 using System.Windows.Forms;
 
@@ -10,7 +11,7 @@ namespace GamePortal.Winforms
         {
             InitializeComponent();
 
-            var services = new ServiceCollection();
+            ServiceCollection services = new ServiceCollection();
 
             services.AddWindowsFormsBlazorWebView();
 

@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GamePortal"
+             xmlns:library="clr-namespace:GamePortal.Library;assembly=GamePortal.Library"
              x:Class="GamePortal.MainPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
     <BlazorWebView HostPage="wwwroot/Root.html" x:Name="blazorWebView">
         <BlazorWebView.RootComponents>
-            <RootComponent Selector="#application" ComponentType="{x:Type local:Main}" />
+            <RootComponent Selector="#application" ComponentType="{x:Type library:Main}" />
         </BlazorWebView.RootComponents>
     </BlazorWebView>
 

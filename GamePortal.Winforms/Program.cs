@@ -1,8 +1,8 @@
+using GamePortal.Winforms.Manage;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taiizor.Essentials.Maui.Cross;
+using Taiizor.Essentials.Maui.Services;
 
 namespace GamePortal.Winforms
 {
@@ -14,6 +14,20 @@ namespace GamePortal.Winforms
         [STAThread]
         private static void Main()
         {
+            try
+            {
+                AppCenterService.Engine(General.Keys);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\n\n" + ex.StackTrace);
+            }
+
+            CrossException.UnhandledException += (sender, args) =>
+            {
+                AppCenterService.Exception(args);
+            };
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

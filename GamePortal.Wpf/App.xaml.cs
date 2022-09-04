@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using GamePortal.Wpf.Manage;
 using System.Windows;
+using Taiizor.Essentials.Maui.Cross;
+using Taiizor.Essentials.Maui.Services;
 
 namespace GamePortal.Wpf
 {
@@ -13,5 +10,23 @@ namespace GamePortal.Wpf
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            try
+            {
+                AppCenterService.Engine(General.Keys);
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\n\n" + ex.StackTrace);
+            }
+
+            CrossException.UnhandledException += (sender, args) =>
+            {
+                AppCenterService.Exception(args);
+            };
+
+            InitializeComponent();
+        }
     }
 }

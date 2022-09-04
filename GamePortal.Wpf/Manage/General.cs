@@ -8,18 +8,11 @@ namespace GamePortal.Wpf.Manage
     {
         public static bool First = true;
 
-        public const int WindowWidth = 800;
-
-        public const int WindowHeight = 600;
-
         public static string Title = Project.Name;
 
         public static Dictionary<AppEnum, string> Keys = new()
         {
-            { AppEnum.iOS, "0b201b30-eafa-4f3d-ae59-2ccc7d7cc92b" },
-            { AppEnum.macOS, "b0773be2-479b-4202-8823-963fd4c5db4b" },
-            { AppEnum.Android, "76c4609d-8ed0-4aad-a590-486b9cf7182f" },
-            { AppEnum.Windows, "65c81568-44ec-46b4-9518-c431dd451f89" }
+            { AppEnum.Windows, "34cd1c21-6be8-4c86-b86c-2c36ed9a5fe6" }
         };
     }
 }

@@ -8,6 +8,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePortal.Winforms", "Game
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePortal.Wpf", "GamePortal.Wpf\GamePortal.Wpf.csproj", "{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePortal.Library", "GamePortal.Library\GamePortal.Library.csproj", "{7A2A78F9-8017-485D-9FD7-FD272EDC9975}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3510D2B1-7BBD-4DDC-BA36-D78DA70E87DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2A78F9-8017-485D-9FD7-FD272EDC9975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2A78F9-8017-485D-9FD7-FD272EDC9975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2A78F9-8017-485D-9FD7-FD272EDC9975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2A78F9-8017-485D-9FD7-FD272EDC9975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

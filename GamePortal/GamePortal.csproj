@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0-android</TargetFrameworks>
+    <!--<TargetFrameworks>net6.0-android</TargetFrameworks>-->
     <!--<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>-->
     <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.22621.0</TargetFrameworks>
     <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
@@ -89,16 +89,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.0.5" />
+    <ProjectReference Include="..\GamePortal.Library\GamePortal.Library.csproj" />
   </ItemGroup>
-
-  <!--<ItemGroup>
-    <Reference Include="Taiizor.Essentials.Maui">
-      <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.dll</HintPath>
-    </Reference>
-    <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
-  </ItemGroup>-->
 
 </Project>
