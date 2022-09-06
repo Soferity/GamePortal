@@ -43,9 +43,9 @@ dotnet_style_operator_placement_when_wrapping = beginning_of_line
 indent_size = 2
 
 [*.cs]
-#### Adlandırma stilleri ####
+#### AdlandÄ±rma stilleri ####
 
-# Adlandırma kuralları
+# AdlandÄ±rma kurallarÄ±
 
 dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
@@ -73,7 +73,7 @@ dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, meth
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.non_field_members.required_modifiers = 
 
-# Adlandırma stilleri
+# AdlandÄ±rma stilleri
 
 dotnet_naming_style.begins_with_i.required_prefix = I
 dotnet_naming_style.begins_with_i.required_suffix = 
@@ -134,21 +134,21 @@ csharp_style_inlined_variable_declaration = true:suggestion
 csharp_style_expression_bodied_local_functions = false:silent
 
 [*.vb]
-#### Adlandırma stilleri ####
+#### AdlandÄ±rma stilleri ####
 
-# Adlandırma kuralları
+# AdlandÄ±rma kurallarÄ±
 
-dotnet_naming_rule.interface_should_be_i_ile_başlar.severity = suggestion
-dotnet_naming_rule.interface_should_be_i_ile_başlar.symbols = interface
-dotnet_naming_rule.interface_should_be_i_ile_başlar.style = i_ile_başlar
+dotnet_naming_rule.interface_should_be_i_ile_baÅŸlar.severity = suggestion
+dotnet_naming_rule.interface_should_be_i_ile_baÅŸlar.symbols = interface
+dotnet_naming_rule.interface_should_be_i_ile_baÅŸlar.style = i_ile_baÅŸlar
 
-dotnet_naming_rule.türler_should_be_baş_harfleri_büyük_olmak_üzere_bitişik.severity = suggestion
-dotnet_naming_rule.türler_should_be_baş_harfleri_büyük_olmak_üzere_bitişik.symbols = türler
-dotnet_naming_rule.türler_should_be_baş_harfleri_büyük_olmak_üzere_bitişik.style = baş_harfleri_büyük_olmak_üzere_bitişik
+dotnet_naming_rule.tÃ¼rler_should_be_baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.severity = suggestion
+dotnet_naming_rule.tÃ¼rler_should_be_baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.symbols = tÃ¼rler
+dotnet_naming_rule.tÃ¼rler_should_be_baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.style = baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik
 
-dotnet_naming_rule.alan_olmayan_üyeler_should_be_baş_harfleri_büyük_olmak_üzere_bitişik.severity = suggestion
-dotnet_naming_rule.alan_olmayan_üyeler_should_be_baş_harfleri_büyük_olmak_üzere_bitişik.symbols = alan_olmayan_üyeler
-dotnet_naming_rule.alan_olmayan_üyeler_should_be_baş_harfleri_büyük_olmak_üzere_bitişik.style = baş_harfleri_büyük_olmak_üzere_bitişik
+dotnet_naming_rule.alan_olmayan_Ã¼yeler_should_be_baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.severity = suggestion
+dotnet_naming_rule.alan_olmayan_Ã¼yeler_should_be_baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.symbols = alan_olmayan_Ã¼yeler
+dotnet_naming_rule.alan_olmayan_Ã¼yeler_should_be_baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.style = baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik
 
 # Sembol belirtimleri
 
@@ -156,27 +156,27 @@ dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
 dotnet_naming_symbols.interface.required_modifiers = 
 
-dotnet_naming_symbols.türler.applicable_kinds = class, struct, interface, enum
-dotnet_naming_symbols.türler.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.türler.required_modifiers = 
+dotnet_naming_symbols.tÃ¼rler.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.tÃ¼rler.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
+dotnet_naming_symbols.tÃ¼rler.required_modifiers = 
 
-dotnet_naming_symbols.alan_olmayan_üyeler.applicable_kinds = property, event, method
-dotnet_naming_symbols.alan_olmayan_üyeler.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.alan_olmayan_üyeler.required_modifiers = 
+dotnet_naming_symbols.alan_olmayan_Ã¼yeler.applicable_kinds = property, event, method
+dotnet_naming_symbols.alan_olmayan_Ã¼yeler.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
+dotnet_naming_symbols.alan_olmayan_Ã¼yeler.required_modifiers = 
 
-# Adlandırma stilleri
+# AdlandÄ±rma stilleri
 
-dotnet_naming_style.i_ile_başlar.required_prefix = I
-dotnet_naming_style.i_ile_başlar.required_suffix = 
-dotnet_naming_style.i_ile_başlar.word_separator = 
-dotnet_naming_style.i_ile_başlar.capitalization = pascal_case
+dotnet_naming_style.i_ile_baÅŸlar.required_prefix = I
+dotnet_naming_style.i_ile_baÅŸlar.required_suffix = 
+dotnet_naming_style.i_ile_baÅŸlar.word_separator = 
+dotnet_naming_style.i_ile_baÅŸlar.capitalization = pascal_case
 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.required_prefix = 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.required_suffix = 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.word_separator = 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.capitalization = pascal_case
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.required_prefix = 
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.required_suffix = 
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.word_separator = 
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.capitalization = pascal_case
 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.required_prefix = 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.required_suffix = 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.word_separator = 
-dotnet_naming_style.baş_harfleri_büyük_olmak_üzere_bitişik.capitalization = pascal_case
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.required_prefix = 
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.required_suffix = 
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.word_separator = 
+dotnet_naming_style.baÅŸ_harfleri_bÃ¼yÃ¼k_olmak_Ã¼zere_bitiÅŸik.capitalization = pascal_case
