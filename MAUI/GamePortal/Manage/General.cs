@@ -11,7 +11,7 @@ namespace GamePortal.Manage
 
         public const int WindowHeight = 670;
 
-        public static string Title = Project.Name;
+        public static string Title = "Soferity: Game Portal"; //Project.Name
 
         public static Dictionary<AppEnum, string> Keys = new()
         {

@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
@@ -23,6 +24,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePortal", "WPF\GamePortal\GamePortal.csproj", "{62FF6C26-6117-488A-88EF-7C9A1FAE4429}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePortal.Library", "WPF\GamePortal.Library\GamePortal.Library.csproj", "{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{249DA1D8-17A9-4B3A-9495-C49E5A190010}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,8 +60,8 @@ Global
 		{62FF6C26-6117-488A-88EF-7C9A1FAE4429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62FF6C26-6117-488A-88EF-7C9A1FAE4429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62FF6C26-6117-488A-88EF-7C9A1FAE4429}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAB22B1D-00AC-4F7F-BD11-B8F120B61539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
