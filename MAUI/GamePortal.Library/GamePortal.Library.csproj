@@ -20,12 +20,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.0" />
-    <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.0" />
+    <ProjectReference Include="..\..\Shared\GamePortal.Public\GamePortal.Public.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\GamePortal.Public\GamePortal.Public.csproj" />
+    <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.1" />
+    <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.1" />
   </ItemGroup>
+
+  <!--<ItemGroup>
+    <Reference Include="Taiizor.Essentials.Maui">
+      <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.dll</HintPath>
+    </Reference>
+    <Reference Include="Taiizor.Essentials.Maui.AppCenter">
+      <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
+    </Reference>
+    <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
+  </ItemGroup>-->
 
 </Project>

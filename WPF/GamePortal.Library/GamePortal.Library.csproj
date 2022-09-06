@@ -10,11 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Taiizor.Essentials.AppCenter" Version="1.0.1.0" />
+    <ProjectReference Include="..\..\Shared\GamePortal.Public\GamePortal.Public.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\GamePortal.Public\GamePortal.Public.csproj" />
+    <PackageReference Include="Taiizor.Essentials.AppCenter" Version="1.0.1.1" />
   </ItemGroup>
+
+  <!--<ItemGroup>
+    <Reference Include="Taiizor.Essentials.AppCenter">
+      <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.AppCenter.dll</HintPath>
+    </Reference>
+    <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
+  </ItemGroup>-->
 
 </Project>

@@ -11,7 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Taiizor.Essentials" Version="1.0.1.0" />
+    <PackageReference Include="Taiizor.Essentials" Version="1.0.1.1" />
   </ItemGroup>
+
+  <!--<ItemGroup>
+    <Reference Include="Taiizor.Essentials">
+      <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials\bin\Release\net6.0\Taiizor.Essentials.dll</HintPath>
+    </Reference>
+  </ItemGroup>-->
 
 </Project>
