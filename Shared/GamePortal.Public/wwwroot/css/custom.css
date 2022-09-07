@@ -1,4 +1,5 @@
 ::-webkit-scrollbar {
+	-webkit-appearance: none;
 	width: 12px;
 }
 

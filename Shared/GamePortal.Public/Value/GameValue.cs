@@ -3,9 +3,9 @@ using GamePortal.Public.Struct;
 
 namespace GamePortal.Public.Value
 {
-    internal class GameValue
+    public class GameValue
     {
-        public static Dictionary<GameEnum, GameStruct.Board> Games = new()
+        public static Dictionary<GameEnum, GameStruct> Games = new()
         {
             {
                 GameEnum.Stray,

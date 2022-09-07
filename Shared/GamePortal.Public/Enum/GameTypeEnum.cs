@@ -1,6 +1,6 @@
 ﻿namespace GamePortal.Public.Enum
 {
-    internal enum GameTypeEnum
+    public enum GameTypeEnum
     {
         RPG,
         FPS,

@@ -1,0 +1,57 @@
+﻿<div class="col">
+    <div class="card text-center hover-shadow shadow-inner">
+        <div class="card-header">
+            <div class="stars">
+                <input class="star star-5" id="star-5" type="radio" name="star" />
+                <label class="star star-5" for="star-5"></label>
+                <input class="star star-4" id="star-4" type="radio" name="star" />
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star" />
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star" />
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star" />
+                <label class="star star-1" for="star-1"></label>
+            </div>
+        </div>
+        <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
+            <img src="@Game.Image" class="img-fluid" />
+            <a href="@Game.Address">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Game.Title</h5>
+            <p class="card-text">@Game.Description</p>
+            <a href="#!" class="btn btn-danger">Play Game</a>
+            <span class="badge rounded-pill badge-notification bg-warning">@Game.State</span>
+        </div>
+        <div class="card-footer text-muted">@Types(Game.Type)</div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public GameStruct Game { get; set; }
+
+    private string Types(GameTypeEnum[] Types)
+    {
+        bool First = true;
+        string Text = string.Empty;
+
+        foreach (GameTypeEnum Type in Types)
+        {
+            if (First)
+            {
+                First = false;
+                Text = $"{Type}";
+            }
+            else
+            {
+                Text += $", {Type}";
+            }
+        }
+
+        return Text;
+    }
+}

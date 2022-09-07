@@ -11,7 +11,7 @@ namespace GamePortal
         {
             InitializeComponent();
 
-            ServiceCollection services = new ServiceCollection();
+            ServiceCollection services = new();
 
             services.AddWindowsFormsBlazorWebView();
 

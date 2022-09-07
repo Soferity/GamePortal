@@ -1,6 +1,6 @@
 ﻿namespace GamePortal.Public.Enum
 {
-    internal enum PlatformEnum
+    public enum PlatformEnum
     {
         iOS,
         WinUI,

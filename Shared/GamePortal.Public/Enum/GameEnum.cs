@@ -1,6 +1,6 @@
 ﻿namespace GamePortal.Public.Enum
 {
-    internal enum GameEnum
+    public enum GameEnum
     {
         Stray,
         Valhalla,

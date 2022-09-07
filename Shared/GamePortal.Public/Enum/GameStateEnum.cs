@@ -1,6 +1,6 @@
 ﻿namespace GamePortal.Public.Enum
 {
-    internal enum GameStateEnum
+    public enum GameStateEnum
     {
         New,
         Old,
