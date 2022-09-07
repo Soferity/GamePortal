@@ -1,5 +1,4 @@
-﻿using GamePortal.Library;
-using GamePortal.Public;
+﻿using GamePortal.Public;
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 using System.Windows.Forms;

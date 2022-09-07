@@ -1,3 +1,15 @@
-﻿@inherits LayoutComponentBase
+﻿@inject IJSRuntime JS
+@inherits LayoutComponentBase
 
 @Body
+
+@code {
+    private Interop JSC;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        JSC = new(JS);
+    }
+}

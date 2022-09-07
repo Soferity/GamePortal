@@ -1,5 +1,122 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<div id="world"></div>
 
-Welcome to your new app.
+<div class="container d-flex">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-3">
+        <div class="col">
+            <div class="card text-start hover-shadow shadow-inner">
+                <div class="card-header">
+                    <div class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="star" />
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star" />
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star" />
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star" />
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star" />
+                        <label class="star star-1" for="star-1"></label>
+                    </div>
+                </div>
+                <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
+                    <img src="img/stray.jpg" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Game Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#!" class="btn btn-danger">Play Game</a>
+                    <span class="badge rounded-pill badge-notification bg-warning">New</span>
+                </div>
+                <div class="card-footer text-muted">Strategy, Puzzle</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center hover-shadow shadow-inner">
+                <div class="card-header">
+                    <div class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="star" />
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star" />
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star" />
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star" />
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star" />
+                        <label class="star star-1" for="star-1"></label>
+                    </div>
+                </div>
+                <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
+                    <img src="img/valhalla.jpg" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Game Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#!" class="btn btn-danger">Play Game</a>
+                    <span class="badge rounded-pill badge-notification bg-warning">New</span>
+                </div>
+                <div class="card-footer text-muted">Action, Adventure</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-end hover-shadow shadow-inner">
+                <div class="card-header">
+                    <div class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="star" />
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star" />
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star" />
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star" />
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star" />
+                        <label class="star star-1" for="star-1"></label>
+                    </div>
+                </div>
+                <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
+                    <img src="img/cyberpunk.jpg" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Game Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#!" class="btn btn-danger">Play Game</a>
+                    <span class="badge rounded-pill badge-notification bg-warning">New</span>
+                </div>
+                <div class="card-footer text-muted">Platform, Shooter</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await Include.Font("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+        await Include.Stylesheet("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+        await Include.Stylesheet("css/main/mdb.dark.min.css");
+        await Include.Stylesheet("css/main/custom.css");
+
+        await Include.Script("js/main/mdb.min.js");
+        await Include.Script("js/main/three.min.js");
+        
+        await Task.Delay(250);
+        
+        await Include.Script("js/main/OrbitControls.js");
+        await Include.Script("js/main/custom.js");
+    }
+}
