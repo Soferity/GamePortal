@@ -1,29 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFrameworks>net6.0-windows</TargetFrameworks>
-    <RootNamespace>GamePortal.Library</RootNamespace>
-    <UseMaui>true</UseMaui>
-    <SingleProject>true</SingleProject>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <DefineConstants>$(DefineConstants);BUILD_FOR_WF</DefineConstants>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net6.0-windows</TargetFrameworks>
+        <RootNamespace>GamePortal.Library</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <SingleProject>true</SingleProject>
+        <UseMaui>true</UseMaui>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Shared\GamePortal.Public\GamePortal.Public.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Shared\GamePortal.Public\GamePortal.Public.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Taiizor.Essentials.AppCenter" Version="1.0.1.1" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Taiizor.Essentials.AppCenter" Version="1.0.1.1" />
+    </ItemGroup>
 
-  <!--<ItemGroup>
-    <Reference Include="Taiizor.Essentials.AppCenter">
-      <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.AppCenter.dll</HintPath>
-    </Reference>
-    <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
-  </ItemGroup>-->
+    <!--<ItemGroup>
+        <Reference Include="Taiizor.Essentials.AppCenter">
+            <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.AppCenter.dll</HintPath>
+        </Reference>
+        <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
+        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
+        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
+    </ItemGroup>-->
 
 </Project>

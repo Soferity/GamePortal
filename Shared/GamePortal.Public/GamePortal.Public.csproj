@@ -1,23 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <RootNamespace>GamePortal.Public</RootNamespace>
-    <TargetFrameworks>net6.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <AnalysisLevel>preview</AnalysisLevel>
-    <LangVersion>preview</LangVersion>
-    <Nullable>disable</Nullable>
-    <UseMaui>true</UseMaui>
-  </PropertyGroup>
+    <PropertyGroup>
+        <RootNamespace>GamePortal.Public</RootNamespace>
+        <TargetFrameworks>net6.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <AnalysisLevel>preview</AnalysisLevel>
+        <LangVersion>preview</LangVersion>
+        <Nullable>disable</Nullable>
+        <UseMaui>true</UseMaui>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Taiizor.Essentials" Version="1.0.1.1" />
-  </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Properties\" />
+    </ItemGroup>
 
-  <!--<ItemGroup>
-    <Reference Include="Taiizor.Essentials">
-      <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials\bin\Release\net6.0\Taiizor.Essentials.dll</HintPath>
-    </Reference>
-  </ItemGroup>-->
+    <ItemGroup>
+        <PackageReference Include="Taiizor.Essentials" Version="1.0.1.1" />
+    </ItemGroup>
+
+    <!--<ItemGroup>
+        <Reference Include="Taiizor.Essentials">
+            <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials\bin\Release\net6.0\Taiizor.Essentials.dll</HintPath>
+        </Reference>
+    </ItemGroup>-->
 
 </Project>

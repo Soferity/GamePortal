@@ -1,25 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <ApplicationIcon>Resources\milkyway.ico</ApplicationIcon>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNameSpace>GamePortal</RootNameSpace>
-    <OutputType>WinExe</OutputType>
-    <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
-    <StartupObject></StartupObject>
-  </PropertyGroup>
+    <PropertyGroup>
+        <ApplicationIcon>Resources\milkyway.ico</ApplicationIcon>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RootNameSpace>GamePortal</RootNameSpace>
+        <OutputType>WinExe</OutputType>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Resource Include="Resources\milkyway.ico" />
-  </ItemGroup>
+    <ItemGroup>
+        <Resource Include="Resources\milkyway.ico" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GamePortal.Library\GamePortal.Library.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\GamePortal.Library\GamePortal.Library.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.532" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.532" />
+    </ItemGroup>
 
 </Project>
