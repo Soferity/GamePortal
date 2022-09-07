@@ -77,7 +77,7 @@ function drawDotSystem() {
 	scene.add(dotSystem);
 
 	const system1 = new DotSystem({
-		intensity: 1000,
+		intensity: 3000,
 		color: 0xE1FEA4,
 		xSpread: 800,
 		ySpread: 800,
@@ -214,7 +214,7 @@ function render() {
 
 class DotSystem {
 	constructor({
-		intensity = 500,
+		intensity = 5000,
 		color = 0xffffff,
 		xSpread = 1000,
 		ySpread = 1000,
