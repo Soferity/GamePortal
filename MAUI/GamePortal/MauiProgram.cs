@@ -1,4 +1,8 @@
-﻿using Microsoft.Maui.LifecycleEvents;
+﻿using GamePortal.Manage;
+using Microsoft.Maui.LifecycleEvents;
+using System.Diagnostics;
+using Taiizor.Essentials.Maui.AppCenter.Services;
+using Taiizor.Essentials.Maui.Cross;
 using Taiizor.Essentials.Maui.Interfaces;
 using Taiizor.Essentials.Maui.Services;
 
@@ -27,10 +31,50 @@ public static class MauiProgram
         builder.ConfigureLifecycleEvents(events =>
         {
 
-            // App Lifecycle Events
+#if WINDOWS
+            events.AddWindows(windows => windows
+                   .OnActivated((window, args) => LogEvent("OnActivated"))
+                   .OnClosed((window, args) => LogEvent("OnClosed")) //End
+                   .OnLaunched((window, args) => LogEvent("OnLaunched"))
+                   .OnLaunching((window, args) => AppCenter()) //Start //LogEvent("OnLaunching")
+                   .OnVisibilityChanged((window, args) => LogEvent("OnVisibilityChanged")));
+#elif ANDROID
+            events.AddAndroid(android => android
+                .OnActivityResult((activity, requestCode, resultCode, data) => LogEvent("OnActivityResult", requestCode.ToString()))
+                .OnStart((activity) => LogEvent("OnStart"))
+                .OnCreate((activity, bundle) => AppCenter()) //Start //LogEvent("OnCreate")
+                .OnBackPressed((activity) => LogEvent("OnBackPressed"))
+                .OnStop((activity) => LogEvent("OnStop"))); //End
+#elif IOS || MACCATALYST
+            events.AddiOS(ios => ios
+                .OnActivated((app) => LogEvent("OnActivated"))
+                .OnResignActivation((app) => LogEvent("OnResignActivation"))
+                .DidEnterBackground((app) => LogEvent("DidEnterBackground"))
+                .FinishedLaunching((app, dict) => LogEvent("FinishedLaunching", $"{dict}")) //Start
+                .WillTerminate((app) => LogEvent("WillTerminate"))); //End
+#endif
 
         });
 
         return builder.Build();
+    }
+    private static bool LogEvent(string eventName, string type = null)
+    {
+        Debug.WriteLine($"Lifecycle Event: {eventName}{(type == null ? string.Empty : $" ({type})")}");
+        return true;
+    }
+
+    private static bool AppCenter()
+    {
+        AppCenterService.Engine(General.Keys);
+
+        CrossException.UnhandledException += (sender, args) =>
+        {
+            AppCenterService.Exception(args);
+        };
+
+        Debug.WriteLine($"Lifecycle Event: AppCenter");
+
+        return true;
     }
 }

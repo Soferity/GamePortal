@@ -47,7 +47,7 @@ namespace GamePortal.Public.Value
                 {
                     Visibility = true,
                     Build = BuildEnum.Develop,
-                    Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure, GameTypeEnum.Platform },
+                    Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Valorous Rabbit",
                     Play = "Play Game",
