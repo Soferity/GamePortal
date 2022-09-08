@@ -2,8 +2,10 @@
 {
     public enum GameEnum
     {
+        Cube,
         Stray,
         Valhalla,
-        Cyberpunk
+        Cyberpunk,
+        TombRaider
     }
 }

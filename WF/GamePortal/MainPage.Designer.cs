@@ -47,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(1444, 631);
             this.Controls.Add(this.blazorWebView1);
             this.Icon = global::GamePortal.Properties.Resources.milkyway;
+            this.MinimumSize = new System.Drawing.Size(300, 600);
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Soferity: Game Portal";

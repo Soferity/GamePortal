@@ -7,12 +7,13 @@ namespace GamePortal.Public.Struct
     public struct GameStruct
     {
         public int Star;
+        public string Play;
         public string Title;
         public string Image;
         public string Address;
         public bool Visibility;
         public string Description;
-        public GameStateEnum State;
+        public GameStateEnum? State;
         public GameTypeEnum[] Type;
         public PlatformEnum[] Platform;
     }

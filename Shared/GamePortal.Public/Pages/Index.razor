@@ -24,9 +24,23 @@
 
         await Include.Script("js/main/mdb.min.js");
         await Include.Script("js/main/three.min.js");
-        
+
+        await GetRender();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(3003);
+            await Interop.Call("Preloaded");
+        }
+    }
+    
+    private async Task GetRender()
+    {
         await Task.Delay(250);
-        
+
         await Include.Script("js/main/OrbitControls.js");
         await Include.Script("js/main/custom.js");
     }
