@@ -1,0 +1,30 @@
+﻿@page "/cube"
+
+<div class="ui">
+    <div class="ui__background"></div>
+    <div class="ui__game"></div>
+    <GameCubeTexts />
+    <GameCubePrefs />
+    <GameCubeTheme />
+    <GameCubeStats />
+    <GameCubeButtons />
+</div>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await Include.Stylesheet("css/game/cube/style.css");
+
+        await Include.Script("js/game/cube/three.min.js");
+
+        await GetRender();
+    }
+    
+    private async Task GetRender()
+    {
+        await Task.Delay(250);
+
+        await Include.Script("js/game/cube/script.js");
+    }
+}

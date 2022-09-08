@@ -2,11 +2,14 @@
 	<Found Context="routeData">
 		<RouteView RouteData="@routeData" DefaultLayout="@typeof(Route)" />
 		@*<FocusOnNavigate RouteData="@routeData" Selector="h1" />*@
+		<Load />
 	</Found>
 	<NotFound>
 		<LayoutView Layout="@typeof(Route)">
-			<p role="alert">Sorry, there's nothing at this address.</p>
+			<p style="color: white">Sorry, there's nothing at this address.</p>
+			<a style="color: white" href="">Return Home</a>
 		</LayoutView>
 		@*<Error Execute="true" />*@
+		<Load />
 	</NotFound>
 </Router>

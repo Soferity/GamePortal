@@ -8,6 +8,22 @@ namespace GamePortal.Public.Value
         public static Dictionary<GameEnum, GameStruct> Games = new()
         {
             {
+                GameEnum.Cube,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Puzzle },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "The Cube",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/cube.jpg",
+                    Address = "cube",
+                    Description = "The Cube is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.Hit
+                }
+            },
+            {
                 GameEnum.Stray,
                 new()
                 {

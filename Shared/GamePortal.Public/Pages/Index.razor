@@ -1,5 +1,7 @@
 ﻿@page "/"
 
+@inject NavigationManager NM
+
 <div id="world"></div>
 
 <div class="container d-flex">
@@ -15,25 +17,19 @@
 {
     protected override async Task OnInitializedAsync()
     {
-        await Include.Font("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
-
-        await Include.Stylesheet("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
-        await Include.Stylesheet("css/main/mdb.dark.min.css");
-        await Include.Stylesheet("css/main/custom.css");
-
-        await Include.Script("js/main/mdb.min.js");
-        await Include.Script("js/main/three.min.js");
-
-        await GetRender();
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
+        if (NM.ToBaseRelativePath(NM.Uri) == "")
         {
-            await Task.Delay(3003);
-            await Interop.Call("Preloaded");
+            await Include.Font("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+            await Include.Stylesheet("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+            await Include.Stylesheet("css/main/mdb.dark.min.css");
+            await Include.Stylesheet("css/main/custom.css");
+
+            await Include.Script("js/main/mdb.min.js");
+            await Include.Script("js/main/three.min.js");
+
+            await GetRender();
         }
     }
     

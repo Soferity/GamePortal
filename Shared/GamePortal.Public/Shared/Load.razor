@@ -1,0 +1,11 @@
+﻿@code
+{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(3003);
+            await Interop.Call("Preloaded");
+        }
+    }
+}
