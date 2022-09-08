@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="/" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="icon" href="img/gameportal-favicon.ico" type="image/x-icon" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<title>Soferity: Game Portal</title>
+</head>
+
+<body id="body" style="overflow: hidden">
+    
+	<div class="loaderer" id="preloader">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		<div class="bar4"></div>
+		<div class="bar5"></div>
+		<div class="bar6"></div>
+	</div>
+
+	<div id="application" style="visibility: hidden"></div>
+
+	<script src="js/taiizor.blazor.js"></script>
+
+	<script src="_framework/blazor.webview.js" autostart="false"></script>
+
+	<script>
+		//document.addEventListener("DOMContentLoaded", function () {
+		//	Blazor.start();
+		//});
+		
+		function Preloaded() {
+			document.getElementById("preloader").style.display = "none";
+			document.getElementById("application").style.visibility = "visible";
+			document.getElementById("body").style.overflow = "unset";
+		}
+	</script>
+
+</body>
+
+</html>
