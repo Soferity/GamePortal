@@ -134,6 +134,22 @@ namespace GamePortal.Public.Value
                     Description = "Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
                 }
+            },
+            {
+                GameEnum.Hextris,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Strategy, GameTypeEnum.Puzzle, GameTypeEnum.Action },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Hextris",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/hextris.jpg",
+                    Address = "hextris",
+                    Description = "Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.Hit
+                }
             }
         };
     }
