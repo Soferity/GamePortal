@@ -29,22 +29,3 @@ canvas{
   display:block;
   background: linear-gradient(to right bottom,rgba(41,8,48,0.95) 0,rgba(82,65,143,0.95) 50%,rgba(114,183,227,0.95) 100%);
 }
-
-h1{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-    position: absolute;
-    text-align: center;
-    margin:0;
-    width: 100%;
-    height: 200px;
-    line-height: 200px;
-    top:50%;
-    margin-top: -100px;
-    z-index: 1001;
-    font-size: 32px;
-    letter-spacing: 0.2em;
-}
