@@ -10,7 +10,8 @@
 	<title>Soferity: Game Portal</title>
 </head>
 
-<body>
+<body id="body" style="overflow: hidden">
+    
 	<div class="loaderer" id="preloader">
 		<div class="bar1"></div>
 		<div class="bar2"></div>
@@ -34,6 +35,7 @@
 		function Preloaded() {
 			document.getElementById("preloader").style.display = "none";
 			document.getElementById("application").style.visibility = "visible";
+			document.getElementById("body").style.overflow = "auto";
 		}
 	</script>
 

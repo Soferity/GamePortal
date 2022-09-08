@@ -17,20 +17,17 @@
 {
     protected override async Task OnInitializedAsync()
     {
-        if (NM.ToBaseRelativePath(NM.Uri) == "")
-        {
-            await Include.Font("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+        await Include.Font("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 
-            await Include.Stylesheet("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+        await Include.Stylesheet("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-            await Include.Stylesheet("css/main/mdb.dark.min.css");
-            await Include.Stylesheet("css/main/custom.css");
+        await Include.Stylesheet("css/main/mdb.dark.min.css");
+        await Include.Stylesheet("css/main/custom.css");
 
-            await Include.Script("js/main/mdb.min.js");
-            await Include.Script("js/main/three.min.js");
+        await Include.Script("js/main/mdb.min.js");
+        await Include.Script("js/main/three.min.js");
 
-            await GetRender();
-        }
+        await GetRender();
     }
     
     private async Task GetRender()

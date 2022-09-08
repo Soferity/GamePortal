@@ -272,6 +272,14 @@ body {
   margin-top: -1.5em;
   border-radius: 100%;
 }
+.btn--tl {
+    top: 0.8em;
+    left: 0.8em;
+}
+.btn--tr {
+    top: 0.8em;
+    right: 0.8em;
+}
 .btn--bl {
   bottom: 0.8em;
   left: 0.8em;
