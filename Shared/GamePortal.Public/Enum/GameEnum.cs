@@ -3,10 +3,12 @@
     public enum GameEnum
     {
         Cube,
-        Stray,
-        Valhalla,
-        Cyberpunk,
-        TombRaider,
-        TowerBlock
+        Lazy2048,
+        TicTacToe,
+        TowerBlock,
+        Classic2048,
+        SweetMemory,
+        MagicSquare,
+        ValorousRabbit
     }
 }

@@ -40,66 +40,99 @@ namespace GamePortal.Public.Value
                 }
             },
             {
-                GameEnum.Stray,
+                GameEnum.ValorousRabbit,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure, GameTypeEnum.Platform },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Valorous Rabbit",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/valorousrabbit.jpg",
+                    Address = "valorousrabbit",
+                    Description = "Valorous Rabbit is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.New
+                }
+            },
+            {
+                GameEnum.Lazy2048,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Platform, GameTypeEnum.Strategy },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Lazy 2048",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/lazy2048.jpg",
+                    Address = "lazy2048",
+                    Description = "Lazy 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.Hit
+                }
+            },
+            {
+                GameEnum.Classic2048,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Platform, GameTypeEnum.Strategy },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Classic 2048",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/classic2048.jpg",
+                    Address = "classic2048",
+                    Description = "Classic 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.Old
+                }
+            },
+            {
+                GameEnum.SweetMemory,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Strategy },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Sweet Memory",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/sweetmemory.jpg",
+                    Address = "sweetmemory",
+                    Description = "SweetMemory is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.New
+                }
+            },
+            {
+                GameEnum.TicTacToe,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Multiplayer, GameTypeEnum.Strategy },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Tic Tac Toe",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/tictactoe.jpg",
+                    Address = "tictactoe",
+                    Description = "Tic Tac Toe is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.Hit
+                }
+            },
+            {
+                GameEnum.MagicSquare,
                 new()
                 {
                     Visibility = true,
                     Type = new[] { GameTypeEnum.Strategy, GameTypeEnum.Puzzle },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
-                    Title = "Stray",
+                    Title = "Magic Square",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/stray.jpg",
-                    Address = "stray",
-                    Description = "Stray is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
-                    State = GameStateEnum.New
-                }
-            },
-            {
-                GameEnum.Valhalla,
-                new()
-                {
-                    Visibility = true,
-                    Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure },
-                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
-                    Title = "Valhalla",
-                    Play = "Play Game",
-                    Star = 4,
-                    Image = "img/valhalla.jpg",
-                    Address = "valhalla",
-                    Description = "Valhalla is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
-                    State = GameStateEnum.Old
-                }
-            },
-            {
-                GameEnum.Cyberpunk,
-                new()
-                {
-                    Visibility = true,
-                    Type = new[] { GameTypeEnum.Platform, GameTypeEnum.Shooter },
-                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
-                    Title = "Cyberpunk",
-                    Play = "Play Game",
-                    Star = 3,
-                    Image = "img/cyberpunk.jpg",
-                    Address = "cyberpunk",
-                    Description = "Cyberpunk is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    Image = "img/magicsquare.jpg",
+                    Address = "magicsquare",
+                    Description = "Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
-                }
-            },
-            {
-                GameEnum.TombRaider,
-                new()
-                {
-                    Visibility = true,
-                    Type = new[] { GameTypeEnum.FPS, GameTypeEnum.Shooter, GameTypeEnum.Adventure },
-                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
-                    Title = "Tomb Raider",
-                    Play = "Play Game",
-                    Star = 1,
-                    Image = "img/tombraider.jpg",
-                    Address = "tombraider",
-                    Description = "Tomb Raider is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home."
                 }
             }
         };

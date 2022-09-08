@@ -20,6 +20,7 @@
         Platform,
         Strategy,
         Adventure,
-        Simulation
+        Simulation,
+        Multiplayer
     }
 }
