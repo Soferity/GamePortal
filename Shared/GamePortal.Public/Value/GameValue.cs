@@ -24,6 +24,22 @@ namespace GamePortal.Public.Value
                 }
             },
             {
+                GameEnum.TowerBlock,
+                new()
+                {
+                    Visibility = true,
+                    Type = new[] { GameTypeEnum.Platform },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Tower Block",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/towerblock.jpg",
+                    Address = "towerblock",
+                    Description = "Tower Block is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.New
+                }
+            },
+            {
                 GameEnum.Stray,
                 new()
                 {

@@ -280,6 +280,10 @@ body {
     top: 0.8em;
     right: 0.8em;
 }
+.btn--tc {
+    top: 0.8em;
+    left: calc(50% - 0.5em);
+}
 .btn--bl {
   bottom: 0.8em;
   left: 0.8em;

@@ -6,6 +6,7 @@
         Stray,
         Valhalla,
         Cyberpunk,
-        TombRaider
+        TombRaider,
+        TowerBlock
     }
 }
