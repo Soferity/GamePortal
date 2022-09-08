@@ -1,8 +1,6 @@
 ﻿@page "/"
 
-@inject NavigationManager NM
-
-<div id="world"></div>
+<MainBackground />
 
 <div class="container d-flex">
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-3">
@@ -25,16 +23,5 @@
         await Include.Stylesheet("css/main/custom.css");
 
         await Include.Script("js/main/mdb.min.js");
-        await Include.Script("js/main/three.min.js");
-
-        await GetRender();
-    }
-    
-    private async Task GetRender()
-    {
-        await Task.Delay(250);
-
-        await Include.Script("js/main/OrbitControls.js");
-        await Include.Script("js/main/custom.js");
     }
 }

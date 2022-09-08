@@ -12,6 +12,7 @@ namespace GamePortal.Public.Struct
         public string Image;
         public string Address;
         public bool Visibility;
+        public BuildEnum Build;
         public string Description;
         public GameStateEnum? State;
         public GameTypeEnum[] Type;

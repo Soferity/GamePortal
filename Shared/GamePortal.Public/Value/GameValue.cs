@@ -12,6 +12,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Puzzle },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "The Cube",
@@ -28,6 +29,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Platform },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Tower Block",
@@ -44,6 +46,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure, GameTypeEnum.Platform },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Valorous Rabbit",
@@ -60,6 +63,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Platform, GameTypeEnum.Strategy },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Lazy 2048",
@@ -76,6 +80,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Platform, GameTypeEnum.Strategy },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Classic 2048",
@@ -92,6 +97,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Strategy },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Sweet Memory",
@@ -108,6 +114,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Multiplayer, GameTypeEnum.Strategy },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Tic Tac Toe",
@@ -124,6 +131,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Strategy, GameTypeEnum.Puzzle },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Magic Square",
@@ -140,6 +148,7 @@ namespace GamePortal.Public.Value
                 new()
                 {
                     Visibility = true,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Strategy, GameTypeEnum.Puzzle, GameTypeEnum.Action },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Hextris",

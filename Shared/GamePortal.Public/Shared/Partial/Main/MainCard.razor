@@ -1,4 +1,4 @@
-﻿@if (Game.Visibility)
+﻿@if ((Game.Visibility && Game.Build == BuildEnum.Release && Game.Platform.Contains(AppValue.Platform)) || AppValue.Build == BuildEnum.Develop)
 {
     <div class="col">
         <div class="card text-center hover-shadow shadow-inner">

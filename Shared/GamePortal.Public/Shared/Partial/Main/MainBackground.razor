@@ -1,0 +1,45 @@
+﻿@if (AppValue.Platform == PlatformEnum.MacCatalyst)
+{
+    <div class="wrapper">
+        <canvas id="introduction-canvas"></canvas>
+        <div class="introduction-canvas--overflow"></div>
+    </div>
+}
+else
+{
+    <div id="world"></div>
+}
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        if (AppValue.Platform == PlatformEnum.MacCatalyst)
+        {
+            await Include.Stylesheet("css/main/style.css");
+            
+            await Include.Script("js/main/script.js");
+        }
+        else
+        {
+            await Include.Script("js/main/three.min.js");
+        }
+
+        await GetRender();
+    }
+    
+    private async Task GetRender()
+    {
+        await Task.Delay(250);
+        
+        if (AppValue.Platform == PlatformEnum.MacCatalyst)
+        {
+            //
+        }
+        else
+        {
+            await Include.Script("js/main/OrbitControls.js");
+            await Include.Script("js/main/custom.js");
+        }
+    }
+}
