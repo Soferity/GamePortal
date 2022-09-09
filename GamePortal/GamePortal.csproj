@@ -100,13 +100,13 @@
     
     <!--<ItemGroup>
         <Reference Include="Taiizor.Essentials">
-            <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials\bin\Release\net6.0\Taiizor.Essentials.dll</HintPath>
+            <HintPath>..\..\Taiizor.Essentials\src\Taiizor.Essentials\bin\Release\$(TargetFramework)\Taiizor.Essentials.dll</HintPath>
         </Reference>
         <Reference Include="Taiizor.Essentials.Maui">
-            <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.dll</HintPath>
+            <HintPath>..\..\Taiizor.Essentials\src\Taiizor.Essentials.Maui\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.dll</HintPath>
         </Reference>
         <Reference Include="Taiizor.Essentials.Maui.AppCenter">
-            <HintPath>..\..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
+            <HintPath>..\..\Taiizor.Essentials\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
         </Reference>
         <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
         <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
