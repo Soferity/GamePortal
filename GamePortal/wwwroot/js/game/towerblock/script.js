@@ -193,7 +193,9 @@ class Game {
                 this.onAction();
         });
         document.addEventListener('click', e => {
-            this.onAction();
+            if (e.offsetX >= 55 || e.offsetY >= 55) {
+                this.onAction();
+            }
         });
         document.addEventListener('touchstart', e => {
             e.preventDefault();
