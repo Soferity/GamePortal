@@ -4,12 +4,10 @@
 @Body
 
 @code {
-    private Interop JSC;
-
     protected override void OnInitialized()
     {
         base.OnInitialized();
 
-        JSC = new(JS);
+        _ = new Interop(JS, Javascript.File);
     }
 }
