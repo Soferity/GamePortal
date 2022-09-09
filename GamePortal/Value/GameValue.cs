@@ -14,7 +14,7 @@ namespace GamePortal.Value
                     Visibility = true,
                     Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Puzzle },
-                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "The Cube",
                     Play = "Play Game",
                     Star = 5,
