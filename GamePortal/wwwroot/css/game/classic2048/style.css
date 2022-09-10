@@ -423,3 +423,22 @@
      color: #fff;
      box-shadow: 0 0 1px 1px #1c0b19;
 }
+.btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 0;
+    position: absolute;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.25);
+    width: 2em;
+    height: 2em;
+    z-index: 999999999;
+}
+
+.btn--tl {
+    top: 0.8em;
+    left: 0.8em;
+}
