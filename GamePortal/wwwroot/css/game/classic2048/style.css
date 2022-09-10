@@ -1,0 +1,425 @@
+/* Variables: */
+/**/
+ *, *:before, *:after {
+     box-sizing: border-box;
+}
+ button:hover, a:hover {
+     cursor: pointer;
+}
+ .clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+}
+ html {
+     min-height: 100%;
+     width: 100%;
+     font-size: 16px;
+     font-family: "Rubik", sans-serif;
+     line-height: 1.5em;
+     color: #fff;
+     background: #160140;
+     background: linear-gradient(to top, #160140, #261535);
+}
+ .wrapper {
+     max-width: 500px;
+     margin: 0 auto;
+     padding: 15px;
+}
+ h2 {
+     font-style: italic;
+}
+/* Introduction */
+ .intro {
+     margin-bottom: 60px;
+}
+ .intro_title {
+     text-align: center;
+     color: #f9d49a;
+     font-size: 3rem;
+}
+/**/
+/* Guide instructions */
+ .guide {
+     border-bottom: 1px solid grey;
+}
+ .guide:first-of-type {
+     margin-top: 4rem;
+     border-top: 1px solid gray;
+}
+ .guide_arrow {
+     display: inline-block;
+     margin: 15px;
+     font-size: 3rem;
+     color: #fff;
+}
+ .controls_game, .controls_score {
+     display: inline-block;
+     width: 50%;
+     float: left;
+}
+ @media all and (max-width: 767px) {
+     .controls_game, .controls_score {
+         width: 100%;
+    }
+}
+ .controls_game-btn {
+     margin-bottom: 1rem;
+     padding: 0.5em 0.75em;
+     background: transparent;
+     color: #f9d49a;
+     outline: 2px solid #f9d49a;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     border: 5px solid transparent;
+     box-shadow: inset 0 0 0px 2px #d4a8cf;
+     letter-spacing: 0.1em;
+     font-weight: bold;
+     text-transform: lowercase;
+}
+ .controls_score {
+     display: inline-block;
+     min-width: 4em;
+     margin-bottom: 4rem;
+     padding: 0.5em 0.75em;
+     background: #0000003b;
+     text-align: center;
+     background: linear-gradient(90deg, #f9d49a, #d4a8cf);
+}
+ .controls_score-label, .controls_score-text {
+     display: inline-block;
+}
+ .controls_score-label {
+     color: initial;
+}
+ .controls_score-text {
+     color: #4a3647;
+     font-size: 2rem;
+}
+/**/
+/* Gameboard: the container for the static grid background;
+ and generated tiles/numbers;
+ */
+ .gameboard {
+    /* Position: relative;
+     set for tile-container, which absolutely positions over it to match grid's dimensions;
+     */
+     position: relative;
+     width: 100%;
+     max-width: 500px;
+     height: 100%;
+     max-height: 500px;
+     margin: auto;
+     padding: 8px;
+     background: #ffffff08;
+     border-radius: 5px;
+     box-shadow: 0 0 8px 0px #f9d49a;
+}
+ .gameboard::before {
+     content: "";
+     display: block;
+     padding-bottom: 100%;
+}
+/**/
+/* Grid: Creates the static grid background and individual grid cells;
+ */
+ .grid {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     margin: auto;
+}
+ .grid_cell, .tile {
+     display: inline-block;
+     height: 25%;
+     width: 25%;
+     padding: 8px;
+     float: left;
+     background: rgba(238, 228, 218, 0.35);
+     background-clip: content-box;
+}
+/**/
+/* Tile container: Contains the dynamically-generated tiles;
+ absolutely positioned over gameboard to match grid dimensions;
+ */
+ .tile-container {
+    /* absolutely positioned over gameboard to match dimensions */
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     border-radius: 5px;
+}
+ .tile {
+     display: table;
+     background: #eee4da;
+     background-clip: content-box;
+     position: absolute;
+     z-index: 2;
+     will-change: top, left;
+     transition-property: top, left;
+     transition-duration: 0.175s;
+     transition-timing-function: ease-out;
+}
+ .tile.initialize {
+     -webkit-animation-name: newTile;
+     animation-name: newTile;
+     -webkit-animation-duration: 0.175s;
+     animation-duration: 0.175s;
+     -webkit-animation-timing-function: linear;
+     animation-timing-function: linear;
+     -webkit-animation-fill-mode: forwards;
+     animation-fill-mode: forwards;
+}
+ @-webkit-keyframes newTile {
+     0% {
+         opacity: 0;
+    }
+     50% {
+         opacity: 0;
+         transform: scale(0);
+    }
+     75% {
+         opacity: 1;
+         transform: scale(0.5);
+    }
+     100% {
+         opacity: 1;
+         transform: scale(1);
+    }
+}
+ @keyframes newTile {
+     0% {
+         opacity: 0;
+    }
+     50% {
+         opacity: 0;
+         transform: scale(0);
+    }
+     75% {
+         opacity: 1;
+         transform: scale(0.5);
+    }
+     100% {
+         opacity: 1;
+         transform: scale(1);
+    }
+}
+ .tile_number {
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: bold;
+     color: white;
+}
+ .tile:nth-of-type(1) {
+     z-index: 2;
+}
+ .tile:nth-of-type(2) {
+     z-index: 3;
+}
+ .tile:nth-of-type(3) {
+     z-index: 4;
+}
+ .tile:nth-of-type(4) {
+     z-index: 5;
+}
+ .tile:nth-of-type(5) {
+     z-index: 6;
+}
+ .tile:nth-of-type(6) {
+     z-index: 7;
+}
+ .tile:nth-of-type(7) {
+     z-index: 8;
+}
+ .tile:nth-of-type(8) {
+     z-index: 9;
+}
+ .tile:nth-of-type(9) {
+     z-index: 10;
+}
+ .tile:nth-of-type(10) {
+     z-index: 11;
+}
+ .tile:nth-of-type(11) {
+     z-index: 12;
+}
+ .tile:nth-of-type(12) {
+     z-index: 13;
+}
+ .tile:nth-of-type(13) {
+     z-index: 14;
+}
+ .tile:nth-of-type(14) {
+     z-index: 15;
+}
+ .tile:nth-of-type(15) {
+     z-index: 16;
+}
+ .tile:nth-of-type(16) {
+     z-index: 17;
+}
+ .tile[data-x="0"][data-y="0"] {
+     top: 0%;
+     left: 0%;
+}
+ .tile[data-x="0"][data-y="25"] {
+     top: 25%;
+     left: 0%;
+}
+ .tile[data-x="0"][data-y="50"] {
+     top: 50%;
+     left: 0%;
+}
+ .tile[data-x="0"][data-y="75"] {
+     top: 75%;
+     left: 0%;
+}
+ .tile[data-x="0"][data-y="100"] {
+     top: 100%;
+     left: 0%;
+}
+ .tile[data-x="25"][data-y="0"] {
+     top: 0%;
+     left: 25%;
+}
+ .tile[data-x="25"][data-y="25"] {
+     top: 25%;
+     left: 25%;
+}
+ .tile[data-x="25"][data-y="50"] {
+     top: 50%;
+     left: 25%;
+}
+ .tile[data-x="25"][data-y="75"] {
+     top: 75%;
+     left: 25%;
+}
+ .tile[data-x="25"][data-y="100"] {
+     top: 100%;
+     left: 25%;
+}
+ .tile[data-x="50"][data-y="0"] {
+     top: 0%;
+     left: 50%;
+}
+ .tile[data-x="50"][data-y="25"] {
+     top: 25%;
+     left: 50%;
+}
+ .tile[data-x="50"][data-y="50"] {
+     top: 50%;
+     left: 50%;
+}
+ .tile[data-x="50"][data-y="75"] {
+     top: 75%;
+     left: 50%;
+}
+ .tile[data-x="50"][data-y="100"] {
+     top: 100%;
+     left: 50%;
+}
+ .tile[data-x="75"][data-y="0"] {
+     top: 0%;
+     left: 75%;
+}
+ .tile[data-x="75"][data-y="25"] {
+     top: 25%;
+     left: 75%;
+}
+ .tile[data-x="75"][data-y="50"] {
+     top: 50%;
+     left: 75%;
+}
+ .tile[data-x="75"][data-y="75"] {
+     top: 75%;
+     left: 75%;
+}
+ .tile[data-x="75"][data-y="100"] {
+     top: 100%;
+     left: 75%;
+}
+ .tile[data-x="100"][data-y="0"] {
+     top: 0%;
+     left: 100%;
+}
+ .tile[data-x="100"][data-y="25"] {
+     top: 25%;
+     left: 100%;
+}
+ .tile[data-x="100"][data-y="50"] {
+     top: 50%;
+     left: 100%;
+}
+ .tile[data-x="100"][data-y="75"] {
+     top: 75%;
+     left: 100%;
+}
+ .tile[data-x="100"][data-y="100"] {
+     top: 100%;
+     left: 100%;
+}
+ .tile_number[data-value="2"] {
+     background: #00d0a4;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #00d0a4;
+}
+ .tile_number[data-value="4"] {
+     background: #dd7373;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #dd7373;
+}
+ .tile_number[data-value="8"] {
+     background: #7d53de;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #7d53de;
+}
+ .tile_number[data-value="16"] {
+     background: #6622cc;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #6622cc;
+}
+ .tile_number[data-value="32"] {
+     background: #00bfb2;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #00bfb2;
+}
+ .tile_number[data-value="64"] {
+     background: #c06ff2;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #c06ff2;
+}
+ .tile_number[data-value="128"] {
+     background: #340068;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #340068;
+}
+ .tile_number[data-value="256"] {
+     background: #3e92cc;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #3e92cc;
+}
+ .tile_number[data-value="512"] {
+     background: #d8315b;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #d8315b;
+}
+ .tile_number[data-value="1024"] {
+     background: #1c0b19;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #1c0b19;
+}
+ .tile_number[data-value="2048"] {
+     background: #1c0b19;
+     color: #fff;
+     box-shadow: 0 0 1px 1px #1c0b19;
+}
