@@ -129,13 +129,13 @@ function initScreenAnd3D() {
 
     window.addEventListener('resize', handleWindowResize, false);
     /*document.addEventListener('mousedown', handleMouseDown, false);*/
-    document.addEventListener('mousedown', e => {
+    document.addEventListener('click', e => {
         if (e.offsetX >= 55 || e.offsetY >= 55) {
             handleMouseDown('handleMouseDown');
         }
     });
     /*document.addEventListener("touchend", handleMouseDown, false);*/
-    document.addEventListener('touchend', e => {
+    document.addEventListener('touchstart', e => {
         e.preventDefault();
         // this.onAction();
         // ☝️ this triggers after click on android so you
