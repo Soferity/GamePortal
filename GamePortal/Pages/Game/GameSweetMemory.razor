@@ -1,0 +1,40 @@
+﻿@page "/sweetmemory"
+
+<GameExit />
+<div id="score-panel">
+    <ul class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+    </ul>
+    <span class="moves">0</span> Moves
+    <div class="restart">
+        <i class="fa fa-repeat"></i>
+    </div>
+</div>
+<ul class="deck"></ul>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await Include.Stylesheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
+        await Include.Stylesheet("https://fonts.googleapis.com/css?family=Coda");
+        await Include.Stylesheet("css/game/sweetmemory/sweetalert2.min.css");
+        await Include.Stylesheet("css/game/sweetmemory/animate.css");
+        await Include.Stylesheet("css/game/sweetmemory/style.css");
+
+        await Include.Script("js/game/classic2048/jquery.js");
+
+        await GetRender();
+    }
+    
+    private async Task GetRender()
+    {
+        await Task.Delay(250);
+
+        await Include.Script("js/game/sweetmemory/jquery.min.js");
+        await Include.Script("js/game/sweetmemory/sweetalert2.min.js");
+        await Include.Script("js/game/sweetmemory/script.js");
+    }
+}
