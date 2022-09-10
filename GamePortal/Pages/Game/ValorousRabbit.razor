@@ -1,0 +1,41 @@
+﻿@page "/valorousrabbit"
+
+<GameValorousRabbitExit />
+<GameValorousRabbitWorld />
+<GameValorousRabbitOver />
+<GameValorousRabbitDist />
+<GameValorousRabbitInstructions />
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await Include.Stylesheet("css/game/valorousrabbit/reset.min.css");
+        await Include.Stylesheet("css/game/valorousrabbit/style.css");
+
+        await Include.Script("js/game/valorousrabbit/three.js");
+        await Include.Script("js/game/valorousrabbit/TweenMax.min.js");
+
+        await GetRender();
+    }
+
+    private async Task GetRender()
+    {
+        await Task.Delay(250);
+
+        await Include.Script("js/game/valorousrabbit/OrbitControls.js");
+        await Include.Script("js/game/valorousrabbit/script.js");
+
+        await Task.Delay(2500);
+
+        try
+        {
+
+            await Interop.Call("init", "false");
+        }
+        catch
+        {
+            //Erken çıktı.
+        }
+    }
+}

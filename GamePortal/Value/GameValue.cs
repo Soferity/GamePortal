@@ -18,7 +18,7 @@ namespace GamePortal.Value
                     Title = "The Cube",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/cube.jpg",
+                    Image = "img/game/cube.jpg",
                     Address = "cube",
                     Description = "The Cube is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
@@ -29,13 +29,13 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Develop,
+                    Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Platform },
-                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Tower Block",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/towerblock.jpg",
+                    Image = "img/game/towerblock.jpg",
                     Address = "towerblock",
                     Description = "Tower Block is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.New
@@ -48,11 +48,11 @@ namespace GamePortal.Value
                     Visibility = true,
                     Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure },
-                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Valorous Rabbit",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/valorousrabbit.jpg",
+                    Image = "img/game/valorousrabbit.jpg",
                     Address = "valorousrabbit",
                     Description = "Valorous Rabbit is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.New
@@ -69,7 +69,7 @@ namespace GamePortal.Value
                     Title = "Lazy 2048",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/lazy2048.jpg",
+                    Image = "img/game/lazy2048.jpg",
                     Address = "lazy2048",
                     Description = "Lazy 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
@@ -86,7 +86,7 @@ namespace GamePortal.Value
                     Title = "Classic 2048",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/classic2048.jpg",
+                    Image = "img/game/classic2048.jpg",
                     Address = "classic2048",
                     Description = "Classic 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Old
@@ -103,7 +103,7 @@ namespace GamePortal.Value
                     Title = "Sweet Memory",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/sweetmemory.jpg",
+                    Image = "img/game/sweetmemory.jpg",
                     Address = "sweetmemory",
                     Description = "SweetMemory is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.New
@@ -120,7 +120,7 @@ namespace GamePortal.Value
                     Title = "Tic Tac Toe",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/tictactoe.jpg",
+                    Image = "img/game/tictactoe.jpg",
                     Address = "tictactoe",
                     Description = "Tic Tac Toe is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
@@ -137,7 +137,7 @@ namespace GamePortal.Value
                     Title = "Magic Square",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/magicsquare.jpg",
+                    Image = "img/game/magicsquare.jpg",
                     Address = "magicsquare",
                     Description = "Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
@@ -154,7 +154,7 @@ namespace GamePortal.Value
                     Title = "Hextris",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/hextris.jpg",
+                    Image = "img/game/hextris.jpg",
                     Address = "hextris",
                     Description = "Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
