@@ -1,5 +1,7 @@
 ﻿@page "/classic2048"
 
+@using System.Text;
+
 <main class="wrapper">
     <!-- intro -->
     <div class="intro clearfix">
@@ -51,16 +53,15 @@
     <!-- /end guide  -->
 </main>
 
-<!-- templates -->
-<script type="text/html" id="template_grid_cell">
+<noscript type="text/html" id="template_grid_cell">
     <div class="grid_cell"></div>
-</script>
-<script type="text/html" id="template_tile">
+</noscript>
+
+<noscript type="text/html" id="template_tile">
     <div class="tile">
-    <span class="tile_number"> </span>
+        <span class="tile_number"> </span>
     </div>
-</script>
-<!-- /end templates -->
+</noscript>
 
 @code
 {
@@ -82,5 +83,16 @@
         await Include.Script("js/game/classic2048/lodash.js");
         await Include.Script("js/game/classic2048/hammer.js");
         await Include.Script("js/game/classic2048/script.js");
+
+        await Task.Delay(500);
+
+        try
+        {
+            await Interop.Call("gameStart");
+        }
+        catch
+        {
+            //Erken çıktı.
+        }
     }
 }

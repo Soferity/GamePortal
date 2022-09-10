@@ -12,7 +12,7 @@ function gameStart() {
     window.game = new Game(4);
     window.game.initialize();
 }
-$(document).ready(gameStart);
+/*$(document).ready(gameStart);*/
 
 /*
  * Game Board
