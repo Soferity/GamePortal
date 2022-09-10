@@ -20,7 +20,7 @@ namespace GamePortal.Value
                     Star = 5,
                     Image = "img/game/cube.jpg",
                     Address = "cube",
-                    Description = "The Cube is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    Description = "The Cube is a rubik's cube game. With the various settings offered, you can make your own custom rubik's cube. So you can test yourself.",
                     State = GameStateEnum.Hit
                 }
             },
@@ -29,7 +29,7 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Release,
+                    Build = BuildEnum.Develop,
                     Type = new[] { GameTypeEnum.Platform },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Tower Block",
