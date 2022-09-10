@@ -4118,7 +4118,7 @@ class Game {
 
         };
         
-        this.dom.buttons.exit.onclick = event => DotNet.invokeMethodAsync('Taiizor.Essentials', 'GoLocation', '');
+        this.dom.buttons.exit.onclick = event => InvokeMethodAsync('Taiizor.Essentials', 'GoLocation', '');
 
         this.dom.buttons.prefs.onclick = event => this.prefs(SHOW);
 
