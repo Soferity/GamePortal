@@ -1,0 +1,19 @@
+﻿@page "/lazy2048"
+
+<div id=container>
+    <GameExit />
+    <GameLazy2048Canvas />
+    <GameLazy2048Load />
+    <GameLazy2048Home />
+    <GameLazy2048End />
+</div>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await Include.Stylesheet("css/game/lazy2048/style.css");
+
+        await Include.Script("js/game/lazy2048/script.js");
+    }
+}
