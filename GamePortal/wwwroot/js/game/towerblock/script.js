@@ -1,5 +1,4 @@
 "use strict";
-console.clear();
 class Stage {
     constructor() {
         // container

@@ -29,11 +29,61 @@
 		//document.addEventListener("DOMContentLoaded", function () {
 		//	Blazor.start();
 		//});
-		
+
+        document.addEventListener('readystatechange', event => {
+            switch (document.readyState) {
+				case "loading":
+                    //var current = new Date();
+                    //console.log("document.readyState: ", document.readyState,
+                    //    `- The document is still loading.`,
+                    //    `Time: `, current.toLocaleString(), `Unix: `, current.getTime()
+                    //);
+                    break;
+                case "interactive":
+                    //var current = new Date();
+                    //console.log("document.readyState: ", document.readyState,
+                    //    `- The document has finished loading DOM. `,
+                    //    `- "DOMContentLoaded" event`,
+                    //    `Time: `, current.toLocaleString(), `Unix: `, current.getTime()
+                    //);
+                    break;
+                case "complete":
+                    //var current = new Date();
+                    //console.log("document.readyState: ", document.readyState,
+                    //    `- The page DOM with Sub-resources are now fully loaded. `,
+                    //    `- "load" event`,
+                    //    `Time: `, current.toLocaleString(), `Unix: `, current.getTime()
+                    //);
+                    Preloaded();
+					break;
+                default:
+                    var current = new Date();
+					console.log("document.readyState: ", document.readyState,
+                        `Time: `, current.toLocaleString(), `Unix: `, current.getTime()
+					);
+                    break;
+            }
+		});
+
+        window.onload = function () { // can also use window.addEventListener('load', (event) => {
+            //var current = new Date();
+            //console.log("window.onload: onload",
+            //    `Time: `, current.toLocaleString(), `Unix: `, current.getTime()
+            //);
+            Preloaded();
+        };
+
+		var countLoader = 0;
 		function Preloaded() {
-			document.getElementById("preloader").style.display = "none";
-			document.getElementById("application").style.visibility = "visible";
-			document.getElementById("body").style.overflow = "unset";
+            if (countLoader > 1) {
+                countLoader = 0;
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("application").style.visibility = "visible";
+                document.getElementById("body").style.overflow = "unset";
+            }
+            else {
+                ++countLoader;
+            }
 		}
 	</script>
 
