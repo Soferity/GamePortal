@@ -1,0 +1,29 @@
+﻿<div id="notfound">
+    <div class="notfound">
+        <div class="notfound-bg">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>oops!</h1>
+        <h2>Error 505 : Something went wrong!</h2>
+        <a href="#" @onclick="(() => Redirect.GoLocation())">go home</a>
+@*        <div class="notfound-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>*@
+    </div>
+</div>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await Include.Stylesheet("css/error/quicksand.700.css");
+
+        await Include.Stylesheet("css/error/font-awesome.min.css");
+        await Include.Stylesheet("css/error/style.css");
+    }
+}

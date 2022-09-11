@@ -37,6 +37,8 @@ public static class MauiProgram
                    .OnClosed((window, args) => LogEvent("OnClosed")) //End
                    .OnLaunched((window, args) => LogEvent("OnLaunched"))
                    .OnLaunching((window, args) => AppCenter()) //Start //LogEvent("OnLaunching")
+                   .OnWindowCreated((window) => LogEvent("OnWindowCreated"))
+                   .OnResumed((window) => LogEvent("OnResumed"))
                    .OnVisibilityChanged((window, args) => LogEvent("OnVisibilityChanged")));
 #elif ANDROID
             events.AddAndroid(android => android

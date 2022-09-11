@@ -18,8 +18,8 @@ namespace GamePortal.Value
                     Title = "The Cube",
                     Play = "Play Game",
                     Star = 5,
-                    Image = "img/game/cube.jpg",
-                    Address = "cube",
+                    Image = "img/game/thecube.jpg",
+                    Address = "thecube",
                     Description = "The Cube is a rubik's cube game. With the various settings offered, you can make your own custom rubik's cube. So you can test yourself.",
                     State = GameStateEnum.Hit
                 }

@@ -40,7 +40,7 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="$(TargetFramework.Contains('-windows')) and '$(Configuration)' == 'Release'">
-        <RuntimeIdentifiers>win-x64;win-x86;win-arm;win-arm64;</RuntimeIdentifiers>
+        <!--<RuntimeIdentifiers>win-x64;win-x86;win-arm;win-arm64;</RuntimeIdentifiers>-->
         <GenerateAppxPackageOnBuild>true</GenerateAppxPackageOnBuild>
         <AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
         <PackageCertificateThumbprint>A3CB5279FC1E683A1B2364E52E8F3D28FF1D80BA</PackageCertificateThumbprint>

@@ -1,0 +1,32 @@
+﻿@page "/thecube"
+
+<div class="ui">
+    <div class="ui__background"></div>
+    <div class="ui__game"></div>
+    <GameTheCubeTexts />
+    <GameTheCubePrefs />
+    <GameTheCubeTheme />
+    <GameTheCubeStats />
+    <GameTheCubeButtons />
+</div>
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        AppCenterService.TrackEvent("Game-TheCube", "JoinGame", "Joined");
+
+        await Include.Stylesheet("css/game/thecube/style.css");
+
+        await Include.Script("js/game/thecube/three.min.js");
+
+        await GetRender();
+    }
+    
+    private async Task GetRender()
+    {
+        await Task.Delay(250);
+
+        await Include.Script("js/game/thecube/script.js");
+    }
+}
