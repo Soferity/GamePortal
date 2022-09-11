@@ -14,12 +14,26 @@ var symbols = icons(),
     rank1stars = gameCardsQTY + 10;
 
 function icons() {
-    switch (randomInt(0, 2)) {
+    switch (randomInt(0, 7)) {
         case 1:
-            return ['bus', 'bus', 'tree', 'tree', 'ship', 'ship', 'rocket', 'rocket', 'shield', 'shield', 'magic', 'magic', 'lemon-o', 'lemon-o', 'phone', 'phone'];
+            return ['bus', 'bus', 'tree', 'tree', 'ship', 'ship', 'rocket', 'rocket', 'shield', 'shield', 'magic', 'magic', 'truck', 'truck', 'phone', 'phone'];
         case 2:
             return ['heart-o', 'heart-o', 'key', 'key', 'plane', 'plane', 'gift', 'gift', 'fire', 'fire', 'eye', 'eye', 'camera', 'camera', 'print', 'print'];
         case 3:
+            return ['snapchat', 'snapchat', 'youtube', 'youtube', 'whatsapp', 'whatsapp', 'facebook', 'facebook', 'twitter', 'twitter', 'instagram', 'instagram', 'tumblr', 'tumblr', 'github', 'github'];
+        case 4:
+            return ['credit-card', 'credit-card', 'bullhorn', 'bullhorn', 'globe', 'globe', 'chain', 'chain', 'cloud', 'cloud', 'magic', 'magic', 'table', 'table', 'paperclip', 'paperclip'];
+        case 5:
+            return ['heartbeat', 'heartbeat', 'skyatlas', 'skyatlas', 'leanpub', 'leanpub', 'trash', 'trash', 'calculator', 'calculator', 'wifi', 'wifi', 'newspaper-o', 'newspaper-o', 'braille', 'braille'];
+        case 6:
+            return ['bluetooth', 'bluetooth', 'gears', 'gears', 'trophy', 'trophy', 'home', 'home', 'signal', 'signal', 'film', 'film', 'glass', 'glass', 'music', 'music'];
+        case 7:
+            return ['sun-o', 'sun-o', 'flag', 'flag', 'qrcode', 'qrcode', 'shopping-bag', 'shopping-bag', 'font', 'font', 'headphones', 'headphones', 'lock', 'lock', 'play', 'play'];
+        case 8:
+            return ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+        case 9:
+            return ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+        case 10:
             return ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
         default:
             return ['bicycle', 'bicycle', 'leaf', 'leaf', 'cube', 'cube', 'anchor', 'anchor', 'paper-plane-o', 'paper-plane-o', 'bolt', 'bolt', 'bomb', 'bomb', 'diamond', 'diamond'];
@@ -85,7 +99,7 @@ function endGame(moves, score) {
         title: 'Congratulations! You Won!',
         text: 'With ' + moves + ' Moves and ' + score + ' Stars.\nBoom Shaka Lak!',
         type: 'success',
-        background: '#1c2020',
+        background: '#1C2020',
         confirmButtonColor: '#9BCB3C',
         confirmButtonText: 'Play again!'
     }).then(function(isConfirm) {
@@ -98,13 +112,14 @@ function endGame(moves, score) {
 // Restart Game
 $restart.on('click', function() {
     swal({
-        allowEscapeKey: false,
-        allowOutsideClick: false,
+        allowEscapeKey: true,
+        allowOutsideClick: true,
         title: 'Are you sure?',
         text: "Your progress will be Lost!",
         type: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#9BCB3C',
+        background: '#1C2020',
         cancelButtonColor: '#EE0E51',
         confirmButtonText: 'Yes, Restart Game!'
     }).then(function(isConfirm) {
