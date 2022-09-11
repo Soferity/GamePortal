@@ -13,7 +13,7 @@ namespace GamePortal.Value
                 {
                     Visibility = true,
                     Build = BuildEnum.Release,
-                    Type = new[] { GameTypeEnum.Puzzle },
+                    Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Simulation },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "The Cube",
                     Play = "Play Game",

@@ -1,48 +1,85 @@
-div.stars {
-	width: auto;
-	display: flex;
-	justify-content: space-between;
-	direction: rtl;
-}
-
-input.star {
-	display: none;
-}
-
-label.star {
-	float: right;
-	padding: 3px;
-	font-size: 20px;
-	transition: all .2s;
-}
-
-input.star:checked ~ label.star:before {
-	content: '\f005';
-	color: #FD4;
-	transition: all .25s;
-}
-
-input.star-5:checked ~ label.star:before {
-	color: #FE7;
-	text-shadow: 0 0 20px #952;
-}
-
-input.star-1:checked ~ label.star:before {
-	color: #F62;
-}
-
-label.star:hover {
-	transform: rotate(-15deg) scale(1.3);
-}
-
-label.star:before {
-	content: '\f006';
-	font-family: FontAwesome;
-}
-
 #world {
-	position: fixed;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
+
+/*  
+ *  Pure CSS star rating that works without reversing order
+ *  of inputs
+ *  -------------------------------------------------------
+ *  NOTE: For the styling to work, there needs to be a radio
+ *        input selected by default. There also needs to be a
+ *        radio input before the first star, regardless of
+ *        whether you offer a 'no rating' or 0 stars option
+ *  
+ *  This codepen uses FontAwesome icons
+ */
+#full-stars-example {
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    /* make hover effect work properly in IE */
+    /* hide radio inputs */
+    /* set icon padding and size */
+    /* set default star color */
+    /* set color of none icon when unchecked */
+    /* if none icon is checked, make it red */
+    /* if any input is checked, make its following siblings grey */
+    /* make all stars orange on rating group hover */
+    /* make hovered input's following siblings grey on hover */
+    /* make none icon grey on rating group hover */
+    /* make none icon red on hover */
+}
+
+    #full-stars-example .rating-group {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #full-stars-example .rating__icon {
+        pointer-events: none;
+    }
+
+    #full-stars-example .rating__input {
+        position: absolute !important;
+        left: -9999px !important;
+    }
+
+    #full-stars-example .rating__label {
+        cursor: pointer;
+        /*padding: 0 0.1em;*/
+        font-size: 1.5rem;
+    }
+
+    #full-stars-example .rating__icon--star {
+        color: orange;
+    }
+
+    #full-stars-example .rating__icon--none {
+        color: #eee;
+    }
+
+    #full-stars-example .rating__input--none:checked + .rating__label .rating__icon--none {
+        color: red;
+    }
+
+    #full-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
+        color: #ddd;
+    }
+
+    #full-stars-example .rating-group:hover .rating__label .rating__icon--star {
+        color: orange;
+    }
+
+    #full-stars-example .rating__input:hover ~ .rating__label .rating__icon--star {
+        color: #ddd;
+    }
+
+    #full-stars-example .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+        color: #eee;
+    }
+
+    #full-stars-example .rating__input--none:hover + .rating__label .rating__icon--none {
+        color: red;
+    }

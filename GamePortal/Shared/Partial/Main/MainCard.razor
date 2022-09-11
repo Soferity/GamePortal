@@ -3,18 +3,33 @@
     <div class="col">
         <div class="card text-center hover-shadow shadow-inner">
             <div class="card-header">
-                <div class="stars">
-                    <input class="star star-5" id="star-5" type="radio" name="star" />
-                    <label class="star star-5" for="star-5"></label>
-                    <input class="star star-4" id="star-4" type="radio" name="star" />
-                    <label class="star star-4" for="star-4"></label>
-                    <input class="star star-3" id="star-3" type="radio" name="star" />
-                    <label class="star star-3" for="star-3"></label>
-                    <input class="star star-2" id="star-2" type="radio" name="star" />
-                    <label class="star star-2" for="star-2"></label>
-                    <input class="star star-1" id="star-1" type="radio" name="star" />
-                    <label class="star star-1" for="star-1"></label>
+
+                <div id="@Game.Address-Star" style="display: none">
+                    <div id="full-stars-example">
+                        <div class="rating-group">
+                            <input class="rating__input rating__input--none" name="rating-@Game.Address" id="rating-none-@Game.Address" value="0" type="radio" @onclick="(() => Set(Game.Address, 0))">
+                            <label aria-label="No rating" class="rating__label" for="rating-none-@Game.Address"><i class="rating__icon rating__icon--none fa fa-ban"></i></label>
+
+                            <label aria-label="1 star" class="rating__label" for="rating-1-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-1-@Game.Address" value="1" type="radio" @onclick="(() => Set(Game.Address, 1))">
+
+                            <label aria-label="2 stars" class="rating__label" for="rating-2-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-2-@Game.Address" value="2" type="radio" @onclick="(() => Set(Game.Address, 2))">
+
+                            <label aria-label="3 stars" class="rating__label" for="rating-3-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-3-@Game.Address" value="3" type="radio" @onclick="(() => Set(Game.Address, 3))">
+
+                            <label aria-label="4 stars" class="rating__label" for="rating-4-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-4-@Game.Address" value="4" type="radio" @onclick="(() => Set(Game.Address, 4))">
+
+                            <label aria-label="5 stars" class="rating__label" for="rating-5-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-5-@Game.Address" value="5" type="radio" @onclick="(() => Set(Game.Address, 5))">
+                        </div>
+                    </div>
                 </div>
+
+                <div id="@Game.Address-Play" style="display: none" class="text-danger">To give points, you must play first.</div>
+                
             </div>
             <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
                 <img src="@Game.Image" class="img-fluid" />
@@ -59,5 +74,47 @@
         }
 
         return Text;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        foreach (GameStruct Game in GameValue.Games.Values)
+        {
+            bool Rating = await Cookie.Check(Game.Address);
+
+            if (Rating)
+            {
+                await Style.Remove($"{Game.Address}-Star", "display");
+
+                Rating = await Cookie.Check($"{Game.Address}-rating");
+
+                if (Rating)
+                {
+                    string Star = await Cookie.Get($"{Game.Address}-rating");
+
+                    if (!string.IsNullOrEmpty(Star) && Star != "0")
+                    {
+                        await Taiizor.Essentials.Extension.Attribute.Set($"rating-{Star}-{Game.Address}", "checked");
+                    }
+                    else
+                    {
+                        await Taiizor.Essentials.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
+                    }
+                }
+                else
+                {
+                    await Taiizor.Essentials.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
+                }
+            }
+            else
+            {
+                await Style.Remove($"{Game.Address}-Play", "display");
+            }
+        }
+    }
+
+    private async void Set(string Address, int Value)
+    {
+        await Cookie.Set($"{Address}-rating", $"{Value}", 999);
     }
 }
