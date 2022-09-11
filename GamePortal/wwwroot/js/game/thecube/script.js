@@ -4064,6 +4064,7 @@ class Game {
                 }
 
                 this.game(SHOW);
+                SetCookie('thecube', 'play', 999)
 
             } else if (this.state === STATE.Complete) {
 
@@ -4353,5 +4354,5 @@ class Game {
 
 }
 
-window.version = '0.99.2';
+window.version = '0.99.3';
 window.game = new Game();

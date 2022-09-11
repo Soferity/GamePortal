@@ -80,21 +80,28 @@
     {
         foreach (GameStruct Game in GameValue.Games.Values)
         {
-            bool Rating = await Cookie.Check(Game.Address);
-
-            if (Rating)
+            if ((Game.Visibility && Game.Build == BuildEnum.Release && Game.Platform.Contains(AppValue.Platform)) || AppValue.Build == BuildEnum.Develop)
             {
-                await Style.Remove($"{Game.Address}-Star", "display");
-
-                Rating = await Cookie.Check($"{Game.Address}-rating");
+                bool Rating = await Cookie.Check(Game.Address);
 
                 if (Rating)
                 {
-                    string Star = await Cookie.Get($"{Game.Address}-rating");
+                    await Style.Remove($"{Game.Address}-Star", "display");
 
-                    if (!string.IsNullOrEmpty(Star) && Star != "0")
+                    Rating = await Cookie.Check($"{Game.Address}-rating");
+
+                    if (Rating)
                     {
-                        await Taiizor.Essentials.Extension.Attribute.Set($"rating-{Star}-{Game.Address}", "checked");
+                        string Star = await Cookie.Get($"{Game.Address}-rating");
+
+                        if (!string.IsNullOrEmpty(Star) && Star != "0")
+                        {
+                            await Taiizor.Essentials.Extension.Attribute.Set($"rating-{Star}-{Game.Address}", "checked");
+                        }
+                        else
+                        {
+                            await Taiizor.Essentials.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
+                        }
                     }
                     else
                     {
@@ -103,12 +110,8 @@
                 }
                 else
                 {
-                    await Taiizor.Essentials.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
+                    await Style.Remove($"{Game.Address}-Play", "display");
                 }
-            }
-            else
-            {
-                await Style.Remove($"{Game.Address}-Play", "display");
             }
         }
     }
