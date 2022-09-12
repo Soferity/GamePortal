@@ -13,19 +13,21 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <AnalysisLevel>preview</AnalysisLevel>
         <LangVersion>preview</LangVersion>
+        <PublisherName>Taiizor</PublisherName>
+        <DefaultLanguage>en-GB</DefaultLanguage>
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 
         <!-- Display name -->
-        <ApplicationTitle>GamePortal</ApplicationTitle>
+        <ApplicationTitle>Soferity: Game Portal</ApplicationTitle>
 
         <!-- App Identifier -->
         <ApplicationId>com.soferity.gameportal</ApplicationId>
         <ApplicationIdGuid>5482B078-A108-4D06-A2E0-08EB73226549</ApplicationIdGuid>
 
         <!-- Versions -->
-        <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
-        <ApplicationVersion>1</ApplicationVersion>
+        <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
+        <ApplicationVersion>0</ApplicationVersion>
 
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
@@ -41,9 +43,16 @@
 
     <PropertyGroup Condition="$(TargetFramework.Contains('-windows')) and '$(Configuration)' == 'Release'">
         <!--<RuntimeIdentifiers>win-x64;win-x86;win-arm;win-arm64;</RuntimeIdentifiers>-->
-        <GenerateAppxPackageOnBuild>true</GenerateAppxPackageOnBuild>
-        <AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
+        <GenerateAppxPackageOnBuild>True</GenerateAppxPackageOnBuild>
+        <!--<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
         <PackageCertificateThumbprint>A3CB5279FC1E683A1B2364E52E8F3D28FF1D80BA</PackageCertificateThumbprint>
+        <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>-->
+        <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+        <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+        <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+        <GenerateTestArtifacts>True</GenerateTestArtifacts>
+        <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+        <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     </PropertyGroup>
 
     <PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
