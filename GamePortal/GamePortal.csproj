@@ -3,7 +3,7 @@
     <PropertyGroup>
         <!--<TargetFrameworks>net6.0-android</TargetFrameworks>-->
         <!--<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>-->
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.22621.0</TargetFrameworks>
+        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
         <!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
         <OutputType>Exe</OutputType>
@@ -30,8 +30,8 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">24.0</SupportedOSPlatformVersion>
-        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.22621.0</SupportedOSPlatformVersion>
-        <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</SupportedOSPlatformVersion>
+        <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</TargetPlatformMinVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
     </PropertyGroup>
 
@@ -65,7 +65,7 @@
     <PropertyGroup Condition="$(TargetFramework.Contains('-ios')) and '$(Configuration)' == 'Release'">
         <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
         <CodesignKey>iPhone Distribution: Soferity (AY2GDE9QM7)</CodesignKey>
-        <CodesignProvision>GamePortay</CodesignProvision>
+        <CodesignProvision>GamePortal</CodesignProvision>
         <ArchiveOnBuild>true</ArchiveOnBuild>
         <TcpPort>58181</TcpPort>
     </PropertyGroup>
@@ -88,13 +88,13 @@
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
     </ItemGroup>
 
-    <!--<ItemGroup>
-        <PackageReference Include="Taiizor.Essentials" Version="1.0.1.5" />
-        <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.5" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.4" />
-    </ItemGroup>-->
-    
     <ItemGroup>
+        <PackageReference Include="Taiizor.Essentials" Version="1.0.1.6" />
+        <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.6" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.6" />
+    </ItemGroup>
+    
+    <!--<ItemGroup>
         <Reference Include="Taiizor.Essentials">
             <HintPath>..\..\Taiizor.Essentials\src\Taiizor.Essentials\bin\Release\$(TargetFramework)\Taiizor.Essentials.dll</HintPath>
         </Reference>
@@ -107,6 +107,6 @@
         <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
         <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
         <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
-    </ItemGroup>
+    </ItemGroup>-->
 
 </Project>
