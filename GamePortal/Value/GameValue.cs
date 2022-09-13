@@ -97,7 +97,7 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Develop,
+                    Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Strategy },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Sweet Memory",
@@ -105,7 +105,7 @@ namespace GamePortal.Value
                     Star = 5,
                     Image = "img/game/sweetmemory.jpg",
                     Address = "sweetmemory",
-                    Description = "SweetMemory is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    Description = "Sweet memory is a memory game. Flip the squares and see the icon behind them. Then look behind more squares to find the same icon. If you find the same icon, you get a point.", //If you don't, the squares will flip back over. Try to get as many points as you can.
                     State = GameStateEnum.New
                 }
             },

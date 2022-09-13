@@ -7,6 +7,7 @@ var symbols = icons(),
     $moveNum = $scorePanel.find('.moves'),
     $ratingStars = $scorePanel.find('i'),
     $restart = $scorePanel.find('.restart'),
+    $exit = $scorePanel.find('.exit'),
     delay = 800,
     gameCardsQTY = symbols.length / 2,
     rank3stars = gameCardsQTY + 2,
@@ -97,13 +98,14 @@ function endGame(moves, score) {
         allowEscapeKey: false,
         allowOutsideClick: false,
         title: 'Congratulations! You Won!',
-        text: 'With ' + moves + ' Moves and ' + score + ' Stars.\nBoom Shaka Lak!',
+        text: 'With ' + moves + ' Moves and ' + score + ' Stars.\nCongratulations!',
         type: 'success',
         background: '#1C2020',
         confirmButtonColor: '#9BCB3C',
         confirmButtonText: 'Play again!'
     }).then(function(isConfirm) {
         if (isConfirm) {
+            symbols = icons();
             initGame();
         }
     })
@@ -126,6 +128,26 @@ $restart.on('click', function() {
         if (isConfirm) {
             symbols = icons();
             initGame();
+        }
+    })
+});
+
+// Exit Game
+$exit.on('click', function () {
+    swal({
+        allowEscapeKey: true,
+        allowOutsideClick: true,
+        title: 'Are you sure?',
+        text: "Your progress will be Lost!",
+        type: 'error',
+        showCancelButton: true,
+        confirmButtonColor: '#9BCB3C',
+        background: '#1C2020',
+        cancelButtonColor: '#EE0E51',
+        confirmButtonText: 'Yes, Close Game!'
+    }).then(function (isConfirm) {
+        if (isConfirm) {
+            GoLocation('');
         }
     })
 });
@@ -172,6 +194,8 @@ $deck.on('click', '.card:not(".match, .open")', function() {
             endGame(moves, score);
         }, 500);
     }
+
+    SetCookie('sweetmemory', 'play', 999);
 });
 
 initGame();

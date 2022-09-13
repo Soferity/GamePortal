@@ -27,7 +27,9 @@
 
         <!-- Versions -->
         <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
-        <ApplicationVersion>0</ApplicationVersion>
+
+        <ApplicationVersion Condition="!$(TargetFramework.Contains('-android'))">0</ApplicationVersion>
+        <ApplicationVersion Condition="$(TargetFramework.Contains('-android'))">1</ApplicationVersion>
 
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>

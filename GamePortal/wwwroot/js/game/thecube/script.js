@@ -4064,7 +4064,7 @@ class Game {
                 }
 
                 this.game(SHOW);
-                SetCookie('thecube', 'play', 999)
+                SetCookie('thecube', 'play', 999);
 
             } else if (this.state === STATE.Complete) {
 
