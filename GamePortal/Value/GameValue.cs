@@ -3,7 +3,7 @@ using GamePortal.Struct;
 
 namespace GamePortal.Value
 {
-    public class GameValue
+    internal class GameValue
     {
         public static Dictionary<GameEnum, GameStruct> Games = new()
         {
