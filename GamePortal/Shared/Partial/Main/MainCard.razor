@@ -82,17 +82,17 @@
         {
             if ((Game.Visibility && Game.Build == BuildEnum.Release && Game.Platform.Contains(AppValue.Platform)) || AppValue.Build == BuildEnum.Develop)
             {
-                bool Rating = await Cookie.Check(Game.Address);
+                bool Rating = await Local.Check(Game.Address);
 
                 if (Rating)
                 {
                     await Style.Remove($"{Game.Address}-Star", "display");
 
-                    Rating = await Cookie.Check($"{Game.Address}-rating");
+                    Rating = await Local.Check($"{Game.Address}-rating");
 
                     if (Rating)
                     {
-                        string Star = await Cookie.Get($"{Game.Address}-rating");
+                        string Star = await Local.Get($"{Game.Address}-rating");
 
                         if (!string.IsNullOrEmpty(Star) && Star != "0")
                         {
@@ -118,6 +118,6 @@
 
     private async void Set(string Address, int Value)
     {
-        await Cookie.Set($"{Address}-rating", $"{Value}", 999);
+        await Local.Set($"{Address}-rating", $"{Value}");
     }
 }

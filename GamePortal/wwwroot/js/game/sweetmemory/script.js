@@ -195,7 +195,7 @@ $deck.on('click', '.card:not(".match, .open")', function() {
         }, 500);
     }
 
-    SetCookie('sweetmemory', 'play', 999);
+    SetLocalStorage('sweetmemory', 'play');
 });
 
 initGame();

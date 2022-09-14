@@ -2481,7 +2481,7 @@ class Timer extends Animation {
 
         if (this.converted != old) {
 
-            localStorage.setItem('theCube_time', this.deltaTime);
+            SetLocalStorage('theCube_time', this.deltaTime);
             this.setText();
 
         }
@@ -3138,14 +3138,14 @@ class Storage {
 
         this.game = game;
 
-        const userVersion = localStorage.getItem('theCube_version');
+        const userVersion = GetLocalStorage('theCube_version');
 
         if (!userVersion || userVersion !== window.gameVersion) {
 
             this.clearGame();
             this.clearPreferences();
             this.migrateScores();
-            localStorage.setItem('theCube_version', window.gameVersion);
+            SetLocalStorage('theCube_version', window.gameVersion);
 
         }
 
@@ -3162,12 +3162,12 @@ class Storage {
 
         try {
 
-            const gameInProgress = localStorage.getItem('theCube_playing') === 'true';
+            const gameInProgress = GetLocalStorage('theCube_playing') === 'true';
 
             if (!gameInProgress) throw new Error();
 
-            const gameCubeData = JSON.parse(localStorage.getItem('theCube_savedState'));
-            const gameTime = parseInt(localStorage.getItem('theCube_time'));
+            const gameCubeData = JSON.parse(GetLocalStorage('theCube_savedState'));
+            const gameTime = parseInt(GetLocalStorage('theCube_time'));
 
             if (!gameCubeData || gameTime === null) throw new Error();
             if (gameCubeData.size !== this.game.cube.sizeGenerated) throw new Error();
@@ -3206,17 +3206,17 @@ class Storage {
 
         });
 
-        localStorage.setItem('theCube_playing', gameInProgress);
-        localStorage.setItem('theCube_savedState', JSON.stringify(gameCubeData));
-        localStorage.setItem('theCube_time', gameTime);
+        SetLocalStorage('theCube_playing', gameInProgress);
+        SetLocalStorage('theCube_savedState', JSON.stringify(gameCubeData));
+        SetLocalStorage('theCube_time', gameTime);
 
     }
 
     clearGame() {
 
-        localStorage.removeItem('theCube_playing');
-        localStorage.removeItem('theCube_savedState');
-        localStorage.removeItem('theCube_time');
+        DeleteLocalStorage('theCube_playing');
+        DeleteLocalStorage('theCube_savedState');
+        DeleteLocalStorage('theCube_time');
 
     }
 
@@ -3224,7 +3224,7 @@ class Storage {
 
         try {
 
-            const scoresData = JSON.parse(localStorage.getItem('theCube_scores'));
+            const scoresData = JSON.parse(GetLocalStorage('theCube_scores'));
 
             if (!scoresData) throw new Error();
 
@@ -3238,13 +3238,13 @@ class Storage {
 
         const scoresData = this.game.scores.data;
 
-        localStorage.setItem('theCube_scores', JSON.stringify(scoresData));
+        SetLocalStorage('theCube_scores', JSON.stringify(scoresData));
 
     }
 
     clearScores() {
 
-        localStorage.removeItem('theCube_scores');
+        DeleteLocalStorage('theCube_scores');
 
     }
 
@@ -3252,10 +3252,10 @@ class Storage {
 
         try {
 
-            const scoresData = JSON.parse(localStorage.getItem('theCube_scoresData'));
-            const scoresBest = parseInt(localStorage.getItem('theCube_scoresBest'));
-            const scoresWorst = parseInt(localStorage.getItem('theCube_scoresWorst'));
-            const scoresSolves = parseInt(localStorage.getItem('theCube_scoresSolves'));
+            const scoresData = JSON.parse(GetLocalStorage('theCube_scoresData'));
+            const scoresBest = parseInt(GetLocalStorage('theCube_scoresBest'));
+            const scoresWorst = parseInt(GetLocalStorage('theCube_scoresWorst'));
+            const scoresSolves = parseInt(GetLocalStorage('theCube_scoresSolves'));
 
             if (!scoresData || !scoresBest || !scoresSolves || !scoresWorst) return false;
 
@@ -3264,10 +3264,10 @@ class Storage {
             this.game.scores.data[3].solves = scoresSolves;
             this.game.scores.data[3].worst = scoresWorst;
 
-            localStorage.removeItem('theCube_scoresData');
-            localStorage.removeItem('theCube_scoresBest');
-            localStorage.removeItem('theCube_scoresWorst');
-            localStorage.removeItem('theCube_scoresSolves');
+            DeleteLocalStorage('theCube_scoresData');
+            DeleteLocalStorage('theCube_scoresBest');
+            DeleteLocalStorage('theCube_scoresWorst');
+            DeleteLocalStorage('theCube_scoresSolves');
 
         } catch (e) { }
 
@@ -3277,7 +3277,7 @@ class Storage {
 
         try {
 
-            const preferences = JSON.parse(localStorage.getItem('theCube_preferences'));
+            const preferences = JSON.parse(GetLocalStorage('theCube_preferences'));
 
             if (!preferences) throw new Error();
 
@@ -3323,13 +3323,13 @@ class Storage {
             colors: this.game.themes.colors,
         };
 
-        localStorage.setItem('theCube_preferences', JSON.stringify(preferences));
+        SetLocalStorage('theCube_preferences', JSON.stringify(preferences));
 
     }
 
     clearPreferences() {
 
-        localStorage.removeItem('theCube_preferences');
+        DeleteLocalStorage('theCube_preferences');
 
     }
 
@@ -4064,7 +4064,7 @@ class Game {
                 }
 
                 this.game(SHOW);
-                SetCookie('thecube', 'play', 999);
+                SetLocalStorage('thecube', 'play');
 
             } else if (this.state === STATE.Complete) {
 
@@ -4254,7 +4254,7 @@ class Game {
             setTimeout(() => this.transition.preferences(SHOW), 1000);
             setTimeout(() => {
 
-                const gameCubeData = JSON.parse(localStorage.getItem('theCube_savedState'));
+                const gameCubeData = JSON.parse(GetLocalStorage('theCube_savedState'));
 
                 if (!gameCubeData) {
 
@@ -4354,5 +4354,5 @@ class Game {
 
 }
 
-window.version = '0.99.3';
+window.gameVersion = '0.99.4';
 window.game = new Game();
