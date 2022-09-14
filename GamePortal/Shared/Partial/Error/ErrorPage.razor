@@ -5,7 +5,7 @@
             <div></div>
             <div></div>
         </div>
-        <h1>oops!</h1>
+        <h1>Oops!</h1>
         <h2>Error 505 : Something went wrong!</h2>
         <a href="#" @onclick="(() => Redirect.GoLocation())">go home</a>
 @*        <div class="notfound-social">
@@ -21,6 +21,8 @@
 {
     protected override async Task OnInitializedAsync()
     {
+        AppCenterService.TrackEvent("Page-Error");
+
         await Include.Stylesheet("css/error/quicksand.700.css");
 
         await Include.Stylesheet("css/error/font-awesome.min.css");

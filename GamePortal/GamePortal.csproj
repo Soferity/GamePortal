@@ -18,7 +18,10 @@
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 
-        <!-- Display name -->
+        <!-- Project Profiles -->
+        <!--<WindowsPackageType Condition="$(TargetFramework.Contains('-windows'))">None</WindowsPackageType>-->
+
+        <!-- Display Name -->
         <ApplicationTitle>Soferity: Game Portal</ApplicationTitle>
 
         <!-- App Identifier -->
