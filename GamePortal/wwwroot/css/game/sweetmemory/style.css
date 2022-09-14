@@ -99,7 +99,7 @@ body {
     #score-panel .exit {
         float: left;
         cursor: pointer;
-        margin-left: 20px;
+        margin-left: 25px;
     }
     
     #score-panel .restart {

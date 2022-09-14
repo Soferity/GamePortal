@@ -96,16 +96,16 @@
 
                         if (!string.IsNullOrEmpty(Star) && Star != "0")
                         {
-                            await Taiizor.Essentials.Extension.Attribute.Set($"rating-{Star}-{Game.Address}", "checked");
+                            await Taiizor.Essentials.Maui.Extension.Attribute.Set($"rating-{Star}-{Game.Address}", "checked");
                         }
                         else
                         {
-                            await Taiizor.Essentials.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
+                            await Taiizor.Essentials.Maui.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
                         }
                     }
                     else
                     {
-                        await Taiizor.Essentials.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
+                        await Taiizor.Essentials.Maui.Extension.Attribute.Set($"rating-none-{Game.Address}", "checked");
                     }
                 }
                 else
