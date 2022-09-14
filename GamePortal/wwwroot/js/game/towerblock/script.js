@@ -213,6 +213,7 @@ class Game {
         switch (this.state) {
             case this.STATES.READY:
                 this.startGame();
+                SetLocalStorage('towerblock', 'play');
                 break;
             case this.STATES.PLAYING:
                 this.placeBlock();

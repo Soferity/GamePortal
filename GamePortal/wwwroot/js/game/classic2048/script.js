@@ -11,6 +11,7 @@
 function gameStart() {
     window.game = new Game(4);
     window.game.initialize();
+    SetLocalStorage('classic2048', 'play');
 }
 /*$(document).ready(gameStart);*/
 

@@ -13,6 +13,8 @@
 {
     protected override async Task OnInitializedAsync()
     {
+        AppCenterService.TrackEvent("Game-TowerBlock", "JoinGame", "Joined");
+        
         await Include.Stylesheet("css/game/towerblock/style.css");
 
         await Include.Script("js/game/towerblock/three.min.js");

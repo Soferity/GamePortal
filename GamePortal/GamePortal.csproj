@@ -103,7 +103,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.8" />
+        <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.9" />
         <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.7" />
     </ItemGroup>
     

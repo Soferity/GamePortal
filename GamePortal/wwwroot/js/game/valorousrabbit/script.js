@@ -1538,6 +1538,8 @@ function init(event) {
     resetGame();
     loop();
 
+    SetLocalStorage('valorousrabbit', 'play');
+    
     /*setInterval(hero.blink.bind(hero), 3000);*/
 }
 

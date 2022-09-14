@@ -10,9 +10,9 @@ var symbols = icons(),
     $exit = $scorePanel.find('.exit'),
     delay = 800,
     gameCardsQTY = symbols.length / 2,
-    rank3stars = gameCardsQTY + 2,
-    rank2stars = gameCardsQTY + 6,
-    rank1stars = gameCardsQTY + 10;
+    rank3stars = gameCardsQTY + 2, //8 + 2 = 10 | 3
+    rank2stars = gameCardsQTY + 6, //8 + 6 = 14 | 2
+    rank1stars = gameCardsQTY + 10; //8 + 10 = 18 | 1
 
 function icons() {
     switch (randomInt(0, 7)) {
@@ -41,6 +41,7 @@ function icons() {
     }
 }
 
+// Random number
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -77,16 +78,18 @@ function initGame() {
 // Set Rating and final Score
 function setRating(moves) {
     var rating = 3;
-    if (moves > rank3stars && moves < rank2stars) {
+
+    if (moves > rank3stars && moves <= rank2stars) {
         $ratingStars.eq(2).removeClass('fa-star').addClass('fa-star-o');
         rating = 2;
-    } else if (moves > rank2stars && moves < rank1stars) {
+    } else if (moves > rank2stars && moves <= rank1stars) {
         $ratingStars.eq(1).removeClass('fa-star').addClass('fa-star-o');
         rating = 1;
     } else if (moves > rank1stars) {
         $ratingStars.eq(0).removeClass('fa-star').addClass('fa-star-o');
         rating = 0;
     }
+
     return {
         score: rating
     };

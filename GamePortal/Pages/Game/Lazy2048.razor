@@ -12,6 +12,8 @@
 {
     protected override async Task OnInitializedAsync()
     {
+        AppCenterService.TrackEvent("Game-Lazy2048", "JoinGame", "Joined");
+        
         await GetRender();
     }
 

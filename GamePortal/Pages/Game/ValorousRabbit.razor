@@ -10,6 +10,8 @@
 {
     protected override async Task OnInitializedAsync()
     {
+        AppCenterService.TrackEvent("Game-ValorousRabbit", "JoinGame", "Joined");
+        
         await Include.Stylesheet("css/game/valorousrabbit/reset.min.css");
         await Include.Stylesheet("css/game/valorousrabbit/style.css");
 
