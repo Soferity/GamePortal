@@ -6,9 +6,9 @@
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   IgnorableNamespaces="uap rescap mp">
 
-  <Identity Name="29415Taiizor.51298815DE774" Publisher="CN=BAEB534D-BC36-4432-8EEF-E0088D896FB9" Version="0.0.0.0" />
+  <Identity Name="29415Taiizor.3001747E67102" Publisher="CN=BAEB534D-BC36-4432-8EEF-E0088D896FB9" Version="0.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="b44669ef-6e00-4b8d-a756-1b40eebaa149" PhonePublisherId="35d623ac-ca3f-4961-b357-4907d492d2d2"/>
+  <mp:PhoneIdentity PhoneProductId="303085e5-46f9-4e76-9826-8278f126e3b2" PhonePublisherId="35d623ac-ca3f-4961-b357-4907d492d2d2"/>
 
   <Properties>
     <DisplayName>Soferity: Game Portal</DisplayName>
