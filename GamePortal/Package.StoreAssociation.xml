@@ -361,7 +361,7 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>29415Taiizor.51298815DE774</MainPackageIdentityName>
+    <MainPackageIdentityName>29415Taiizor.3001747E67102</MainPackageIdentityName>
     <ReservedNames>
       <ReservedName>Soferity: Game Portal</ReservedName>
     </ReservedNames>
@@ -369,5 +369,5 @@
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>29415Taiizor.Lunox</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9PCS1VXK6G2V" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9P1JZMGT34M2" />
 </StoreAssociation>
