@@ -20,7 +20,7 @@ namespace GamePortal.Value
                     Star = 5,
                     Image = "img/game/thecube.jpg",
                     Address = "thecube",
-                    Description = "The Cube is a rubik's cube game. With the various settings offered, you can make your own custom rubik's cube. So you can test yourself.",
+                    Description = "The Cube is a rubik's cube completion game. With the various settings offered, you can make your own custom rubik's cube. So you can test yourself. If you give up, you lose.",
                     State = GameStateEnum.Hit
                 }
             },
@@ -29,15 +29,15 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Develop,
-                    Type = new[] { GameTypeEnum.Platform },
+                    Build = BuildEnum.Release,
+                    Type = new[] { GameTypeEnum.Platform, GameTypeEnum.Action },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Tower Block",
                     Play = "Play Game",
                     Star = 5,
                     Image = "img/game/towerblock.jpg",
                     Address = "towerblock",
-                    Description = "Tower Block is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    Description = "Tower Block is a game of stacking blocks. As you stack blocks on top of each other, you earn points. The higher you stack, the more points you earn. The game ends when you can no longer stack blocks.",
                     State = GameStateEnum.New
                 }
             },
@@ -46,7 +46,7 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Develop,
+                    Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Action, GameTypeEnum.Adventure },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Valorous Rabbit",
@@ -54,7 +54,7 @@ namespace GamePortal.Value
                     Star = 5,
                     Image = "img/game/valorousrabbit.jpg",
                     Address = "valorousrabbit",
-                    Description = "Valorous Rabbit is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    Description = "Valorous Rabbit is an action adventure game. Try to escape from the hedgehog by taking the carrots. The most important thing is to never get caught by a hedgehog. If you lose your life, it's game over.",
                     State = GameStateEnum.New
                 }
             },
