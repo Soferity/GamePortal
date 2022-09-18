@@ -2,14 +2,7 @@
 
 <MainBackground />
 
-<div class="container d-flex">
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-3">
-        @foreach (GameStruct Game in GameValue.Games.Values)
-        {
-            <MainCard Game="@Game" />
-        }
-    </div>
-</div>
+<MainContainer />
 
 @code
 {

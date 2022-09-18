@@ -1,4 +1,4 @@
-﻿@if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
+﻿@if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.Android || AppValue.Platform == PlatformEnum.iOS)
 {
     <div class="wrapper">
         <canvas id="introduction-canvas"></canvas>
@@ -14,7 +14,7 @@ else
 {
     protected override async Task OnInitializedAsync()
     {
-        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
+        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.Android || AppValue.Platform == PlatformEnum.iOS)
         {
             await Include.Stylesheet("css/main/style.css");
             
@@ -32,7 +32,7 @@ else
     {
         await Task.Delay(DelayValue.Render);
         
-        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
+        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.Android || AppValue.Platform == PlatformEnum.iOS)
         {
             //
         }
