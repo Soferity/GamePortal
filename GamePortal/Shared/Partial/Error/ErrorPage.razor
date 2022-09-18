@@ -23,6 +23,8 @@
     {
         AppCenterService.TrackEvent("Page-Error");
 
+        await Task.Delay(DelayValue.Initialize);
+
         await Include.Stylesheet("css/error/quicksand.700.css");
 
         await Include.Stylesheet("css/error/font-awesome.min.css");

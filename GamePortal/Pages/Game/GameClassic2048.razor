@@ -15,6 +15,8 @@
     protected override async Task OnInitializedAsync()
     {
         AppCenterService.TrackEvent("Game-Classic2048", "JoinGame", "Joined");
+
+        await Task.Delay(DelayValue.Initialize);
         
         await Include.Stylesheet("https://fonts.googleapis.com/css?family=Rubik:300,400,700");
         await Include.Stylesheet("css/game/classic2048/normalize.min.css");
@@ -27,21 +29,10 @@
     
     private async Task GetRender()
     {
-        await Task.Delay(250);
+        await Task.Delay(DelayValue.Render);
 
         await Include.Script("js/game/classic2048/lodash.js");
         await Include.Script("js/game/classic2048/hammer.js");
         await Include.Script("js/game/classic2048/script.js");
-
-        await Task.Delay(250);
-
-        try
-        {
-            await Interop.Call("gameStart");
-        }
-        catch
-        {
-            //Erken çıktı.
-        }
     }
 }

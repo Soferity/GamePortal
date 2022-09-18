@@ -14,6 +14,7 @@ function gameStart() {
     SetLocalStorage('classic2048', 'play');
 }
 /*$(document).ready(gameStart);*/
+setTimeout(gameStart, 250);
 
 /*
  * Game Board

@@ -13,6 +13,8 @@
     protected override async Task OnInitializedAsync()
     {
         AppCenterService.TrackEvent("Game-SweetMemory", "JoinGame", "Joined");
+
+        await Task.Delay(DelayValue.Initialize);
         
         await Include.Stylesheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
         await Include.Stylesheet("https://fonts.googleapis.com/css?family=Coda");
@@ -28,7 +30,7 @@
     
     private async Task GetRender()
     {
-        await Task.Delay(250);
+        await Task.Delay(DelayValue.Render);
 
         await Include.Script("js/game/sweetmemory/jquery.min.js");
         await Include.Script("js/game/sweetmemory/sweetalert2.min.js");

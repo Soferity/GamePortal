@@ -4,7 +4,8 @@
     {
         if (firstRender)
         {
-            await Task.Delay(1500);
+            await Task.Delay(DelayValue.Preloader);
+            
             await Interop.Call("Preloaded");
         }
     }

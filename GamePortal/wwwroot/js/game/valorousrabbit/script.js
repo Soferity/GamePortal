@@ -1654,3 +1654,4 @@ Trunc = function() {
 
 //window.addEventListener('load', init, false);
 //document.addEventListener('load', init, false);
+setTimeout(init, 1000, false);

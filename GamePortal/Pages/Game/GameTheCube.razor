@@ -16,6 +16,8 @@
     {
         AppCenterService.TrackEvent("Game-TheCube", "JoinGame", "Joined");
 
+        await Task.Delay(DelayValue.Initialize);
+
         await Include.Stylesheet("css/game/thecube/style.css");
 
         await Include.Script("js/game/thecube/three.min.js");
@@ -25,7 +27,7 @@
     
     private async Task GetRender()
     {
-        await Task.Delay(250);
+        await Task.Delay(DelayValue.Render);
 
         await Include.Script("js/game/thecube/script.js");
     }

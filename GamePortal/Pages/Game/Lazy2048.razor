@@ -13,13 +13,15 @@
     protected override async Task OnInitializedAsync()
     {
         AppCenterService.TrackEvent("Game-Lazy2048", "JoinGame", "Joined");
+
+        await Task.Delay(DelayValue.Initialize);
         
         await GetRender();
     }
 
     private async Task GetRender()
     {
-        await Task.Delay(500);
+        await Task.Delay(DelayValue.Render);
 
         await Include.Stylesheet("css/game/lazy2048/style.css");
         await Include.Script("js/game/lazy2048/script.js");
