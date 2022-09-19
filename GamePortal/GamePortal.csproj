@@ -118,10 +118,6 @@
         <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.9" />
         <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.7" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="wwwroot\font\" />
-    </ItemGroup>
     
     <!--<ItemGroup>
         <Reference Include="Taiizor.Essentials.Maui">
