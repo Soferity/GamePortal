@@ -1,9 +1,13 @@
-﻿@if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.Android || AppValue.Platform == PlatformEnum.iOS)
+﻿@if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
 {
     <div class="wrapper">
         <canvas id="introduction-canvas"></canvas>
         <div class="introduction-canvas--overflow"></div>
     </div>
+}
+else if (AppValue.Platform == PlatformEnum.Android)
+{
+    <div id="particle"></div>
 }
 else
 {
@@ -14,11 +18,17 @@ else
 {
     protected override async Task OnInitializedAsync()
     {
-        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.Android || AppValue.Platform == PlatformEnum.iOS)
+        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
         {
             await Include.Stylesheet("css/main/style.css");
             
             await Include.Script("js/main/script.js");
+        }
+        else if (AppValue.Platform == PlatformEnum.Android)
+        {
+            await Include.Stylesheet("css/main/styles.css");
+            
+            await Include.Script("js/main/jquery.min.js");
         }
         else
         {
@@ -32,9 +42,14 @@ else
     {
         await Task.Delay(DelayValue.Render);
         
-        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.Android || AppValue.Platform == PlatformEnum.iOS)
+        if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
         {
             //
+        }
+        else if (AppValue.Platform == PlatformEnum.Android)
+        {
+
+            await Include.Script("js/main/scripts.js");
         }
         else
         {
