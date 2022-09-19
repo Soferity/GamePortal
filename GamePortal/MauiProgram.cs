@@ -23,7 +23,7 @@ namespace GamePortal
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-        builder.Services.AddBlazorWebViewDeveloperTools();
+			builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
             builder.Services.AddSingleton<IDialogService, DialogService>();
@@ -32,14 +32,14 @@ namespace GamePortal
             {
 
 #if WINDOWS
-                events.AddWindows(windows => windows
-                       .OnActivated((window, args) => LogEvent("OnActivated"))
-                       .OnClosed((window, args) => LogEvent("OnClosed")) //End
-                       .OnLaunched((window, args) => LogEvent("OnLaunched"))
-                       .OnLaunching((window, args) => AppCenter()) //Start //LogEvent("OnLaunching")
-                       .OnWindowCreated((window) => LogEvent("OnWindowCreated"))
-                       .OnResumed((window) => LogEvent("OnResumed"))
-                       .OnVisibilityChanged((window, args) => LogEvent("OnVisibilityChanged")));
+			events.AddWindows(windows => windows
+			   .OnActivated((window, args) => LogEvent("OnActivated"))
+			   .OnClosed((window, args) => LogEvent("OnClosed")) //End
+			   .OnLaunched((window, args) => LogEvent("OnLaunched"))
+			   .OnLaunching((window, args) => AppCenter()) //Start //LogEvent("OnLaunching")
+			   .OnWindowCreated((window) => LogEvent("OnWindowCreated"))
+			   .OnResumed((window) => LogEvent("OnResumed"))
+			   .OnVisibilityChanged((window, args) => LogEvent("OnVisibilityChanged")));
 #elif ANDROID
             events.AddAndroid(android => android
                 .OnActivityResult((activity, requestCode, resultCode, data) => LogEvent("OnActivityResult", requestCode.ToString()))
