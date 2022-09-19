@@ -1,0 +1,29 @@
+﻿@page "/magicsquare"
+
+<GameExit />
+
+<GameMagicSquarePaper />
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        AppCenterService.TrackEvent("Game-MagicSquare", "JoinGame", "Joined");
+
+        await Task.Delay(DelayValue.Initialize);
+
+        await Include.Stylesheet("css/game/magicsquare/baloo.400.css");
+        await Include.Stylesheet("css/game/magicsquare/style.css");
+
+        await Include.Script("js/game/magicsquare/jquery.min.js");
+
+        await GetRender();
+    }
+
+    private async Task GetRender()
+    {
+        await Task.Delay(DelayValue.Render);
+
+        await Include.Script("js/game/magicsquare/script.js");
+    }
+}
