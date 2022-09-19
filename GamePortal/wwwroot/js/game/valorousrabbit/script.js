@@ -1648,7 +1648,6 @@ Trunc = function() {
 
     }
 
-
     this.mesh.castShadow = true;
 }
 
