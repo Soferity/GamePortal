@@ -6,6 +6,7 @@
         Hextris,
         Lazy2048,
         TicTacToe,
+        TheAviator,
         TowerBlock,
         Classic2048,
         SweetMemory,

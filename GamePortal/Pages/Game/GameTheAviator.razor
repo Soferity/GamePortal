@@ -1,0 +1,32 @@
+﻿@page "/theaviator"
+
+<GameExit />
+
+<GameTheAviatorHolder />
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        AppCenterService.TrackEvent("Game-TheAviator", "JoinGame", "Joined");
+
+        await Task.Delay(DelayValue.Initialize);
+
+        await Include.Stylesheet("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic");
+        await Include.Stylesheet("css/game/theaviator/custom.css");
+        await Include.Stylesheet("css/game/theaviator/game.css");
+
+        await Include.Script("js/game/theaviator/three.min.js");
+        
+        await Include.Script("js/game/theaviator/tweenmax.min.js");
+
+        await GetRender();
+    }
+
+    private async Task GetRender()
+    {
+        await Task.Delay(DelayValue.Render);
+
+        await Include.Script("js/game/theaviator/game.js");
+    }
+}

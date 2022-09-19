@@ -1537,6 +1537,7 @@ function init(event) {
     initUI();
     resetGame();
     loop();
+    audio.play();
 
     SetLocalStorage('valorousrabbit', 'play');
     

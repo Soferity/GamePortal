@@ -159,6 +159,23 @@ namespace GamePortal.Value
                     Description = "Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
                     State = GameStateEnum.Hit
                 }
+            },
+            {
+                GameEnum.TheAviator,
+                new()
+                {
+                    Visibility = true,
+                    Build = BuildEnum.Develop,
+                    Type = new[] { GameTypeEnum.Action, GameTypeEnum.Platform },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "The Aviator",
+                    Play = "Play Game",
+                    Star = 5,
+                    Image = "img/game/theaviator.jpg",
+                    Address = "theaviator",
+                    Description = "The Aviator is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.",
+                    State = GameStateEnum.New
+                }
             }
         };
     }
