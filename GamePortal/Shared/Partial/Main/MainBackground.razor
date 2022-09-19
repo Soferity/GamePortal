@@ -20,19 +20,21 @@ else
     {
         if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
         {
-            await Include.Stylesheet("css/main/style.css");
+            await Include.Stylesheet("css/main/apple/style.css");
             
-            await Include.Script("js/main/script.js");
+            await Include.Script("js/main/apple/script.js");
         }
         else if (AppValue.Platform == PlatformEnum.Android)
         {
-            await Include.Stylesheet("css/main/styles.css");
+            await Include.Stylesheet("css/main/android/styles.css");
             
-            await Include.Script("js/main/jquery.min.js");
+            await Include.Script("js/main/android/jquery.min.js");
         }
         else
         {
-            await Include.Script("js/main/three.min.js");
+            await Include.Stylesheet("css/main/winui/custom.css");
+            
+            await Include.Script("js/main/winui/three.min.js");
         }
 
         await GetRender();
@@ -49,12 +51,12 @@ else
         else if (AppValue.Platform == PlatformEnum.Android)
         {
 
-            await Include.Script("js/main/scripts.js");
+            await Include.Script("js/main/android/scripts.js");
         }
         else
         {
-            await Include.Script("js/main/OrbitControls.js");
-            await Include.Script("js/main/custom.js");
+            await Include.Script("js/main/winui/orbitcontrols.js");
+            await Include.Script("js/main/winui/custom.js");
         }
     }
 }

@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
     //Can also use window.addEventListener('load', (event) => {
     Preloaded();
 };
@@ -30,8 +30,7 @@ function Preloaded() {
         document.getElementById("preloader").style.display = "none";
         document.getElementById("application").style.visibility = "visible";
         document.getElementById("body").style.overflow = "unset";
-    }
-    else {
+    } else {
         ++countLoader;
     }
 }

@@ -29,7 +29,9 @@ else
     protected override Task OnErrorAsync(Exception exception)
     {
         receivedExceptions.Add(exception);
+
         AppCenterService.TrackError(exception);
+        
         return base.OnErrorAsync(exception);
     }
 

@@ -78,7 +78,7 @@ for (let i = 0; i < max; i++) {
 }
 
 function update() {
-    particles = particles.filter(function (p) {
+    particles = particles.filter(function(p) {
         return p.move();
     });
     requestAnimationFrame(update.bind(this));
