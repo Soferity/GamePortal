@@ -26,5 +26,11 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>com.apple.webinspector.allow</key>
+	<true/>
+	<key>com.apple.security.get-task-allow</key>
+	<true/>
 </dict>
 </plist>
