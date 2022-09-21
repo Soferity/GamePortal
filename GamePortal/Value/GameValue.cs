@@ -105,7 +105,7 @@ namespace GamePortal.Value
                     Star = 5,
                     Image = "img/game/sweetmemory.jpg",
                     Address = "sweetmemory",
-                    Description = "Sweet memory is a memory game. Flip the squares and see the icon behind them. Then look behind more squares to find the same icon. If you find the same icon, you get a point.", //If you don't, the squares will flip back over. Try to get as many points as you can.
+                    Description = "Sweet Memory is a memory game. Flip the squares and see the icon behind them. Then look behind more squares to find the same icon. If you find the same icon, you get a point.", //If you don't, the squares will flip back over. Try to get as many points as you can.
                     State = GameStateEnum.New
                 }
             },
