@@ -32,12 +32,14 @@
 <br>
 
 <span id="download_png_url">
-	<input type="text" value="" style="width: 666px" id="savetext">
+	<input type="text" value="data:image/svg+xml," style="width: 1111px" id="savetext">
 	<button onclick="SaveText()">Kaydet</button>
 </span>
 
 <script language="JavaScript">
 	let pngname = "PNG";
+	var pngwidth = 71;
+	var pngheight = 71;
 
 	class SVGtoPNGData
 	{
@@ -48,12 +50,12 @@
 			this.loader = new Image;
 		}
 
-		go(mySVG, callback)
+		convert(mySVG, callback)
 		{
 			var svgAsXML = (new XMLSerializer).serializeToString( mySVG );
 
-			this.loader.width = this.can.width = 71;
-			this.loader.height = this.can.height = 71;
+			this.loader.width = this.can.width = pngwidth;
+			this.loader.height = this.can.height = pngheight;
 			pngname = this.loader.width + "x" + this.loader.height;
 			var self = this;
 			this.loader.onload = function() {
@@ -70,11 +72,12 @@
 	tgtImage = document.querySelector('#diagram_png'),
 	tgtLink = document.querySelector('#download_png_url input');
 
-	converter.go(mySVG, callback=function(dataURL)
+	converter.convert(mySVG, callback=function(dataURL)
 	{
 		tgtImage.src = dataURL;
 		tgtLink.value = dataURL;
 	});
+	
 	function SaveText()
 	{
 		var uri = document.getElementById("savetext").value;
