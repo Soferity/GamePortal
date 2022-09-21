@@ -1,17 +1,21 @@
 ﻿@using System.Net.Http
+
+@using Microsoft.JSInterop
+@using Microsoft.Extensions.Localization
+@using Microsoft.AspNetCore.Components.Web
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
-@using Microsoft.AspNetCore.Components.Web
 @using Microsoft.AspNetCore.Components.Web.Virtualization
-@using Microsoft.JSInterop
+
 @using GamePortal
 @using GamePortal.Enum
 @using GamePortal.Value
 @using GamePortal.Pages
 @using GamePortal.Helper
-@using GamePortal.Pages.Game
+@using GamePortal.Manage
 @using GamePortal.Struct
 @using GamePortal.Shared
+@using GamePortal.Pages.Game
 @using GamePortal.Shared.Error
 @using GamePortal.Shared.Partial
 @using GamePortal.Shared.Layout.Game
@@ -26,10 +30,14 @@
 @using GamePortal.Shared.Partial.Game.SweetMemory
 @using GamePortal.Shared.Partial.Game.MagicSquare
 @using GamePortal.Shared.Partial.Game.ValorousRabbit
-@using GamePortal.Manage
+
+@using GamePortal.Resources.Languages
+@using GamePortal.Resources.Languages.Main
+@using GamePortal.Resources.Languages.Error
+
 @using Taiizor.Essentials.Maui.Enum
+@using Taiizor.Essentials.Maui.Services
 @using Taiizor.Essentials.Maui.Extension
 @using Taiizor.Essentials.Maui.Interfaces
-@using Taiizor.Essentials.Maui.Services
 @using Taiizor.Essentials.Maui.Extension.Storage
 @using Taiizor.Essentials.Maui.AppCenter.Services

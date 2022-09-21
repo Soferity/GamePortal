@@ -8,9 +8,8 @@
         RTS,
         MMO,
         MOBA,
-        Slot,
+        Music,
         Lucky,
-        Casino,
         Action,
         Racing,
         Puzzle,
@@ -19,8 +18,10 @@
         Fighting,
         Platform,
         Strategy,
+        Education,
         Adventure,
         Simulation,
-        Multiplayer
+        Multiplayer,
+        Singleplayer
     }
 }

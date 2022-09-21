@@ -20,6 +20,8 @@ namespace GamePortal
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
+            builder.Services.AddLocalization();
+
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG

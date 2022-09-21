@@ -118,8 +118,45 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Compile Update="Resources\Languages\Error\ErrorLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>ErrorLocalization.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Languages\Localization.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Localization.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Languages\Main\MainLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>MainLocalization.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Resources\Languages\Error\ErrorLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>ErrorLocalization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Localization.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Localization.tr-TR.resx">
+            <Generator></Generator>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Main\MainLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>MainLocalization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.1.9" />
         <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.1.7" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0-rc.1.22427.2" />
     </ItemGroup>
     
     <!--<ItemGroup>

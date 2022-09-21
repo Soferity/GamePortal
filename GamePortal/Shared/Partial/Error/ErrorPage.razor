@@ -1,13 +1,15 @@
-﻿<div id="notfound">
+﻿@inject IStringLocalizer<ErrorLocalization> Localizer
+
+<div id="notfound">
     <div class="notfound">
         <div class="notfound-bg">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <h1>Oops!</h1>
-        <h2>Error 505 : Something went wrong!</h2>
-        <a href="#" @onclick="(() => Redirect.GoLocation())">go home</a>
+        <h1>@Localizer["Title"]</h1>
+        <h2>@Localizer["Message"]</h2>
+        <a href="#" @onclick="(() => Redirect.GoLocation())">@Localizer["Home"]</a>
         @*<div class="notfound-social">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>

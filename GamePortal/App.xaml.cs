@@ -1,25 +1,26 @@
 ﻿using GamePortal.Manage;
 
-namespace GamePortal;
-
-public partial class App : Application
+namespace GamePortal
 {
-    public App()
+    public partial class App : Application
     {
-        InitializeComponent();
-
-        MainPage = new MainPage();
-    }
-
-    protected override Window CreateWindow(IActivationState activationState)
-    {
-        Window Window = base.CreateWindow(activationState);
-
-        if (Window != null)
+        public App()
         {
-            Window.Title = General.Title;
+            InitializeComponent();
+
+            MainPage = new MainPage();
         }
 
-        return Window;
+        protected override Window CreateWindow(IActivationState activationState)
+        {
+            Window window = base.CreateWindow(activationState);
+
+            if (window != null)
+            {
+                window.Title = General.Title;
+            }
+
+            return window;
+        }
     }
 }

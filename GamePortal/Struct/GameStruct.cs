@@ -7,7 +7,6 @@ namespace GamePortal.Struct
     public struct GameStruct
     {
         public int Star;
-        public string Play;
         public string Title;
         public string Image;
         public string Address;
