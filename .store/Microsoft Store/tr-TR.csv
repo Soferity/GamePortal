@@ -1,11 +1,11 @@
-﻿Field,ID,Type (Type),default,en-gb
-Description,2,Text,,Soferity: Game Portal is a game hub. It allows you to have a fun and good time with the various types of games it offers.
-ReleaseNotes,3,Text,,"Some of What's New and Bug Fixes are listed below:
+﻿Field,ID,Type (Type),default,tr-tr
+Description,2,Text,,Soferity: Game Portal bir oyun portalıdır. Sunduğu çeşitli oyun türleri ile eğlenceli ve güzel vakit geçirmenizi sağlar.
+ReleaseNotes,3,Text,,"Yenilikler ve Hata Düzeltmelerinden bazıları aşağıda listelenmiştir:
 
-Added The Cube game.
-Added Tower Block game.
-Added Sweet Memory game.
-Added Valorous Rabbit game."
+Küp oyunu eklendi.
+Gökdelen oyunu eklendi.
+Tatlı Hafıza oyunu eklendi.
+Yiğit Tavşan oyunu eklendi."
 Title,4,Text,,Soferity: Game Portal
 ShortTitle,5,Text,,Soferity: Game Portal
 SortTitle,6,Text,,Soferity: Game Portal
@@ -24,11 +24,11 @@ DesktopScreenshot7,106,Relative path (or URL to file in Partner Center),,
 DesktopScreenshot8,107,Relative path (or URL to file in Partner Center),,
 DesktopScreenshot9,108,Relative path (or URL to file in Partner Center),,
 DesktopScreenshot10,109,Relative path (or URL to file in Partner Center),,
-DesktopScreenshotCaption1,150,Text,,Home
-DesktopScreenshotCaption2,151,Text,,Valorous Rabbit
-DesktopScreenshotCaption3,152,Text,,The Cube
-DesktopScreenshotCaption4,153,Text,,Tower Block
-DesktopScreenshotCaption5,154,Text,,Sweet Memory
+DesktopScreenshotCaption1,150,Text,,Ev
+DesktopScreenshotCaption2,151,Text,,Yiğit Tavşan
+DesktopScreenshotCaption3,152,Text,,Küp
+DesktopScreenshotCaption4,153,Text,,Gökdelen
+DesktopScreenshotCaption5,154,Text,,Tatlı Hafıza
 DesktopScreenshotCaption6,155,Text,,
 DesktopScreenshotCaption7,156,Text,,
 DesktopScreenshotCaption8,157,Text,,
@@ -44,11 +44,11 @@ MobileScreenshot7,206,Relative path (or URL to file in Partner Center),,
 MobileScreenshot8,207,Relative path (or URL to file in Partner Center),,
 MobileScreenshot9,208,Relative path (or URL to file in Partner Center),,
 MobileScreenshot10,209,Relative path (or URL to file in Partner Center),,
-MobileScreenshotCaption1,250,Text,,Home
-MobileScreenshotCaption2,251,Text,,Valorous Rabbit
-MobileScreenshotCaption3,252,Text,,Sweet Memory
-MobileScreenshotCaption4,253,Text,,The Cube
-MobileScreenshotCaption5,254,Text,,Tower Block
+MobileScreenshotCaption1,250,Text,,Ev
+MobileScreenshotCaption2,251,Text,,Yiğit Tavşan
+MobileScreenshotCaption3,252,Text,,Tatlı Hafıza
+MobileScreenshotCaption4,253,Text,,Küp
+MobileScreenshotCaption5,254,Text,,Tatlı Hafıza
 MobileScreenshotCaption6,255,Text,,
 MobileScreenshotCaption7,256,Text,,
 MobileScreenshotCaption8,257,Text,,
@@ -64,11 +64,11 @@ XboxScreenshot7,306,Relative path (or URL to file in Partner Center),,
 XboxScreenshot8,307,Relative path (or URL to file in Partner Center),,
 XboxScreenshot9,308,Relative path (or URL to file in Partner Center),,
 XboxScreenshot10,309,Relative path (or URL to file in Partner Center),,
-XboxScreenshotCaption1,350,Text,,Home
-XboxScreenshotCaption2,351,Text,,Tower Block
-XboxScreenshotCaption3,352,Text,,Sweet Memory
-XboxScreenshotCaption4,353,Text,,The Cube
-XboxScreenshotCaption5,354,Text,,Valorous Rabbit
+XboxScreenshotCaption1,350,Text,,Ev
+XboxScreenshotCaption2,351,Text,,Gökdelen
+XboxScreenshotCaption3,352,Text,,Tatlı Hafıza
+XboxScreenshotCaption4,353,Text,,Küp
+XboxScreenshotCaption5,354,Text,,Yiğit Tavşan
 XboxScreenshotCaption6,355,Text,,
 XboxScreenshotCaption7,356,Text,,
 XboxScreenshotCaption8,357,Text,,
@@ -84,11 +84,11 @@ HolographicScreenshot7,406,Relative path (or URL to file in Partner Center),,
 HolographicScreenshot8,407,Relative path (or URL to file in Partner Center),,
 HolographicScreenshot9,408,Relative path (or URL to file in Partner Center),,
 HolographicScreenshot10,409,Relative path (or URL to file in Partner Center),,
-HolographicScreenshotCaption1,450,Text,,Home
-HolographicScreenshotCaption2,451,Text,,The Cube
-HolographicScreenshotCaption3,452,Text,,Sweet Memory
-HolographicScreenshotCaption4,453,Text,,Tower Block
-HolographicScreenshotCaption5,454,Text,,Valorous Rabbit
+HolographicScreenshotCaption1,450,Text,,Ev
+HolographicScreenshotCaption2,451,Text,,Küp
+HolographicScreenshotCaption3,452,Text,,Tatlı Tavşan
+HolographicScreenshotCaption4,453,Text,,Gökdelen
+HolographicScreenshotCaption5,454,Text,,Yiğit Tavşan
 HolographicScreenshotCaption6,455,Text,,
 HolographicScreenshotCaption7,456,Text,,
 HolographicScreenshotCaption8,457,Text,,
@@ -108,24 +108,24 @@ XboxFeaturedPromo1080x1080,610,Relative path (or URL to file in Partner Center),
 OptionalPromo358x358,611,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695294340/listings/1152922700011208874/listingassets/3035461976378393064
 OptionalPromo1000x800,612,Relative path (or URL to file in Partner Center),,
 OptionalPromo414x180,613,Relative path (or URL to file in Partner Center),,
-Feature1,700,Text,,Action games
-Feature2,701,Text,,Racing games
-Feature3,702,Text,,Puzzle games
-Feature4,703,Text,,Sports games
-Feature5,704,Text,,Shooter games
-Feature6,705,Text,,Fighting games
-Feature7,706,Text,,Platform games
-Feature8,707,Text,,Strategy games
-Feature9,708,Text,,Adventure games
-Feature10,709,Text,,Simulation games
-Feature11,710,Text,,Multiplayer games
-Feature12,711,Text,,Entertainment center
-Feature13,712,Text,,Many different types of games
+Feature1,700,Text,,Aksiyon oyunları
+Feature2,701,Text,,Yarış oyunları
+Feature3,702,Text,,Bulmaca oyunları
+Feature4,703,Text,,Spor oyunları
+Feature5,704,Text,,Nişancı oyunları
+Feature6,705,Text,,Savaş oyunları
+Feature7,706,Text,,Platform oyunları
+Feature8,707,Text,,Strateji oyunları
+Feature9,708,Text,,Macera oyunları
+Feature10,709,Text,,Simülasyon oyunları
+Feature11,710,Text,,Çok oyunculu oyunlar
+Feature12,711,Text,,Eğlence merkezi
+Feature13,712,Text,,Birçok farklı oyun türü
 Feature14,713,Text,,Game Portal
 Feature15,714,Text,,Game Center
 Feature16,715,Text,,Game Hub
-Feature17,716,Text,,
-Feature18,717,Text,,
+Feature17,716,Text,,Oyun Portalı
+Feature18,717,Text,,Oyun Merkezi
 Feature19,718,Text,,
 Feature20,719,Text,,
 MinimumHardwareReq1,800,Text,,
@@ -150,13 +150,13 @@ RecommendedHardwareReq8,857,Text,,
 RecommendedHardwareReq9,858,Text,,
 RecommendedHardwareReq10,859,Text,,
 RecommendedHardwareReq11,860,Text,,
-SearchTerm1,900,Text,,soferity game games gamer portal hub
+SearchTerm1,900,Text,,soferity oyun oyunlar oyuncu portal hub
 SearchTerm2,901,Text,,rpg fps
-SearchTerm3,902,Text,,singleplayer multiplayer
-SearchTerm4,903,Text,,sports racing
-SearchTerm5,904,Text,,action adventure puzzle strategy
-SearchTerm6,905,Text,,platform simulation fighting shooter
-SearchTerm7,906,Text,,music
+SearchTerm3,902,Text,,tekoyunculu çokoyunculu
+SearchTerm4,903,Text,,spor yarış müzik nişancı
+SearchTerm5,904,Text,,aksiyon macera bulmaca
+SearchTerm6,905,Text,,platform simülasyon savaş
+SearchTerm7,906,Text,,strateji
 TrailerToPlayAtTopOfListing,999,Relative path (or URL to file in Partner Center),,
 Trailer1,1000,Relative path (or URL to file in Partner Center),,
 Trailer2,1001,Relative path (or URL to file in Partner Center),,
