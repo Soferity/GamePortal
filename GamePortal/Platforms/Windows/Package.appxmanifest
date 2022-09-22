@@ -1,46 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  IgnorableNamespaces="uap rescap mp">
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+    IgnorableNamespaces="uap rescap mp">
 
-  <Identity Name="29415Taiizor.3001747E67102" Publisher="CN=BAEB534D-BC36-4432-8EEF-E0088D896FB9" Version="0.0.0.0" />
+    <Identity Name="29415Taiizor.3001747E67102" Publisher="CN=BAEB534D-BC36-4432-8EEF-E0088D896FB9" Version="0.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="303085e5-46f9-4e76-9826-8278f126e3b2" PhonePublisherId="35d623ac-ca3f-4961-b357-4907d492d2d2"/>
+    <mp:PhoneIdentity PhoneProductId="303085e5-46f9-4e76-9826-8278f126e3b2" PhonePublisherId="35d623ac-ca3f-4961-b357-4907d492d2d2"/>
 
-  <Properties>
-    <DisplayName>Soferity: Game Portal</DisplayName>
-    <PublisherDisplayName>Taiizor</PublisherDisplayName>
-    <Logo>$placeholder$.png</Logo>
-  </Properties>
+    <Properties>
+        <DisplayName>Soferity: Game Portal</DisplayName>
+        <PublisherDisplayName>Taiizor</PublisherDisplayName>
+        <Logo>$placeholder$.png</Logo>
+    </Properties>
 
-  <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22621.0" />
-    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22621.0" />
-  </Dependencies>
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22621.0" />
+        <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22621.0" />
+    </Dependencies>
 
-  <Resources>
-    <Resource Language="x-generate" />
-  </Resources>
+    <Resources>
+        <Resource Language="x-generate" />
+        <Resource Language="en-gb"/>
+        <Resource Language="tr-tr"/>
+    </Resources>
 
-  <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
-      <uap:VisualElements
-        DisplayName="Soferity: Game Portal"
-        Description="$placeholder$"
-        Square150x150Logo="$placeholder$.png"
-        Square44x44Logo="$placeholder$.png"
-        BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="$placeholder$.png" Wide310x150Logo="$placeholder$.png" Square310x310Logo="$placeholder$.png" />
-        <uap:SplashScreen Image="$placeholder$.png" />
-      </uap:VisualElements>
-    </Application>
-  </Applications>
+    <Applications>
+        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
+            <uap:VisualElements
+                DisplayName="Soferity: Game Portal"
+                Description="$placeholder$"
+                Square150x150Logo="$placeholder$.png"
+                Square44x44Logo="$placeholder$.png"
+                BackgroundColor="transparent">
+                <uap:DefaultTile Square71x71Logo="$placeholder$.png" Wide310x150Logo="$placeholder$.png" Square310x310Logo="$placeholder$.png" />
+                <uap:SplashScreen Image="$placeholder$.png" />
+            </uap:VisualElements>
+        </Application>
+    </Applications>
 
-  <Capabilities>
-    <rescap:Capability Name="runFullTrust" />
-  </Capabilities>
+    <Capabilities>
+        <rescap:Capability Name="runFullTrust" />
+    </Capabilities>
 
 </Package>
