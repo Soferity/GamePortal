@@ -61,7 +61,7 @@ namespace GamePortal.Resources.Languages.Game.TheAviator {
         }
         
         /// <summary>
-        ///   Grab the blue pills benzeri yerelleştirilmiş bir dize arar.
+        ///   grab the blue pills benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionOne {
             get {
@@ -79,7 +79,7 @@ namespace GamePortal.Resources.Languages.Game.TheAviator {
         }
         
         /// <summary>
-        ///   distance benzeri yerelleştirilmiş bir dize arar.
+        ///   ‏‏‎ ‎distance‏‏‎ ‎ benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string Distance {
             get {
