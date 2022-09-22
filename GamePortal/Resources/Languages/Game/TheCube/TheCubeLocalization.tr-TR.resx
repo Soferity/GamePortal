@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Average12" xml:space="preserve">
-    <value>12'nin ortalamasi:</value>
+    <value>12 oyun ortalamasi:</value>
   </data>
   <data name="Average25" xml:space="preserve">
-    <value>25'in ortalamasi:</value>
+    <value>25 oyun ortalamasi:</value>
   </data>
   <data name="Average5" xml:space="preserve">
-    <value>5'in ortalamasi:</value>
+    <value>5 oyun ortalamasi:</value>
   </data>
   <data name="BestTime" xml:space="preserve">
-    <value>En İyi Zaman!</value>
+    <value>En Iyi Zaman!</value>
   </data>
   <data name="CameraAngle" xml:space="preserve">
     <value>Kamera Acisi</value>

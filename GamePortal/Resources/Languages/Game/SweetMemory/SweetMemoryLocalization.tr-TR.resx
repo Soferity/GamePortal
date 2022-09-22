@@ -127,7 +127,7 @@
     <value>İlerlemen Kaybolacak!</value>
   </data>
   <data name="ExitTitle" xml:space="preserve">
-    <value>Emin misiniz?</value>
+    <value>Emin misin?</value>
   </data>
   <data name="Moves" xml:space="preserve">
     <value>0</value>
@@ -139,13 +139,13 @@
     <value>İptal</value>
   </data>
   <data name="RestartConfirm" xml:space="preserve">
-    <value>Evet, Oyunu Yeniden Başlat!</value>
+    <value>Evet, Yeniden Başlat!</value>
   </data>
   <data name="RestartText" xml:space="preserve">
     <value>İlerlemen Kaybolacak!</value>
   </data>
   <data name="RestartTitle" xml:space="preserve">
-    <value>Emin misiniz?</value>
+    <value>Emin misin?</value>
   </data>
   <data name="WinConfirm" xml:space="preserve">
     <value>Tekrar Oyna!</value>
