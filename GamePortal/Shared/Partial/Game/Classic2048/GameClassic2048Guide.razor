@@ -1,18 +1,19 @@
 ﻿@inject IStringLocalizer<Classic2048Localization> Localizer
 
-<section class="guide clearfix ">
-    <h2>@Localizer["WhatIsThis"]</h2>
-    <p>@Localizer["Description"]</p>
-</section>
 <section class="guide clearfix">
     <h2>@Localizer["HowDoPlay"]</h2>
     <p>@Localizer["HowDescriptionOne"]</p>
-    <p>@Localizer["HowDescriptionTwo"]</p>
-    <div class="guide_arrow-wrap">
-        <span class="guide_arrow"> &uHar; </span>
-        <span class="guide_arrow"> &lHar; </span>
-        <span class="guide_arrow"> &rHar; </span>
-        <span class="guide_arrow"> &dHar; </span>
-    </div>
+    <p>@Localizer[$"HowDescriptionTwo{HelperDevice.GetDeviceType}"]</p>
+
+    @if (HelperDevice.GetDeviceType == DeviceTypeEnum.Desktop)
+    {
+        <div class="guide_arrow-wrap">
+            <span class="guide_arrow">&uHar;</span>
+            <span class="guide_arrow">&lHar;</span>
+            <span class="guide_arrow">&rHar;</span>
+            <span class="guide_arrow">&dHar;</span>
+        </div>
+    }
+
     <p>@Localizer["HowDescriptionThree"]</p>
 </section>

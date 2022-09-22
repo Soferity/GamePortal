@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Game" xml:space="preserve">
-    <value>Classic 2048</value>
+    <value>Klasik 2048</value>
   </data>
   <data name="HowDescriptionOne" xml:space="preserve">
-    <value>Tiles with matching number values can be merged into a single tile, which receives the values' sum.</value>
+    <value>Eşleşen sayı değerlerine sahip kutucuklar, değerlerin toplamını alan tek bir kutucukta birleştirilebilir.</value>
   </data>
   <data name="HowDescriptionThree" xml:space="preserve">
-    <value>To win, get a 2048 tile.</value>
+    <value>Kazanmak için 2048 kutucuğu oluşturun.</value>
   </data>
-  <data name="HowDescriptionTwo" xml:space="preserve">
-    <value>To move the board, use the directional arrows or swipe with your mouse.</value>
+  <data name="HowDescriptionTwoDesktop" xml:space="preserve">
+    <value>Tahtayı hareket ettirmek için yön oklarını kullanın veya farenizle kaydırın.</value>
   </data>
   <data name="HowDescriptionTwoMobile" xml:space="preserve">
-    <value>To move the board, swipe your finger.</value>
+    <value>Tahtayı hareket ettirmek için parmağınızla kaydırın.</value>
   </data>
   <data name="HowDoPlay" xml:space="preserve">
-    <value>How do I play?</value>
+    <value>Nasıl oynarım?</value>
   </data>
   <data name="NewGame" xml:space="preserve">
-    <value>New Game</value>
+    <value>Yeni Oyun</value>
   </data>
   <data name="Score" xml:space="preserve">
-    <value>Score</value>
+    <value>Puan</value>
   </data>
 </root>

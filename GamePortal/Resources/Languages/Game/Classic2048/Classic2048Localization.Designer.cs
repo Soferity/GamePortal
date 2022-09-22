@@ -61,15 +61,6 @@ namespace GamePortal.Resources.Languages.Game.Classic2048 {
         }
         
         /// <summary>
-        ///   Although coded entirely from scratch, this game is a (lackluster) copy of Gabriele Cirulli&apos;s 2048, https://soferity.dev. benzeri yerelleştirilmiş bir dize arar.
-        /// </summary>
-        internal static string Description {
-            get {
-                return ResourceManager.GetString("Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Classic 2048 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string Game {
@@ -97,7 +88,7 @@ namespace GamePortal.Resources.Languages.Game.Classic2048 {
         }
         
         /// <summary>
-        ///    To move the board, use the directional arrows - or swipe. benzeri yerelleştirilmiş bir dize arar.
+        ///   To move the board, use the directional arrows or swipe with your mouse. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string HowDescriptionTwo {
             get {
@@ -106,7 +97,16 @@ namespace GamePortal.Resources.Languages.Game.Classic2048 {
         }
         
         /// <summary>
-        ///    How do I play?  benzeri yerelleştirilmiş bir dize arar.
+        ///   To move the board, swipe your finger. benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string HowDescriptionTwoMobile {
+            get {
+                return ResourceManager.GetString("HowDescriptionTwoMobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   How do I play? benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string HowDoPlay {
             get {
@@ -115,7 +115,7 @@ namespace GamePortal.Resources.Languages.Game.Classic2048 {
         }
         
         /// <summary>
-        ///    New Game  benzeri yerelleştirilmiş bir dize arar.
+        ///   New Game benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string NewGame {
             get {
@@ -124,20 +124,11 @@ namespace GamePortal.Resources.Languages.Game.Classic2048 {
         }
         
         /// <summary>
-        ///   Score  benzeri yerelleştirilmiş bir dize arar.
+        ///   Score benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string Score {
             get {
                 return ResourceManager.GetString("Score", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    What is this?  benzeri yerelleştirilmiş bir dize arar.
-        /// </summary>
-        internal static string WhatIsThis {
-            get {
-                return ResourceManager.GetString("WhatIsThis", resourceCulture);
             }
         }
     }
