@@ -1,19 +1,21 @@
-﻿<div class="ui__texts">
+﻿@inject IStringLocalizer<TheCubeLocalization> Localizer
+
+<div class="ui__texts">
     <h1 class="text text--title">
-        <span>THE</span>
-        <span>CUBE</span>
+        <span>@Localizer["GameOne"]</span>
+        <span>@Localizer["GameTwo"]</span>
     </h1>
     <div class="text text--note">
-        Double tap to start
+        @Localizer[$"Start{HelperDevice.GetDeviceType}"]
     </div>
     <div class="text text--timer">
-        0:00
+        @Localizer["Timer"]
     </div>
     <div class="text text--complete">
-        <span>Complete!</span>
+        <span>@Localizer["Complete"]</span>
     </div>
     <div class="text text--best-time">
         <icon trophy></icon>
-        <span>Best Time!</span>
+        <span>@Localizer["BestTime"]</span>
     </div>
 </div>

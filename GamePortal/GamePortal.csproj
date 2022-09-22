@@ -138,6 +138,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>Lazy2048Localization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\TheCube\TheCubeLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>TheCubeLocalization.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Languages\Game\TowerBlock\TowerBlockLocalization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
@@ -172,6 +177,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Lazy2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\TheCube\TheCubeLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>TheCubeLocalization.Designer.cs</LastGenOutput>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Game\TowerBlock\TowerBlockLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>

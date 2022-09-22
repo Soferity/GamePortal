@@ -1,5 +1,7 @@
-﻿<div class="ui__theme">
-    <range name="hue" title="Hue" color></range>
-    <range name="saturation" title="Saturation" color></range>
-    <range name="lightness" title="Lightness" color></range>
+﻿@inject IStringLocalizer<TheCubeLocalization> Localizer
+
+<div class="ui__theme">
+    <range name="hue" title="@Localizer["Hue"]" color></range>
+    <range name="saturation" title="@Localizer["Saturation"]" color></range>
+    <range name="lightness" title="@Localizer["Lightness"]" color></range>
 </div>
