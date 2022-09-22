@@ -23,7 +23,11 @@
 
     <Resources>
         <Resource Language="x-generate" />
+        <Resource Language="de-de"/>
         <Resource Language="en-gb"/>
+        <Resource Language="es-es"/>
+        <Resource Language="fr-fr"/>
+        <Resource Language="pl-pl"/>
         <Resource Language="tr-tr"/>
     </Resources>
 
