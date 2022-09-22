@@ -70,6 +70,15 @@ namespace GamePortal.Resources.Languages.Game.Lazy2048 {
         }
         
         /// <summary>
+        ///   How to play: benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string HowToPlay {
+            get {
+                return ResourceManager.GetString("HowToPlay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Let&apos;s party! benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string LetsParty {
@@ -111,6 +120,51 @@ namespace GamePortal.Resources.Languages.Game.Lazy2048 {
         internal static string PlayAgain {
             get {
                 return ResourceManager.GetString("PlayAgain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ⭐️ Or Sit simply benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string PlayDescriptionFourPartOne {
+            get {
+                return ResourceManager.GetString("PlayDescriptionFourPartOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   (recommended for highly lazy ones) benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string PlayDescriptionFourPartTwo {
+            get {
+                return ResourceManager.GetString("PlayDescriptionFourPartTwo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ⭐️ Drag pieces around benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string PlayDescriptionOne {
+            get {
+                return ResourceManager.GetString("PlayDescriptionOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ⭐️ Get to 2048 to win the game benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string PlayDescriptionThree {
+            get {
+                return ResourceManager.GetString("PlayDescriptionThree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ⭐️ Stack those with the same number benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string PlayDescriptionTwo {
+            get {
+                return ResourceManager.GetString("PlayDescriptionTwo", resourceCulture);
             }
         }
         

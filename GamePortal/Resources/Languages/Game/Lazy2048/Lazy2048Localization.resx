@@ -120,6 +120,9 @@
   <data name="Game" xml:space="preserve">
     <value>Lazy 2048</value>
   </data>
+  <data name="HowToPlay" xml:space="preserve">
+    <value>How to play:</value>
+  </data>
   <data name="LetsParty" xml:space="preserve">
     <value>Let's party!</value>
   </data>
@@ -134,6 +137,21 @@
   </data>
   <data name="PlayAgain" xml:space="preserve">
     <value>PLAY AGAIN</value>
+  </data>
+  <data name="PlayDescriptionFourPartOne" xml:space="preserve">
+    <value>⭐️ Or Sit simply</value>
+  </data>
+  <data name="PlayDescriptionFourPartTwo" xml:space="preserve">
+    <value>(recommended for highly lazy ones)</value>
+  </data>
+  <data name="PlayDescriptionOne" xml:space="preserve">
+    <value>⭐️ Drag pieces around</value>
+  </data>
+  <data name="PlayDescriptionThree" xml:space="preserve">
+    <value>⭐️ Get to 2048 to win the game</value>
+  </data>
+  <data name="PlayDescriptionTwo" xml:space="preserve">
+    <value>⭐️ Stack those with the same number</value>
   </data>
   <data name="Quality" xml:space="preserve">
     <value>High Quality</value>
