@@ -151,6 +151,96 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
+        ///   img/game/classic2048.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageClassic2048 {
+            get {
+                return ResourceManager.GetString("ImageClassic2048", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/hextris.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageHextris {
+            get {
+                return ResourceManager.GetString("ImageHextris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/lazy2048.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageLazy2048 {
+            get {
+                return ResourceManager.GetString("ImageLazy2048", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/magicsquare.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageMagicSquare {
+            get {
+                return ResourceManager.GetString("ImageMagicSquare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/sweetmemory.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageSweetMemory {
+            get {
+                return ResourceManager.GetString("ImageSweetMemory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/theaviator.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageTheAviator {
+            get {
+                return ResourceManager.GetString("ImageTheAviator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/thecube.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageTheCube {
+            get {
+                return ResourceManager.GetString("ImageTheCube", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/tictactoe.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageTicTacToe {
+            get {
+                return ResourceManager.GetString("ImageTicTacToe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/towerblock.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageTowerBlock {
+            get {
+                return ResourceManager.GetString("ImageTowerBlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/valorousrabbit.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageValorousRabbit {
+            get {
+                return ResourceManager.GetString("ImageValorousRabbit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   To give points, you must play first. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string PlayFirst {

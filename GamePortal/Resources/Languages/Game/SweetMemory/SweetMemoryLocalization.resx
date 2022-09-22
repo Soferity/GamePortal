@@ -148,7 +148,7 @@
     <value>Are you sure?</value>
   </data>
   <data name="WinConfirm" xml:space="preserve">
-    <value>Play again!</value>
+    <value>Play Again!</value>
   </data>
   <data name="WinText" xml:space="preserve">
     <value>With {0} Moves and {1} Stars.{2}Congratulations!</value>

@@ -148,7 +148,7 @@
     <value>Emin misiniz?</value>
   </data>
   <data name="WinConfirm" xml:space="preserve">
-    <value>Tekrar oyna!</value>
+    <value>Tekrar Oyna!</value>
   </data>
   <data name="WinText" xml:space="preserve">
     <value>{0} Hamle ile {1} Yıldız aldın.{2}Bravo!</value>

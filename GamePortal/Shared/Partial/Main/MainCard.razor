@@ -34,7 +34,7 @@
                 
             </div>
             <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
-                <img src="@Game.Image" class="img-fluid" />
+                <img src="@Localizer[$"Image{Game.Image}"]" class="img-fluid" />
                 <a @onclick="(() => Redirect.GoLocation(Game.Address))" style="cursor: pointer">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>

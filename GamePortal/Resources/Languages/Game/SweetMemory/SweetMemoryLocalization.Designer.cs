@@ -151,7 +151,7 @@ namespace GamePortal.Resources.Languages.Game.SweetMemory {
         }
         
         /// <summary>
-        ///   Play again! benzeri yerelleştirilmiş bir dize arar.
+        ///   Play Again! benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string WinConfirm {
             get {

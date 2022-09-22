@@ -148,6 +148,36 @@
   <data name="DescriptionValorousRabbit" xml:space="preserve">
     <value>Yiğit Tavşan bir aksiyon macera oyunudur. Havuçları alarak kirpiden kaçmaya çalışın. En önemli şey asla bir kirpi tarafından yakalanmamaktır. Kirpiye yakalanırsan, oyun biter.</value>
   </data>
+  <data name="ImageClassic2048" xml:space="preserve">
+    <value>img/game/classic2048.tr.jpg</value>
+  </data>
+  <data name="ImageHextris" xml:space="preserve">
+    <value>img/game/hextris.tr.jpg</value>
+  </data>
+  <data name="ImageLazy2048" xml:space="preserve">
+    <value>img/game/lazy2048.tr.jpg</value>
+  </data>
+  <data name="ImageMagicSquare" xml:space="preserve">
+    <value>img/game/magicsquare.tr.jpg</value>
+  </data>
+  <data name="ImageSweetMemory" xml:space="preserve">
+    <value>img/game/sweetmemory.tr.jpg</value>
+  </data>
+  <data name="ImageTheAviator" xml:space="preserve">
+    <value>img/game/theaviator.tr.jpg</value>
+  </data>
+  <data name="ImageTheCube" xml:space="preserve">
+    <value>img/game/thecube.tr.jpg</value>
+  </data>
+  <data name="ImageTicTacToe" xml:space="preserve">
+    <value>img/game/tictactoe.tr.jpg</value>
+  </data>
+  <data name="ImageTowerBlock" xml:space="preserve">
+    <value>img/game/towerblock.tr.jpg</value>
+  </data>
+  <data name="ImageValorousRabbit" xml:space="preserve">
+    <value>img/game/valorousrabbit.tr.jpg</value>
+  </data>
   <data name="PlayFirst" xml:space="preserve">
     <value>Puan vermek için önce oynamalısınız.</value>
   </data>
