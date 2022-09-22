@@ -138,6 +138,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>Lazy2048Localization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\MagicSquare\MagicSquareLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>MagicSquareLocalization.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Languages\Game\SweetMemory\SweetMemoryLocalization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
@@ -187,6 +192,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Lazy2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\MagicSquare\MagicSquareLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>MagicSquareLocalization.Designer.cs</LastGenOutput>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Game\SweetMemory\SweetMemoryLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>

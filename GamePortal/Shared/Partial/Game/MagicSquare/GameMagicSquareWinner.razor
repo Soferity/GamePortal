@@ -1,5 +1,7 @@
-﻿<div id="winner">
-    <div class="header">Congratulations!</div>
-    <div id="new">Play again?</div>
-    <div id="close">×</div> <!-- Sneaky multiplication -->
+﻿@inject IStringLocalizer<MagicSquareLocalization> Localizer
+
+<div id="winner">
+    <div class="header">@Localizer["Congratulations"]</div>
+    <div id="new">@Localizer["PlayAgain"]</div>
+    <div id="close">@Localizer["Close"]</div> <!-- Sneaky multiplication -->
 </div>
