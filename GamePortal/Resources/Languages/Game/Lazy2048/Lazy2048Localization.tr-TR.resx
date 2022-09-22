@@ -118,54 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Game" xml:space="preserve">
-    <value>Lazy 2048</value>
+    <value>Tembel 2048</value>
   </data>
   <data name="HowToPlay" xml:space="preserve">
-    <value>How to play:</value>
+    <value>Nasıl oynanır:</value>
   </data>
   <data name="LetsParty" xml:space="preserve">
-    <value>Let's party!</value>
+    <value>Kutlama zamanı!</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading</value>
+    <value>Yükleniyor</value>
   </data>
   <data name="Music" xml:space="preserve">
-    <value>Music</value>
+    <value>Müzik</value>
   </data>
   <data name="NewGame" xml:space="preserve">
-    <value>NEW GAME</value>
+    <value>YENİ OYUN</value>
   </data>
   <data name="PlayAgain" xml:space="preserve">
-    <value>PLAY AGAIN</value>
+    <value>TEKRAR OYNA</value>
   </data>
   <data name="PlayDescriptionFourPartOne" xml:space="preserve">
-    <value>⭐️ Or Sit simply</value>
+    <value>⭐️ Ya da sadece oturun</value>
   </data>
   <data name="PlayDescriptionFourPartTwo" xml:space="preserve">
-    <value> (recommended for highly lazy ones)</value>
+    <value> (çok tembel olanlar için önerilir)</value>
   </data>
   <data name="PlayDescriptionOne" xml:space="preserve">
-    <value>⭐️ Drag pieces around</value>
+    <value>⭐️ Parçaları sürükleyerek</value>
   </data>
   <data name="PlayDescriptionThree" xml:space="preserve">
-    <value>⭐️ Get to 2048 to win the game</value>
+    <value>⭐️ Oyunu kazanmak için 2048'e ulaşın</value>
   </data>
   <data name="PlayDescriptionTwo" xml:space="preserve">
-    <value>⭐️ Stack those with the same number</value>
+    <value>⭐️ Aynı numaraya sahip olanları birleştirin</value>
   </data>
   <data name="Quality" xml:space="preserve">
-    <value>High Quality</value>
+    <value>Yüksek Kalite</value>
   </data>
   <data name="Sound" xml:space="preserve">
-    <value>Sound FX</value>
+    <value>Ses Efekti</value>
   </data>
   <data name="Win" xml:space="preserve">
-    <value>You win</value>
+    <value>Kazandın</value>
   </data>
   <data name="WinDescriptionOne" xml:space="preserve">
-    <value>Success is commemorated; failure merely remembered.</value>
+    <value>Başarı anılır; başarısızlık sadece hatırlanır.</value>
   </data>
   <data name="WinDescriptionTwo" xml:space="preserve">
-    <value>Don't be afraid to try again.</value>
+    <value>Yeniden denemekten korkma.</value>
   </data>
 </root>

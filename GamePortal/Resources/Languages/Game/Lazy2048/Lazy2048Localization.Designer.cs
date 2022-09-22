@@ -133,7 +133,7 @@ namespace GamePortal.Resources.Languages.Game.Lazy2048 {
         }
         
         /// <summary>
-        ///   (recommended for highly lazy ones) benzeri yerelleştirilmiş bir dize arar.
+        ///    (recommended for highly lazy ones) benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string PlayDescriptionFourPartTwo {
             get {
@@ -196,7 +196,7 @@ namespace GamePortal.Resources.Languages.Game.Lazy2048 {
         }
         
         /// <summary>
-        ///   Success is commemorated; failure merely remembered benzeri yerelleştirilmiş bir dize arar.
+        ///   Success is commemorated; failure merely remembered. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string WinDescriptionOne {
             get {
@@ -205,7 +205,7 @@ namespace GamePortal.Resources.Languages.Game.Lazy2048 {
         }
         
         /// <summary>
-        ///   Written for Soferity benzeri yerelleştirilmiş bir dize arar.
+        ///   Don&apos;t be afraid to try again. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string WinDescriptionTwo {
             get {
