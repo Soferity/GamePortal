@@ -16,14 +16,5 @@ namespace GamePortal.Helper
             get => PlatformEnum.WinUI;
 #endif
         }
-
-        public static string GetDevice => GetPlatform switch
-        {
-            PlatformEnum.iOS => "iPhone",
-            PlatformEnum.WinUI => "Windows",
-            PlatformEnum.Android => "Android",
-            PlatformEnum.MacCatalyst => "MacBook",
-            _ => "Unknown",
-        };
     }
 }

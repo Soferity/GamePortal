@@ -138,6 +138,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>Lazy2048Localization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\ValorousRabbit\ValorousRabbitLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>ValorousRabbitLocalization.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Languages\Localization.Designer.cs">
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
@@ -162,6 +167,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Lazy2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\ValorousRabbit\ValorousRabbitLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>ValorousRabbitLocalization.Designer.cs</LastGenOutput>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Localization.resx">
             <Generator>ResXFileCodeGenerator</Generator>

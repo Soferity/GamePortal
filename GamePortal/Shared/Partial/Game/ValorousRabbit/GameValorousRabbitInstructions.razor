@@ -1,4 +1,6 @@
-﻿<div id="instructions">
-    click (or press the spacebar) to jump
-    <span class="lightInstructions"> — hrab the carrots / avoid the hedgehogs</span>
+﻿@inject IStringLocalizer<ValorousRabbitLocalization> Localizer
+
+<div id="instructions">
+    @Localizer[$"DescriptionOne{HelperDevice.GetDeviceType}"]
+    <span class="lightInstructions">@Localizer["DescriptionTwo"]</span>
 </div>
