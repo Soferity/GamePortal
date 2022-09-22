@@ -138,6 +138,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>Lazy2048Localization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\TheAviator\TheAviatorLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>TheAviatorLocalization.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Languages\Game\TheCube\TheCubeLocalization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
@@ -177,6 +182,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Lazy2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\TheAviator\TheAviatorLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>TheAviatorLocalization.Designer.cs</LastGenOutput>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Game\TheCube\TheCubeLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>

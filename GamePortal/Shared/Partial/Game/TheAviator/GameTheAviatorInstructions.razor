@@ -1,1 +1,3 @@
-﻿<div class="message message--instructions" id="instructions">Grab the blue pills<span>avoid the red ones</span></div>
+﻿@inject IStringLocalizer<TheAviatorLocalization> Localizer
+
+<div class="message message--instructions" id="instructions">@Localizer["DescriptionOne"]<span>@Localizer["DescriptionTwo"]</span></div>

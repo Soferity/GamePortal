@@ -1,1 +1,3 @@
-﻿<div class="message message--replay" id="replayMessage">Click to Replay</div>
+﻿@inject IStringLocalizer<TheAviatorLocalization> Localizer
+
+<div class="message message--replay" id="replayMessage">@Localizer[$"Replay{HelperDevice.GetDeviceType}"]</div>
