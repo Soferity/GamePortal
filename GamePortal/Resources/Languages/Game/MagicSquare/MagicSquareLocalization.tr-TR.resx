@@ -121,7 +121,7 @@
     <value>×</value>
   </data>
   <data name="Congratulations" xml:space="preserve">
-    <value>Congratulations!</value>
+    <value>Tebrikler!</value>
   </data>
   <data name="Key0" xml:space="preserve">
     <value> </value>
@@ -155,6 +155,6 @@
     <value>9</value>
   </data>
   <data name="PlayAgain" xml:space="preserve">
-    <value>Play again?</value>
+    <value>Tekrar oyna?</value>
   </data>
 </root>

@@ -117,44 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Close" xml:space="preserve">
-    <value>×</value>
+  <data name="DescriptionOneDesktop" xml:space="preserve">
+    <value>ziplamak icin tikla veya bosluk tusuna bas</value>
   </data>
-  <data name="Congratulations" xml:space="preserve">
-    <value>Congratulations!</value>
+  <data name="DescriptionOneMobile" xml:space="preserve">
+    <value>ziplamak icin dokun</value>
   </data>
-  <data name="Key0" xml:space="preserve">
-    <value> </value>
-    <comment>&amp;nbsp;</comment>
+  <data name="DescriptionTwo" xml:space="preserve">
+    <value>— havuclari topla / kirpiden kac</value>
   </data>
-  <data name="Key1" xml:space="preserve">
-    <value>1</value>
+  <data name="Distance" xml:space="preserve">
+    <value>mesafe</value>
   </data>
-  <data name="Key2" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Key3" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Key4" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Key5" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Key6" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Key7" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Key8" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Key9" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="PlayAgain" xml:space="preserve">
-    <value>Play again?</value>
+  <data name="GameOver" xml:space="preserve">
+    <value>oyun bitti</value>
   </data>
 </root>

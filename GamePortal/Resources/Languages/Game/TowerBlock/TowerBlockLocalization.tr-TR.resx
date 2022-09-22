@@ -117,44 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Close" xml:space="preserve">
-    <value>×</value>
+  <data name="DescriptionDesktop" xml:space="preserve">
+    <value>Bloğu yerleştirmek için tıklayın veya boşluk tuşuna basın</value>
   </data>
-  <data name="Congratulations" xml:space="preserve">
-    <value>Congratulations!</value>
+  <data name="DescriptionMobile" xml:space="preserve">
+    <value>Bloğu yerleştirmek için dokunun</value>
   </data>
-  <data name="Key0" xml:space="preserve">
-    <value> </value>
-    <comment>&amp;nbsp;</comment>
+  <data name="GameOver" xml:space="preserve">
+    <value>Oyun Bitti</value>
   </data>
-  <data name="Key1" xml:space="preserve">
-    <value>1</value>
+  <data name="GameOverDesktop" xml:space="preserve">
+    <value>Yeniden başlamak için tıklayın veya boşluk tuşuna basın</value>
   </data>
-  <data name="Key2" xml:space="preserve">
-    <value>2</value>
+  <data name="GameOverMobile" xml:space="preserve">
+    <value>Yeniden başlamak için dokunun</value>
   </data>
-  <data name="Key3" xml:space="preserve">
-    <value>3</value>
+  <data name="GameOverOne" xml:space="preserve">
+    <value>Harika iş çıkardın, en iyisi sensin.</value>
   </data>
-  <data name="Key4" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Key5" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Key6" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Key7" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Key8" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Key9" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="PlayAgain" xml:space="preserve">
-    <value>Play again?</value>
+  <data name="Start" xml:space="preserve">
+    <value>Başla</value>
   </data>
 </root>

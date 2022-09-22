@@ -79,7 +79,7 @@ namespace GamePortal.Resources.Languages.Game.ValorousRabbit {
         }
         
         /// <summary>
-        ///   — hrab the carrots / avoid the hedgehogs benzeri yerelleştirilmiş bir dize arar.
+        ///   — grab the carrots / avoid the hedgehogs benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionTwo {
             get {

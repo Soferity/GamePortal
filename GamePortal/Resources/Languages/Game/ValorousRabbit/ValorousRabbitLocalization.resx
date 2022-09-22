@@ -124,7 +124,7 @@
     <value>touch to jump</value>
   </data>
   <data name="DescriptionTwo" xml:space="preserve">
-    <value>— hrab the carrots / avoid the hedgehogs</value>
+    <value>— grab the carrots / avoid the hedgehogs</value>
   </data>
   <data name="Distance" xml:space="preserve">
     <value>distance</value>
