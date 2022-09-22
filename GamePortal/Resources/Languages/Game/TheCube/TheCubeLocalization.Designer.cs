@@ -106,7 +106,7 @@ namespace GamePortal.Resources.Languages.Game.TheCube {
         }
         
         /// <summary>
-        ///   Ortographic,Perspective benzeri yerelleştirilmiş bir dize arar.
+        ///   Orthographic,Perspective benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string CameraAngleValue {
             get {

@@ -118,84 +118,85 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Average12" xml:space="preserve">
-    <value>Average of 12:</value>
+    <value>12'nin ortalamasi:</value>
   </data>
   <data name="Average25" xml:space="preserve">
-    <value>Average of 25:</value>
+    <value>25'in ortalamasi:</value>
   </data>
   <data name="Average5" xml:space="preserve">
-    <value>Average of 5:</value>
+    <value>5'in ortalamasi:</value>
   </data>
   <data name="BestTime" xml:space="preserve">
-    <value>Best Time!</value>
+    <value>En İyi Zaman!</value>
   </data>
   <data name="CameraAngle" xml:space="preserve">
-    <value>Camera Angle</value>
+    <value>Kamera Acisi</value>
   </data>
   <data name="CameraAngleValue" xml:space="preserve">
-    <value>Orthographic,Perspective</value>
+    <value>Ortografik,Perspektif</value>
   </data>
   <data name="ColorScheme" xml:space="preserve">
-    <value>Color Scheme</value>
+    <value>Renk Semasi</value>
   </data>
   <data name="ColorSchemeValue" xml:space="preserve">
     <value>Cube,Erno,Dust,Camo,Rain</value>
   </data>
   <data name="Complete" xml:space="preserve">
-    <value>Complete!</value>
+    <value>Tebrikler!</value>
   </data>
   <data name="CubeSize" xml:space="preserve">
-    <value>Cube Size</value>
+    <value>Kup Boyutu</value>
   </data>
   <data name="CubeSizeValue" xml:space="preserve">
     <value>2,3,4,5</value>
   </data>
   <data name="FlipType" xml:space="preserve">
-    <value>Flip Type</value>
+    <value>Cevirme Tipi</value>
   </data>
   <data name="FlipTypeValue" xml:space="preserve">
-    <value>Swift&amp;nbsp;,Smooth,Bounce</value>
+    <value>Hizli&amp;nbsp;,Yumusak,Sekme</value>
   </data>
   <data name="GameOne" xml:space="preserve">
-    <value>THE</value>
+    <value />
+    <comment>RUBIK</comment>
   </data>
   <data name="GameTwo" xml:space="preserve">
-    <value>CUBE</value>
+    <value>KUP</value>
   </data>
   <data name="Hue" xml:space="preserve">
-    <value>Hue</value>
+    <value>Ton</value>
   </data>
   <data name="Lightness" xml:space="preserve">
-    <value>Lightness</value>
+    <value>Aciklik</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Cube</value>
+    <value>Kup</value>
   </data>
   <data name="Saturation" xml:space="preserve">
-    <value>Saturation</value>
+    <value>Doygunluk</value>
   </data>
   <data name="ScrambleLength" xml:space="preserve">
-    <value>Scramble Length</value>
+    <value>Karistirma Uzunlugu</value>
   </data>
   <data name="ScrambleLengthValue" xml:space="preserve">
     <value>20,25,30</value>
   </data>
   <data name="StartDesktop" xml:space="preserve">
-    <value>Double click to start</value>
+    <value>Baslamak icin iki kere tıkla</value>
   </data>
   <data name="StartMobile" xml:space="preserve">
-    <value>Double touch to start</value>
+    <value>Baslamak icin iki kere dokun</value>
   </data>
   <data name="TheBestTime" xml:space="preserve">
-    <value>Best time:</value>
+    <value>En iyi zaman:</value>
   </data>
   <data name="Timer" xml:space="preserve">
     <value>0:00</value>
   </data>
   <data name="TotalSolves" xml:space="preserve">
-    <value>Total solves:</value>
+    <value>Toplam cozme:</value>
   </data>
   <data name="WorstTime" xml:space="preserve">
-    <value>Worst time:</value>
+    <value>En kotu zaman:</value>
   </data>
 </root>
