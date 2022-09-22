@@ -1,9 +1,11 @@
-﻿<div class="controls clearfix">
+﻿@inject IStringLocalizer<Classic2048Localization> Localizer
+
+<div class="controls clearfix">
     <div class="controls_game">
-        <button data-js="newGame" class="controls_game-btn"> New Game </button>
+        <button data-js="newGame" class="controls_game-btn">@Localizer["NewGame"]</button>
     </div>
     <div class="controls_score">
-        <span class="controls_score-label">Score </span>
+        <span class="controls_score-label">@Localizer["Score"]</span>
         <br>
         <span class="controls_score-text" data-js="score"> </span>
     </div>

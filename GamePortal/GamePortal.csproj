@@ -128,6 +128,16 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>ErrorLocalization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\Classic2048\Classic2048Localization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Classic2048Localization.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Lazy2048Localization.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Languages\Localization.Designer.cs">
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
@@ -145,12 +155,17 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>ErrorLocalization.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\Classic2048\Classic2048Localization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>Classic2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>Lazy2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Localization.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Localization.Designer.cs</LastGenOutput>
-        </EmbeddedResource>
-        <EmbeddedResource Update="Resources\Languages\Localization.tr-TR.resx">
-            <Generator></Generator>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Main\MainLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>

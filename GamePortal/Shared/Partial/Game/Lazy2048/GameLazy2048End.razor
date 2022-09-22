@@ -1,5 +1,7 @@
-﻿<div id=end style=display:none>
-    <h1>You win</h1>
-    <p><b>Let's party!</b><br><small>Success is commemorated; failure merely remembered</small><br>Written for Soferity</p>
-    <div id=reset>PLAY AGAIN</div>
+﻿@inject IStringLocalizer<Lazy2048Localization> Localizer
+
+<div id=end style=display:none>
+    <h1>@Localizer["Win"]</h1>
+    <p><b>@Localizer["LetsParty"]</b><br><small>@Localizer["WinDescriptionOne"]</small><br>@Localizer["WinDescriptionTwo"]</p>
+    <div id=reset>@Localizer["PlayAgain"]</div>
 </div>
