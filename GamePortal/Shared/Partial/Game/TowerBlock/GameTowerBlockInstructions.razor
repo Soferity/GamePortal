@@ -1,1 +1,3 @@
-﻿<div id="instructions">Click (or press the spacebar) to place the block</div>
+﻿@inject IStringLocalizer<TowerBlockLocalization> Localizer
+
+<div id="instructions">@Localizer[$"Description{HelperDevice.GetDeviceType}"]</div>

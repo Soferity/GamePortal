@@ -1,5 +1,7 @@
-﻿<div class="game-over">
-    <h2>Game Over</h2>
-    <p>You did great, you're the best.</p>
-    <p>Click or spacebar to start again</p>
+﻿@inject IStringLocalizer<TowerBlockLocalization> Localizer
+
+<div class="game-over">
+    <h2>@Localizer["GameOver"]</h2>
+    <p>@Localizer["GameOverOne"]</p>
+    <p>@Localizer[$"GameOver{HelperDevice.GetDeviceType}"]</p>
 </div>

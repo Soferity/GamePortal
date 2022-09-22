@@ -1,4 +1,6 @@
-﻿<div class="game-ready">
-    <div id="start-button">Start</div>
+﻿@inject IStringLocalizer<TowerBlockLocalization> Localizer
+
+<div class="game-ready">
+    <div id="start-button">@Localizer["Start"]</div>
     <div></div>
 </div>
