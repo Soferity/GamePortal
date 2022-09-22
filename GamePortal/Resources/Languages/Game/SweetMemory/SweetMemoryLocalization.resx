@@ -117,10 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ExitCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ExitConfirm" xml:space="preserve">
+    <value>Yes, Close Game!</value>
+  </data>
+  <data name="ExitText" xml:space="preserve">
+    <value>Your progress will be Lost!</value>
+  </data>
+  <data name="ExitTitle" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
   <data name="Moves" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="MovesText" xml:space="preserve">
     <value> Moves</value>
+  </data>
+  <data name="RestartCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="RestartConfirm" xml:space="preserve">
+    <value>Yes, Restart Game!</value>
+  </data>
+  <data name="RestartText" xml:space="preserve">
+    <value>Your progress will be lost!</value>
+  </data>
+  <data name="RestartTitle" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="WinConfirm" xml:space="preserve">
+    <value>Play again!</value>
+  </data>
+  <data name="WinText" xml:space="preserve">
+    <value>With {0} Moves and {1} Stars.{2}Congratulations!</value>
+  </data>
+  <data name="WinTitle" xml:space="preserve">
+    <value>Congratulations! You Won!</value>
   </data>
 </root>

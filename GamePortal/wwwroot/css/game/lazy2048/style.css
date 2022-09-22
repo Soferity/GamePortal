@@ -5,7 +5,7 @@
      box-sizing: border-box 
 }
  body, html {
-     background: #263238;
+     /*background: #263238;*/
      height: 100%;
      margin: 0;
      overflow: hidden;

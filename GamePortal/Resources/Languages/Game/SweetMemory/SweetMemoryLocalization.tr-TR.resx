@@ -117,10 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ExitCancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="ExitConfirm" xml:space="preserve">
+    <value>Evet, Oyundan Çık!</value>
+  </data>
+  <data name="ExitText" xml:space="preserve">
+    <value>İlerlemen Kaybolacak!</value>
+  </data>
+  <data name="ExitTitle" xml:space="preserve">
+    <value>Emin misiniz?</value>
+  </data>
   <data name="Moves" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="MovesText" xml:space="preserve">
     <value> Hamle</value>
+  </data>
+  <data name="RestartCancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="RestartConfirm" xml:space="preserve">
+    <value>Evet, Oyunu Yeniden Başlat!</value>
+  </data>
+  <data name="RestartText" xml:space="preserve">
+    <value>İlerlemen Kaybolacak!</value>
+  </data>
+  <data name="RestartTitle" xml:space="preserve">
+    <value>Emin misiniz?</value>
+  </data>
+  <data name="WinConfirm" xml:space="preserve">
+    <value>Tekrar oyna!</value>
+  </data>
+  <data name="WinText" xml:space="preserve">
+    <value>{0} Hamle ile {1} Yıldız aldın.{2}Bravo!</value>
+  </data>
+  <data name="WinTitle" xml:space="preserve">
+    <value>Tebrikler! Kazandın!</value>
   </data>
 </root>

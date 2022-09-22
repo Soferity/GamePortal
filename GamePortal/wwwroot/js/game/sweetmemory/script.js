@@ -14,6 +14,20 @@ var symbols = icons(),
     rank2stars = gameCardsQTY + 6, //8 + 6 = 14 | 2
     rank1stars = gameCardsQTY + 10; //8 + 10 = 18 | 1
 
+var winTitle,
+    winText,
+    winConfirm,
+
+    restartTitle,
+    restartText,
+    restartConfirm,
+    restartCancel,
+
+    exitTitle,
+    exitText,
+    exitConfirm,
+    exitCancel;
+
 function icons() {
     switch (randomInt(0, 7)) {
         case 1:
@@ -100,12 +114,12 @@ function endGame(moves, score) {
     swal({
         allowEscapeKey: false,
         allowOutsideClick: false,
-        title: 'Congratulations! You Won!',
-        text: 'With ' + moves + ' Moves and ' + score + ' Stars.\nCongratulations!',
+        title: winTitle,
+        text: String.format(winText, moves, score, '\n'), //winText.format(moves, score, '\n')
         type: 'success',
         background: '#1C2020',
         confirmButtonColor: '#9BCB3C',
-        confirmButtonText: 'Play again!'
+        confirmButtonText: winConfirm
     }).then(function(isConfirm) {
         if (isConfirm) {
             symbols = icons();
@@ -119,14 +133,15 @@ $restart.on('click', function() {
     swal({
         allowEscapeKey: true,
         allowOutsideClick: true,
-        title: 'Are you sure?',
-        text: "Your progress will be Lost!",
+        title: restartTitle,
+        text: restartText,
         type: 'warning',
         showCancelButton: true,
+        cancelButtonText: restartCancel,
         confirmButtonColor: '#9BCB3C',
         background: '#1C2020',
         cancelButtonColor: '#EE0E51',
-        confirmButtonText: 'Yes, Restart Game!'
+        confirmButtonText: restartConfirm
     }).then(function(isConfirm) {
         if (isConfirm) {
             symbols = icons();
@@ -140,14 +155,15 @@ $exit.on('click', function () {
     swal({
         allowEscapeKey: true,
         allowOutsideClick: true,
-        title: 'Are you sure?',
-        text: "Your progress will be Lost!",
+        title: exitTitle,
+        text: exitText,
         type: 'error',
         showCancelButton: true,
+        cancelButtonText: exitCancel,
         confirmButtonColor: '#9BCB3C',
         background: '#1C2020',
         cancelButtonColor: '#EE0E51',
-        confirmButtonText: 'Yes, Close Game!'
+        confirmButtonText: exitConfirm
     }).then(function (isConfirm) {
         if (isConfirm) {
             GoLocation('');
@@ -200,5 +216,21 @@ $deck.on('click', '.card:not(".match, .open")', function() {
 
     SetLocalStorage('sweetmemory', 'play');
 });
+
+function SetLocalization(WinTitle, WinText, WinConfirm, RestartTitle, RestartText, RestartConfirm, RestartCancel, ExitTitle, ExitText, ExitConfirm, ExitCancel) {
+    winTitle = WinTitle;
+    winText = WinText;
+    winConfirm = WinConfirm;
+
+    restartTitle = RestartTitle;
+    restartText = RestartText;
+    restartConfirm = RestartConfirm;
+    restartCancel = RestartCancel;
+
+    exitTitle = ExitTitle;
+    exitText = ExitText;
+    exitConfirm = ExitConfirm;
+    exitCancel = ExitCancel;
+}
 
 initGame();

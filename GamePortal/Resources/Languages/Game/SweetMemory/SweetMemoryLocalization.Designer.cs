@@ -61,6 +61,42 @@ namespace GamePortal.Resources.Languages.Game.SweetMemory {
         }
         
         /// <summary>
+        ///   Cancel benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ExitCancel {
+            get {
+                return ResourceManager.GetString("ExitCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Yes, Close Game! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ExitConfirm {
+            get {
+                return ResourceManager.GetString("ExitConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Your progress will be Lost! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ExitText {
+            get {
+                return ResourceManager.GetString("ExitText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Are you sure? benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ExitTitle {
+            get {
+                return ResourceManager.GetString("ExitTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   0 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string Moves {
@@ -75,6 +111,69 @@ namespace GamePortal.Resources.Languages.Game.SweetMemory {
         internal static string MovesText {
             get {
                 return ResourceManager.GetString("MovesText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cancel benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string RestartCancel {
+            get {
+                return ResourceManager.GetString("RestartCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Yes, Restart Game! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string RestartConfirm {
+            get {
+                return ResourceManager.GetString("RestartConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Your progress will be lost! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string RestartText {
+            get {
+                return ResourceManager.GetString("RestartText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Are you sure? benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string RestartTitle {
+            get {
+                return ResourceManager.GetString("RestartTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Play again! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string WinConfirm {
+            get {
+                return ResourceManager.GetString("WinConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   With {0} Moves and {1} Stars.{2}Congratulations! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string WinText {
+            get {
+                return ResourceManager.GetString("WinText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Congratulations! You Won! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string WinTitle {
+            get {
+                return ResourceManager.GetString("WinTitle", resourceCulture);
             }
         }
     }
