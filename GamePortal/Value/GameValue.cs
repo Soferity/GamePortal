@@ -182,7 +182,7 @@ namespace GamePortal.Value
                     Description = "TowerOfHanoi",
                     State = GameStateEnum.New
                 }
-            },
+            }
         };
     }
 }

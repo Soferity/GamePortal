@@ -145,6 +145,9 @@
   <data name="DescriptionTowerBlock" xml:space="preserve">
     <value>Gökdelen, blokları istifleme oyunudur. Blokları üst üste yığdıkça puan kazanıyorsunuz. Ne kadar yüksek yığın yaparsanız, o kadar çok puan kazanırsınız. Artık blok istifleyemediğiniz zaman oyun sona erer.</value>
   </data>
+  <data name="DescriptionTowerOfHanoi" xml:space="preserve">
+    <value>Tower of Hanoi is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
   <data name="DescriptionValorousRabbit" xml:space="preserve">
     <value>Yiğit Tavşan bir aksiyon macera oyunudur. Havuçları alarak kirpiden kaçmaya çalışın. En önemli şey asla bir kirpi tarafından yakalanmamaktır. Kirpiye yakalanırsan, oyun biter.</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="ImageTowerBlock" xml:space="preserve">
     <value>img/game/towerblock.tr.jpg</value>
+  </data>
+  <data name="ImageTowerOfHanoi" xml:space="preserve">
+    <value>img/game/towerofhanoi.tr.jpg</value>
   </data>
   <data name="ImageValorousRabbit" xml:space="preserve">
     <value>img/game/valorousrabbit.tr.jpg</value>
@@ -219,6 +225,9 @@
   </data>
   <data name="TitleTowerBlock" xml:space="preserve">
     <value>Gökdelen</value>
+  </data>
+  <data name="TitleTowerOfHanoi" xml:space="preserve">
+    <value>Hanoi Kulesi</value>
   </data>
   <data name="TitleValorousRabbit" xml:space="preserve">
     <value>Yiğit Tavşan</value>

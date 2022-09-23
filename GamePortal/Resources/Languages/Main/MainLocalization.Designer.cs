@@ -142,6 +142,15 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
+        ///   Tower of Hanoi is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home. benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string DescriptionTowerOfHanoi {
+            get {
+                return ResourceManager.GetString("DescriptionTowerOfHanoi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Valorous Rabbit is an action adventure game. Try to escape from the hedgehog by taking the carrots. The most important thing is to never get caught by a hedgehog. If you get caught in the hedgehog, it&apos;s game over. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionValorousRabbit {
@@ -228,6 +237,15 @@ namespace GamePortal.Resources.Languages.Main {
         internal static string ImageTowerBlock {
             get {
                 return ResourceManager.GetString("ImageTowerBlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/towerofhanoi.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageTowerOfHanoi {
+            get {
+                return ResourceManager.GetString("ImageTowerOfHanoi", resourceCulture);
             }
         }
         
@@ -363,6 +381,15 @@ namespace GamePortal.Resources.Languages.Main {
         internal static string TitleTowerBlock {
             get {
                 return ResourceManager.GetString("TitleTowerBlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Tower of Hanoi benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string TitleTowerOfHanoi {
+            get {
+                return ResourceManager.GetString("TitleTowerOfHanoi", resourceCulture);
             }
         }
         

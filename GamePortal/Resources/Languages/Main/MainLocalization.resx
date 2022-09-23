@@ -145,6 +145,9 @@
   <data name="DescriptionTowerBlock" xml:space="preserve">
     <value>Tower Block is a game of stacking blocks. As you stack blocks on top of each other, you earn points. The higher you stack, the more points you earn. The game ends when you can no longer stack blocks.</value>
   </data>
+  <data name="DescriptionTowerOfHanoi" xml:space="preserve">
+    <value>Tower of Hanoi is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
   <data name="DescriptionValorousRabbit" xml:space="preserve">
     <value>Valorous Rabbit is an action adventure game. Try to escape from the hedgehog by taking the carrots. The most important thing is to never get caught by a hedgehog. If you get caught in the hedgehog, it's game over.</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="ImageTowerBlock" xml:space="preserve">
     <value>img/game/towerblock.jpg</value>
+  </data>
+  <data name="ImageTowerOfHanoi" xml:space="preserve">
+    <value>img/game/towerofhanoi.jpg</value>
   </data>
   <data name="ImageValorousRabbit" xml:space="preserve">
     <value>img/game/valorousrabbit.jpg</value>
@@ -219,6 +225,9 @@
   </data>
   <data name="TitleTowerBlock" xml:space="preserve">
     <value>Tower Block</value>
+  </data>
+  <data name="TitleTowerOfHanoi" xml:space="preserve">
+    <value>Tower of Hanoi</value>
   </data>
   <data name="TitleValorousRabbit" xml:space="preserve">
     <value>Valorous Rabbit</value>
