@@ -11,6 +11,7 @@
         Classic2048,
         SweetMemory,
         MagicSquare,
-        ValorousRabbit
+        TowerOfHanoi,
+        ValorousRabbit,
     }
 }

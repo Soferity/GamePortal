@@ -166,7 +166,23 @@ namespace GamePortal.Value
                     Description = "TheAviator",
                     State = GameStateEnum.New
                 }
-            }
+            },
+            {
+                GameEnum.TowerOfHanoi,
+                new()
+                {
+                    Visibility = true,
+                    Build = BuildEnum.Develop,
+                    Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Strategy },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "TowerOfHanoi",
+                    Star = 5,
+                    Image = "TowerOfHanoi",
+                    Address = "towerofhanoi",
+                    Description = "TowerOfHanoi",
+                    State = GameStateEnum.New
+                }
+            },
         };
     }
 }
