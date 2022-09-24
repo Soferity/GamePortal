@@ -106,7 +106,7 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
-        ///   The Aviator is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home. benzeri yerelleştirilmiş bir dize arar.
+        ///   The Aviator is a action platform game. Collect batteries by plane and escape from the meteorites. Level up as the distance traveled increases. Don&apos;t forget to control your speed while flying. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionTheAviator {
             get {

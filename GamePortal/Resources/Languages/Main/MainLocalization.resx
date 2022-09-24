@@ -134,7 +134,7 @@
     <comment>If you don't, the squares will flip back over. Try to get as many points as you can.</comment>
   </data>
   <data name="DescriptionTheAviator" xml:space="preserve">
-    <value>The Aviator is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+    <value>The Aviator is a action platform game. Collect batteries by plane and escape from the meteorites. Level up as the distance traveled increases. Don't forget to control your speed while flying.</value>
   </data>
   <data name="DescriptionTheCube" xml:space="preserve">
     <value>The Cube is a rubik's cube completion game. With the various settings offered, you can make your own custom rubik's cube. So you can test yourself. If you give up, you lose.</value>

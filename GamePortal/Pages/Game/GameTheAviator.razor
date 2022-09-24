@@ -17,7 +17,7 @@
         await Include.Stylesheet("css/game/theaviator/game.css");
 
         await Include.Script("js/game/theaviator/three.min.js");
-        
+
         await Include.Script("js/game/theaviator/tweenmax.min.js");
 
         await GetRender();
@@ -27,6 +27,13 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.Script("js/game/theaviator/game.js");
+        if (General.Random.Next(0, 2) == 0)
+        {
+            await Include.Script("js/game/theaviator/gamesea.js");
+        }
+        else
+        {
+            await Include.Script("js/game/theaviator/gameforest.js");
+        }
     }
 }

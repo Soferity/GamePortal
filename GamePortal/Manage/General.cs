@@ -7,6 +7,8 @@ namespace GamePortal.Manage
     {
         public static bool First = true;
 
+        public static Random Random = new();
+
         public const int WindowWidth = 1460;
 
         public const int WindowHeight = 670;

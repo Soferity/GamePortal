@@ -17,9 +17,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TheCube",
                     Star = 5,
-                    Image = "TheCube",
                     Address = "thecube",
-                    Description = "TheCube",
                     State = GameStateEnum.Hit
                 }
             },
@@ -33,9 +31,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TowerBlock",
                     Star = 5,
-                    Image = "TowerBlock",
                     Address = "towerblock",
-                    Description = "TowerBlock",
                     State = GameStateEnum.New
                 }
             },
@@ -49,9 +45,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "ValorousRabbit",
                     Star = 5,
-                    Image = "ValorousRabbit",
                     Address = "valorousrabbit",
-                    Description = "ValorousRabbit",
                     State = GameStateEnum.New
                 }
             },
@@ -65,9 +59,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Lazy2048",
                     Star = 5,
-                    Image = "Lazy2048",
                     Address = "lazy2048",
-                    Description = "Lazy2048",
                     State = GameStateEnum.Hit
                 }
             },
@@ -81,9 +73,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Classic2048",
                     Star = 5,
-                    Image = "Classic2048",
                     Address = "classic2048",
-                    Description = "Classic2048",
                     State = GameStateEnum.Old
                 }
             },
@@ -97,9 +87,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "SweetMemory",
                     Star = 5,
-                    Image = "SweetMemory",
                     Address = "sweetmemory",
-                    Description = "SweetMemory",
                     State = GameStateEnum.New
                 }
             },
@@ -113,9 +101,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TicTacToe",
                     Star = 5,
-                    Image = "TicTacToe",
                     Address = "tictactoe",
-                    Description = "TicTacToe",
                     State = GameStateEnum.Hit
                 }
             },
@@ -129,9 +115,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "MagicSquare",
                     Star = 5,
-                    Image = "MagicSquare",
                     Address = "magicsquare",
-                    Description = "MagicSquare",
                     State = GameStateEnum.Hit
                 }
             },
@@ -145,9 +129,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "Hextris",
                     Star = 5,
-                    Image = "Hextris",
                     Address = "hextris",
-                    Description = "Hextris",
                     State = GameStateEnum.Hit
                 }
             },
@@ -161,9 +143,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TheAviator",
                     Star = 5,
-                    Image = "TheAviator",
                     Address = "theaviator",
-                    Description = "TheAviator",
                     State = GameStateEnum.New
                 }
             },
@@ -177,9 +157,7 @@ namespace GamePortal.Value
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TowerOfHanoi",
                     Star = 5,
-                    Image = "TowerOfHanoi",
                     Address = "towerofhanoi",
-                    Description = "TowerOfHanoi",
                     State = GameStateEnum.New
                 }
             }

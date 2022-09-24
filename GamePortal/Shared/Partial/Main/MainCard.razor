@@ -34,14 +34,14 @@
                 
             </div>
             <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
-                <img src="@Localizer[$"Image{Game.Image}"]" class="img-fluid" />
+                <img src="@Localizer[$"Image{Game.Title}"]" class="img-fluid" />
                 <a @onclick="(() => Redirect.GoLocation(Game.Address))" style="cursor: pointer">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
             </div>
             <div class="card-body">
                 <h5 class="card-title">@Localizer[$"Title{Game.Title}"]</h5>
-                <p class="card-text">@Localizer[$"Description{Game.Description}"]</p>
+                <p class="card-text">@Localizer[$"Description{Game.Title}"]</p>
                 <a @onclick="(() => Redirect.GoLocation(Game.Address))" class="btn btn-danger">@Localizer["PlayGame"]</a>
                 @if (Game.State != null)
                 {

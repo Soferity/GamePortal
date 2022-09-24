@@ -134,7 +134,7 @@
     <comment>Bunu yapmazsanız, kareler geri dönecektir. Mümkün olduğu kadar çok puan almaya çalışın.</comment>
   </data>
   <data name="DescriptionTheAviator" xml:space="preserve">
-    <value>The Aviator is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+    <value>Göklerin Hakimi bir aksiyon platformu oyunudur. Pilleri uçakla toplayın ve meteorlardan kaçın. Kat edilen mesafe arttıkça seviye atlayın. Uçarken hızınızı kontrol etmeyi de sakın unutmayın.</value>
   </data>
   <data name="DescriptionTheCube" xml:space="preserve">
     <value>Küp, bir rubik küp tamamlama oyunudur. Sunulan çeşitli ayarlarla kendi özel rubik küpünüzü yapabilirsiniz. Böylece kendinizi test edebilirsiniz. Vazgeçersen kaybedersin.</value>
