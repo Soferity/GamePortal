@@ -1,21 +1,7 @@
 ﻿@page "/towerofhanoi"
-@inject IStringLocalizer<SweetMemoryLocalization> Localizer
+@inject IStringLocalizer<TowerOfHanoiLocalization> Localizer
 
-<div id="canves">
-    <div class="restart"><i class="fa fa-repeat"></i></div>
-    <div class="curtain"></div>
-    <ul id="score-panel">
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li>
-            <h1> <span id="moves-num"></span><span> Moves</span></h1>
-        </li>
-    </ul>
-    <ul class="tower" id="tower-1"></ul>
-    <ul class="tower" id="tower-2"></ul>
-    <ul class="tower" id="tower-3"></ul>
-</div>
+<GameTowerOfHanoiCanvas />
 
 @code
 {
@@ -30,7 +16,6 @@
         await Include.Stylesheet("css/game/towerofhanoi/coda.400.css");
 
         await Include.Stylesheet("css/game/towerofhanoi/sweetalert2.min.css");
-        await Include.Stylesheet("css/game/towerofhanoi/animate.css");
         await Include.Stylesheet("css/game/towerofhanoi/style.css");
 
         await Include.Script("js/game/towerofhanoi/jquery.min.js");
@@ -47,6 +32,6 @@
 
         await Task.Delay(DelayValue.Localization);
         
-        //await Interop.Call("SetLocalization", Localizer["WinTitle"].Value, Localizer["WinText"].Value, Localizer["WinConfirm"].Value, Localizer["RestartTitle"].Value, Localizer["RestartText"].Value, Localizer["RestartConfirm"].Value, Localizer["RestartCancel"].Value, Localizer["ExitTitle"].Value, Localizer["ExitText"].Value, Localizer["ExitConfirm"].Value, Localizer["ExitCancel"].Value);
+        await Interop.Call("SetLocalization", Localizer["WinTitle"].Value, Localizer["WinText"].Value, Localizer["WinConfirm"].Value, Localizer["RestartTitle"].Value, Localizer["RestartText"].Value, Localizer["RestartConfirm"].Value, Localizer["RestartCancel"].Value, Localizer["ExitTitle"].Value, Localizer["ExitText"].Value, Localizer["ExitConfirm"].Value, Localizer["ExitCancel"].Value);
     }
 }

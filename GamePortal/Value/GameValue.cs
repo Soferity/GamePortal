@@ -172,7 +172,7 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Develop,
+                    Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Puzzle, GameTypeEnum.Strategy },
                     Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TowerOfHanoi",

@@ -100,6 +100,7 @@ body {
         float: left;
         cursor: pointer;
         margin-left: 25px;
+        font-size: 17.47px;
     }
     
     #score-panel .restart {

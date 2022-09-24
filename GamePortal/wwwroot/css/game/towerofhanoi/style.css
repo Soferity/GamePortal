@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    color: skyblue;
 }
  #canves {
      width: 395px;
@@ -46,18 +47,26 @@ body {
      font-size: 7px;
      line-height: 1;
 }
+.exit {
+    cursor: pointer;
+    position: absolute;
+    bottom: -60px;
+    left: 45%;
+    font-size: 22.9px;
+    transform: translateX(-45%);
+}
  .restart {
      cursor: pointer;
      position: absolute;
      bottom: -60px;
-     left: 50%;
+     left: 55%;
      font-size: 21px;
-     transform: translateX(-50%);
+     transform: translateX(-55%);
 }
  .tower {
      width: 115px;
-     height: 117px;
-     border-bottom: 5px solid #000000;
+     height: 115px;
+     border-bottom: 5px solid royalblue;
      border-radius: 7px;
      position: relative;
      text-align: center;
@@ -76,7 +85,7 @@ body {
      height: 116px;
      content: "";
      display: block;
-     background: #000000;
+     background: darkcyan;
      position: absolute;
      bottom: -2px;
      left: calc(50% - 2px);
@@ -97,8 +106,8 @@ body {
      left: 50%;
      transform: translateX(-50%);
 }
- .swal2-overlay {
-     background-color: white;
+.swal2-overlay {
+    background-color: #1c2020;
 }
  .disk-1 {
      width: 17.5px;
@@ -127,4 +136,8 @@ body {
  .disk-7 {
      width: 122.5px;
      background-color: #ff9800;
+}
+ .disk-8 {
+    width: 140px;
+    background-color: #ff4500;
 }

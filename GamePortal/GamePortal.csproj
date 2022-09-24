@@ -163,6 +163,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>TowerBlockLocalization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\TowerOfHanoi\TowerOfHanoiLocalization.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>TowerOfHanoiLocalization.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Languages\Game\ValorousRabbit\ValorousRabbitLocalization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
@@ -212,6 +217,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\TowerBlock\TowerBlockLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>TowerBlockLocalization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\TowerOfHanoi\TowerOfHanoiLocalization.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>TowerOfHanoiLocalization.Designer.cs</LastGenOutput>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Game\ValorousRabbit\ValorousRabbitLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
