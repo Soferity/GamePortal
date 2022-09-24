@@ -136,11 +136,10 @@
     <value>sonuna kadar uç</value>
   </data>
   <data name="GameOne" xml:space="preserve">
-    <value />
-    <comment>the</comment>
+    <value>Göklerin</value>
   </data>
   <data name="GameTwo" xml:space="preserve">
-    <value>Havacı</value>
+    <value>Hakimi</value>
   </data>
   <data name="Level" xml:space="preserve">
     <value>seviye</value>

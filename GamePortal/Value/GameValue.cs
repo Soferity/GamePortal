@@ -156,7 +156,7 @@ namespace GamePortal.Value
                 new()
                 {
                     Visibility = true,
-                    Build = BuildEnum.Develop,
+                    Build = BuildEnum.Release,
                     Type = new[] { GameTypeEnum.Action, GameTypeEnum.Platform },
                     Platform = new[] { PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
                     Title = "TheAviator",
