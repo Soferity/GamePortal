@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DescriptionClassic2048" xml:space="preserve">
+    <value>Classic 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
+  <data name="DescriptionHextris" xml:space="preserve">
+    <value>Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
+  <data name="DescriptionLazy2048" xml:space="preserve">
+    <value>Lazy 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
+  <data name="DescriptionMagicSquare" xml:space="preserve">
+    <value>Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
+  <data name="DescriptionSweetMemory" xml:space="preserve">
+    <value>Dulce Memoria es un juego de memoria. Voltee los cuadrados y vea el ícono detrás de ellos. Luego mire detrás de más cuadrados para encontrar el mismo icono. Si encuentra el mismo icono, obtiene un punto.</value>
+    <comment>If you don't, the squares will flip back over. Try to get as many points as you can.</comment>
+  </data>
+  <data name="DescriptionTheAviator" xml:space="preserve">
+    <value>La Aviadora es un juego de plataformas de acción. Recoge baterías en avión y escapa de los meteoritos. Sube de nivel a medida que aumenta la distancia recorrida. No olvides controlar tu velocidad mientras vuelas.</value>
+  </data>
+  <data name="DescriptionTheCube" xml:space="preserve">
+    <value>El Cubo es un juego de finalización de cubo de rubik. Con las diversas configuraciones ofrecidas, puede hacer su propio cubo de rubik personalizado. Para que puedas ponerte a prueba. Si te rindes, pierdes.</value>
+  </data>
+  <data name="DescriptionTicTacToe" xml:space="preserve">
+    <value>Tic Tac Toe is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+  </data>
+  <data name="DescriptionTowerBlock" xml:space="preserve">
+    <value>Bloque de la Torre es un juego de apilamiento de bloques. A medida que apilas bloques uno encima del otro, ganas puntos. Cuanto más alto acumules, más puntos ganarás. El juego termina cuando ya no puedes apilar bloques.</value>
+  </data>
+  <data name="DescriptionTowerOfHanoi" xml:space="preserve">
+    <value>Torre de Hanoi es un juego de rompecabezas. El rompecabezas comienza con los discos apilados en una varilla en orden de tamaño decreciente, la más pequeña en la parte superior, aproximándose así a una forma cónica.</value>
+  </data>
+  <data name="DescriptionValorousRabbit" xml:space="preserve">
+    <value>Conejo Valoroso es un juego de acción y aventura. Intenta escapar del erizo tomando las zanahorias. Lo más importante es nunca ser atrapado por un erizo. Si te atrapan en el erizo, se acabó el juego.</value>
+  </data>
+  <data name="ImageClassic2048" xml:space="preserve">
+    <value>img/game/classic2048.es.jpg</value>
+  </data>
+  <data name="ImageHextris" xml:space="preserve">
+    <value>img/game/hextris.es.jpg</value>
+  </data>
+  <data name="ImageLazy2048" xml:space="preserve">
+    <value>img/game/lazy2048.es.jpg</value>
+  </data>
+  <data name="ImageMagicSquare" xml:space="preserve">
+    <value>img/game/magicsquare.es.jpg</value>
+  </data>
+  <data name="ImageSweetMemory" xml:space="preserve">
+    <value>img/game/sweetmemory.es.jpg</value>
+  </data>
+  <data name="ImageTheAviator" xml:space="preserve">
+    <value>img/game/theaviator.es.jpg</value>
+  </data>
+  <data name="ImageTheCube" xml:space="preserve">
+    <value>img/game/thecube.es.jpg</value>
+  </data>
+  <data name="ImageTicTacToe" xml:space="preserve">
+    <value>img/game/tictactoe.es.jpg</value>
+  </data>
+  <data name="ImageTowerBlock" xml:space="preserve">
+    <value>img/game/towerblock.es.jpg</value>
+  </data>
+  <data name="ImageTowerOfHanoi" xml:space="preserve">
+    <value>img/game/towerofhanoi.es.jpg</value>
+  </data>
+  <data name="ImageValorousRabbit" xml:space="preserve">
+    <value>img/game/valorousrabbit.es.jpg</value>
+  </data>
+  <data name="PlayFirst" xml:space="preserve">
+    <value>Para dar puntos, debes jugar primero.</value>
+  </data>
+  <data name="PlayGame" xml:space="preserve">
+    <value>Juega al Juego</value>
+  </data>
+  <data name="StateHit" xml:space="preserve">
+    <value>Tendencia</value>
+  </data>
+  <data name="StateNew" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="StateOld" xml:space="preserve">
+    <value>Viejo</value>
+  </data>
+  <data name="TitleClassic2048" xml:space="preserve">
+    <value>Clásico 2048</value>
+  </data>
+  <data name="TitleHextris" xml:space="preserve">
+    <value>Hextris</value>
+  </data>
+  <data name="TitleLazy2048" xml:space="preserve">
+    <value>Perezoso 2048</value>
+  </data>
+  <data name="TitleMagicSquare" xml:space="preserve">
+    <value>Cuadrado Mágico</value>
+  </data>
+  <data name="TitleSweetMemory" xml:space="preserve">
+    <value>Dulce Memoria</value>
+  </data>
+  <data name="TitleTheAviator" xml:space="preserve">
+    <value>La Aviadora</value>
+  </data>
+  <data name="TitleTheCube" xml:space="preserve">
+    <value>El Cubo</value>
+  </data>
+  <data name="TitleTicTacToe" xml:space="preserve">
+    <value>Tic Tac Toe</value>
+  </data>
+  <data name="TitleTowerBlock" xml:space="preserve">
+    <value>Bloque de la Torre</value>
+  </data>
+  <data name="TitleTowerOfHanoi" xml:space="preserve">
+    <value>Torre de Hanoi</value>
+  </data>
+  <data name="TitleValorousRabbit" xml:space="preserve">
+    <value>Conejo Valoroso</value>
+  </data>
+  <data name="TypeAction" xml:space="preserve">
+    <value>Acción</value>
+  </data>
+  <data name="TypeAdventure" xml:space="preserve">
+    <value>Aventura</value>
+  </data>
+  <data name="TypeEducation" xml:space="preserve">
+    <value>Educación</value>
+  </data>
+  <data name="TypeFighting" xml:space="preserve">
+    <value>Peleando</value>
+  </data>
+  <data name="TypeFPS" xml:space="preserve">
+    <value>FPS</value>
+  </data>
+  <data name="TypeLucky" xml:space="preserve">
+    <value>Afortunado</value>
+  </data>
+  <data name="TypeMMO" xml:space="preserve">
+    <value>MMO</value>
+  </data>
+  <data name="TypeMOBA" xml:space="preserve">
+    <value>MOBA</value>
+  </data>
+  <data name="TypeMultiplayer" xml:space="preserve">
+    <value>Multijugador</value>
+  </data>
+  <data name="TypeMusic" xml:space="preserve">
+    <value>Música</value>
+  </data>
+  <data name="TypePlatform" xml:space="preserve">
+    <value>Plataforma</value>
+  </data>
+  <data name="TypePuzzle" xml:space="preserve">
+    <value>Rompecabezas</value>
+  </data>
+  <data name="TypeRacing" xml:space="preserve">
+    <value>Carreras</value>
+  </data>
+  <data name="TypeRPG" xml:space="preserve">
+    <value>RPG</value>
+  </data>
+  <data name="TypeRTS" xml:space="preserve">
+    <value>RTS</value>
+  </data>
+  <data name="TypeShooter" xml:space="preserve">
+    <value>Tirador</value>
+  </data>
+  <data name="TypeSimulation" xml:space="preserve">
+    <value>Simulación</value>
+  </data>
+  <data name="TypeSingleplayer" xml:space="preserve">
+    <value>Un jugador</value>
+  </data>
+  <data name="TypeSports" xml:space="preserve">
+    <value>Deportes</value>
+  </data>
+  <data name="TypeStrategy" xml:space="preserve">
+    <value>Estrategia</value>
+  </data>
+  <data name="TypeTPS" xml:space="preserve">
+    <value>TPS</value>
+  </data>
+</root>
