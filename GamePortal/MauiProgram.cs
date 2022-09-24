@@ -60,7 +60,7 @@ namespace GamePortal
 
             });
 
-            //Taiizor.Essentials.Maui.Extension.Culture.Set("en-GB");
+            Taiizor.Essentials.Maui.Extension.Culture.Set("es-ES");
 
             return builder.Build();
         }
