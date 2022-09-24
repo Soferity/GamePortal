@@ -41,6 +41,7 @@
   ![TowerBlock](.screenshots/TowerBlock.TR.png)
   ![SweetMemory](.screenshots/SweetMemory.TR.png)
   ![TowerOfHanoi](.screenshots/TowerOfHanoi.TR.png)
+  ![TheAviator](.screenshots/TheAviator.TR.png)
 
 </details>
 
