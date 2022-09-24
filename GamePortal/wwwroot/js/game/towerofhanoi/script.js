@@ -70,9 +70,12 @@ function setRating(moves) {
 // Init Game
 function initGame(tower) {
     $tower.html('');
+    rating = 3;
     moves = 0;
     $movesCount.html(0);
     holding = [];
+    disksNum = randomInt(3, 8);
+    minMoves = movesCalc(disksNum);
     for (var i = 1; i <= disksNum; i++) {
         tower.prepend($('<li class="disk disk-' + i + '" data-value="' + i + '"></li>'));
     }
@@ -99,9 +102,6 @@ function countMove() {
                 confirmButtonText: winConfirm
             }).then(function (isConfirm) {
                 if (isConfirm) {
-                    rating = 3;
-                    disksNum = randomInt(3, 8);
-                    minMoves = movesCalc(disksNum);
                     initGame($tower.eq(0));
                 }
             })
@@ -154,9 +154,6 @@ $restart.on('click', function () {
         confirmButtonText: restartConfirm
     }).then(function (isConfirm) {
         if (isConfirm) {
-            rating = 3;
-            disksNum = randomInt(3, 8);
-            minMoves = movesCalc(disksNum);
             initGame($tower.eq(0));
         }
     })

@@ -64,7 +64,7 @@ body {
      transform: translateX(-55%);
 }
  .tower {
-     width: 115px;
+     width: 140px;
      height: 115px;
      border-bottom: 5px solid royalblue;
      border-radius: 7px;
@@ -82,7 +82,7 @@ body {
 }
  .tower:before {
      width: 4px;
-     height: 116px;
+     height: 117px;
      content: "";
      display: block;
      background: darkcyan;
