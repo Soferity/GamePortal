@@ -20,14 +20,14 @@ Hanoi Kulesi oyunu eklendi.
 Türkçe dil desteği eklendi.
 İngilizce dil desteği eklendi."
 Title,4,Text,,Soferity: Game Portal,Soferity: Game Portal
-ShortTitle,5,Text,,Soferity: Game Portal,Soferity: Game Portal
-SortTitle,6,Text,,Soferity: Game Portal,Soferity: Game Portal
-VoiceTitle,7,Text,,Soferity: Game Portal,Soferity: Game Portal
-ShortDescription,8,Text,,Soferity: Game Portal,Soferity: Game Portal
+ShortTitle,5,Text,,Soferity: Game Portal,Soferity: Oyun Portalı
+SortTitle,6,Text,,Soferity: Game Portal,Soferity: Oyun Portalı
+VoiceTitle,7,Text,,Soferity: Game Portal,Soferity: Oyun Portalı
+ShortDescription,8,Text,,Soferity: Game Portal is a game hub.,Soferity: Game Portal bir oyun portalıdır.
 DevStudio,9,Text,,Soferity LLC,Soferity LLC
 CopyrightTrademarkInformation,12,Text,,Copyright © 2022 Soferity LLC,Copyright © 2022 Soferity LLC
 AdditionalLicenseTerms,13,Text,,,
-DesktopScreenshot1,100,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3016267709191015367,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3059129939611096254
+DesktopScreenshot1,100,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3035039899575464992,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3054240985864720242
 DesktopScreenshot2,101,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3010365213412219494,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3036642572988482984
 DesktopScreenshot3,102,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3063536928505101034,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3019130454692726900
 DesktopScreenshot4,103,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3023353359262385232,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3008431547128341086
@@ -38,7 +38,7 @@ DesktopScreenshot8,107,Relative path (or URL to file in Partner Center),,,
 DesktopScreenshot9,108,Relative path (or URL to file in Partner Center),,,
 DesktopScreenshot10,109,Relative path (or URL to file in Partner Center),,,
 DesktopScreenshotCaption1,150,Text,,Home,Ev
-DesktopScreenshotCaption2,151,Text,,Valorous Rabbit,Tatlı Hafıza
+DesktopScreenshotCaption2,151,Text,,Valorous Rabbit,Gökdelen
 DesktopScreenshotCaption3,152,Text,,The Cube,Yiğit Tavşan
 DesktopScreenshotCaption4,153,Text,,Tower Block,Tatlı Hafıza
 DesktopScreenshotCaption5,154,Text,,Sweet Memory,Küp
@@ -47,8 +47,8 @@ DesktopScreenshotCaption7,156,Text,,,
 DesktopScreenshotCaption8,157,Text,,,
 DesktopScreenshotCaption9,158,Text,,,
 DesktopScreenshotCaption10,159,Text,,,
-MobileScreenshot1,200,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3007002679357604017,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3041109642924167489
-MobileScreenshot2,201,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3057114786995307074,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3063216473788494481
+MobileScreenshot1,200,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3035371835512689199,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3041109642924167489
+MobileScreenshot2,201,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3057114786995307074,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3037313266901136040
 MobileScreenshot3,202,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3009628893742859156,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3040308644995921416
 MobileScreenshot4,203,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3056247458014640946,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3055599186867386119
 MobileScreenshot5,204,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3041109642924167489,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3017188749202461483
@@ -67,8 +67,8 @@ MobileScreenshotCaption7,256,Text,,,
 MobileScreenshotCaption8,257,Text,,,
 MobileScreenshotCaption9,258,Text,,,
 MobileScreenshotCaption10,259,Text,,,
-XboxScreenshot1,300,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3012230921735826922,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3021787215884568133
-XboxScreenshot2,301,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3021787215884568133,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3002573927506401579
+XboxScreenshot1,300,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3044128489209127334,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3021787215884568133
+XboxScreenshot2,301,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3021787215884568133,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3062365575049555527
 XboxScreenshot3,302,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3017334133168235505,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3011472872683858407
 XboxScreenshot4,303,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3039265409504354292,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3062905927991029522
 XboxScreenshot5,304,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3013555594120085619,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3049786499422587624
@@ -87,8 +87,8 @@ XboxScreenshotCaption7,356,Text,,,
 XboxScreenshotCaption8,357,Text,,,
 XboxScreenshotCaption9,358,Text,,,
 XboxScreenshotCaption10,359,Text,,,
-HolographicScreenshot1,400,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3061332388554483762,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3047735658509215944
-HolographicScreenshot2,401,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3071821047742053960,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3055047532570390362
+HolographicScreenshot1,400,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3016270248326496355,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3047735658509215944
+HolographicScreenshot2,401,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3071821047742053960,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3046659336003505419
 HolographicScreenshot3,402,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3070275403708704551,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3044319720068496662
 HolographicScreenshot4,403,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3047735658509215944,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3014834354028776645
 HolographicScreenshot5,404,Relative path (or URL to file in Partner Center),,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011208874/listingassets/3050941405318745086,https://developer.microsoft.com/en-us/dashboard/apps/9P1JZMGT34M2/submissions/1152921505695326733/listings/1152922700011240210/listingassets/3018956900019789663
