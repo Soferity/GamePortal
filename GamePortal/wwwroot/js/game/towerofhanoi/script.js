@@ -99,6 +99,7 @@ function countMove() {
                 confirmButtonText: winConfirm
             }).then(function (isConfirm) {
                 if (isConfirm) {
+                    rating = 3;
                     disksNum = randomInt(3, 8);
                     minMoves = movesCalc(disksNum);
                     initGame($tower.eq(0));
@@ -153,6 +154,7 @@ $restart.on('click', function () {
         confirmButtonText: restartConfirm
     }).then(function (isConfirm) {
         if (isConfirm) {
+            rating = 3;
             disksNum = randomInt(3, 8);
             minMoves = movesCalc(disksNum);
             initGame($tower.eq(0));
