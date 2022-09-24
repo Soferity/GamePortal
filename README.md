@@ -40,6 +40,7 @@
   ![ValorousRabbit](.screenshots/ValorousRabbit.TR.png)
   ![TowerBlock](.screenshots/TowerBlock.TR.png)
   ![SweetMemory](.screenshots/SweetMemory.TR.png)
+  ![TowerOfHanoi](.screenshots/TowerOfHanoi.TR.png)
 
 </details>
 
