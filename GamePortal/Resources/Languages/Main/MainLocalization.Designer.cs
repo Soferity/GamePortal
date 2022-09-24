@@ -142,7 +142,7 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
-        ///   Tower of Hanoi is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home. benzeri yerelleştirilmiş bir dize arar.
+        ///   Tower of Hanoi is a puzzle game. The puzzle begins with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a conical shape. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionTowerOfHanoi {
             get {

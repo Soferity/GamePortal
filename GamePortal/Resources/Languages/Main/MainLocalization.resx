@@ -146,7 +146,7 @@
     <value>Tower Block is a game of stacking blocks. As you stack blocks on top of each other, you earn points. The higher you stack, the more points you earn. The game ends when you can no longer stack blocks.</value>
   </data>
   <data name="DescriptionTowerOfHanoi" xml:space="preserve">
-    <value>Tower of Hanoi is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+    <value>Tower of Hanoi is a puzzle game. The puzzle begins with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a conical shape.</value>
   </data>
   <data name="DescriptionValorousRabbit" xml:space="preserve">
     <value>Valorous Rabbit is an action adventure game. Try to escape from the hedgehog by taking the carrots. The most important thing is to never get caught by a hedgehog. If you get caught in the hedgehog, it's game over.</value>
