@@ -68,12 +68,13 @@ namespace GamePortal
         private static bool LogEvent(string eventName, string type = null)
         {
             Debug.WriteLine($"Lifecycle Event: {eventName}{(type == null ? string.Empty : $" ({type})")}");
+            
             return true;
         }
 
         private static bool AppCenter()
         {
-            AppCenterService.Engine(General.Keys);
+            AppCenterService.Engine(General.Keys, General.Watch);
 
             CrossException.UnhandledException += (sender, args) =>
             {
