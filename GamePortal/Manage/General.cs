@@ -21,8 +21,8 @@ namespace GamePortal.Manage
             Format = "{1}{2}-{3}",
             Event = WatchEnum.Open,
             Error = WatchEnum.Close,
-            Prefix = string.Empty,
-            Suffix = string.Empty,
+            Prefix = "Prefix",
+            Suffix = "Suffix",
             EventName = "Event",
             ErrorName = "Error",
             Name = "Watch"
