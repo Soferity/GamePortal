@@ -38,7 +38,7 @@ Title,4,Text,,Soferity: Game Portal,Soferity: Game Portal,Soferity: Game Portal
 ShortTitle,5,Text,,Soferity: Game Portal,Soferity: Oyun Portalı,Soferity: Game Portal
 SortTitle,6,Text,,Soferity: Game Portal,Soferity: Oyun Portalı,Soferity: Game Portal
 VoiceTitle,7,Text,,Soferity: Game Portal,Soferity: Oyun Portalı,Soferity: Game Portal
-ShortDescription,8,Text,,Soferity: Game Portal is a game portal.,Soferity: Game Portal bir oyun portalıdır.,Soferity: Game Portal is a game portal.
+ShortDescription,8,Text,,Soferity: Game Portal is a game portal.,Soferity: Game Portal bir oyun portalıdır.,Soferity: Game Portal es un portal de juegos.
 DevStudio,9,Text,,Soferity LLC,Soferity LLC,Soferity LLC
 CopyrightTrademarkInformation,12,Text,,Copyright © 2022 Soferity LLC,Copyright © 2022 Soferity LLC,Copyright © 2022 Soferity LLC
 AdditionalLicenseTerms,13,Text,,,,
@@ -153,7 +153,7 @@ Feature14,713,Text,,Game Portal,Game Portal,Game Portal
 Feature15,714,Text,,Game Center,Game Center,Game Center
 Feature16,715,Text,,Game Hub,Game Hub,Game Hub
 Feature17,716,Text,,,Oyun Portalı,Portal de Juegos
-Feature18,717,Text,,,Oyun Merkezi,Centro de Juego
+Feature18,717,Text,,,Oyun Merkezi,Centro de Juegos
 Feature19,718,Text,,,,
 Feature20,719,Text,,,,
 MinimumHardwareReq1,800,Text,,,,
@@ -178,13 +178,13 @@ RecommendedHardwareReq8,857,Text,,,,
 RecommendedHardwareReq9,858,Text,,,,
 RecommendedHardwareReq10,859,Text,,,,
 RecommendedHardwareReq11,860,Text,,,,
-SearchTerm1,900,Text,,soferity game games gamer portal hub,soferity oyun oyunlar oyuncu portal hub,soferity game games gamer portal hub
+SearchTerm1,900,Text,,soferity game games gamer portal hub,soferity oyun oyunlar oyuncu portal hub,soferity juego juegos jugador portal hub
 SearchTerm2,901,Text,,rpg fps,rpg fps,rpg fps
-SearchTerm3,902,Text,,singleplayer multiplayer,tekoyunculu çokoyunculu,singleplayer multiplayer
-SearchTerm4,903,Text,,sports racing,spor yarış müzik nişancı,sports racing
-SearchTerm5,904,Text,,action adventure puzzle strategy,aksiyon macera bulmaca,action adventure puzzle strategy
-SearchTerm6,905,Text,,platform simulation fighting shooter,platform simülasyon savaş,platform simulation fighting shooter
-SearchTerm7,906,Text,,music,strateji,music
+SearchTerm3,902,Text,,singleplayer multiplayer,tekoyunculu çokoyunculu,unjugador multijugador
+SearchTerm4,903,Text,,sports racing,spor yarış müzik nişancı,carreras deportes
+SearchTerm5,904,Text,,action adventure puzzle strategy,aksiyon macera bulmaca,acción aventura rompecabezas estrategia
+SearchTerm6,905,Text,,platform simulation fighting shooter,platform simülasyon savaş,plataforma simulación lucha tirador
+SearchTerm7,906,Text,,music,strateji,música
 TrailerToPlayAtTopOfListing,999,Relative path (or URL to file in Partner Center),,,,
 Trailer1,1000,Relative path (or URL to file in Partner Center),,,,
 Trailer2,1001,Relative path (or URL to file in Partner Center),,,,
