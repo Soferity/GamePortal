@@ -25,7 +25,7 @@ namespace GamePortal
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-			builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
             builder.Services.AddSingleton<IDialogService, DialogService>();
@@ -64,11 +64,11 @@ namespace GamePortal
 
             return builder.Build();
         }
-        
+
         private static bool LogEvent(string eventName, string type = null)
         {
             Debug.WriteLine($"Lifecycle Event: {eventName}{(type == null ? string.Empty : $" ({type})")}");
-            
+
             return true;
         }
 

@@ -1,5 +1,5 @@
-﻿using System.Runtime.InteropServices;
-using GamePortal.Enum;
+﻿using GamePortal.Enum;
+using System.Runtime.InteropServices;
 
 namespace GamePortal.Struct
 {

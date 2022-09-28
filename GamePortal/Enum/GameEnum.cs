@@ -39,7 +39,7 @@
         Multiplayer,
         Singleplayer
     }
-    
+
     public enum GameStateEnum
     {
         New,
