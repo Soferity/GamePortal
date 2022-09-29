@@ -1,19 +1,28 @@
 ﻿using Microsoft.AspNetCore.Components.WebView;
 
-namespace GamePortal;
-
-public partial class MainPage : ContentPage
+namespace GamePortal
 {
-    public MainPage()
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-
-        blazorWebView.UrlLoading += (sender, urlLoadingEventArgs) =>
+        public MainPage()
         {
-            if (urlLoadingEventArgs.Url.Host != "0.0.0.0")
+            InitializeComponent();
+            
+            blazorWebView.UrlLoading += (sender, urlLoadingEventArgs) =>
             {
-                urlLoadingEventArgs.UrlLoadingStrategy = UrlLoadingStrategy.OpenInWebView;
-            }
-        };
+                if (urlLoadingEventArgs.Url.Host != "0.0.0.0")
+                {
+                    urlLoadingEventArgs.UrlLoadingStrategy = UrlLoadingStrategy.OpenInWebView;
+                }
+            };
+
+            blazorWebView.BlazorWebViewInitializing += (sender, args) =>
+            {
+                args.EnvironmentOptions = new()
+                {
+                    AdditionalBrowserArguments = "--enable-features=enable-unsafe-webgpu",
+                };
+            };
+        }
     }
 }

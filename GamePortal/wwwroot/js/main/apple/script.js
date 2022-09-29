@@ -4,13 +4,13 @@ var canvas = {
     cw: 0,
     ch: 0,
     currentFps: 0,
-    totalFps: 24,
+    totalFps: 30,
     createItemEvery: 4,
     windowW: window.innerWidth,
     windowH: window.innerHeight
 };
 
-canvas.setup = function() {
+canvas.setup = function(execute = true) {
     var t = this;
 
     t.canvas = document.querySelector('#introduction-canvas');
@@ -23,23 +23,10 @@ canvas.setup = function() {
     t.DATA = [];
     t.totalFrameForALoop = t.totalFps * t.createItemEvery;
     t.group = new t.Group();
-
-    canvas.draw();
-};
-
-canvas.setup2 = function() {
-    var t = this;
-
-    t.canvas = document.querySelector('#introduction-canvas');
-    t.ctx = t.canvas.getContext('2d');
-    t.canvas.setAttribute("width", t.windowW);
-    t.canvas.setAttribute("height", t.windowH);
-    t.cw = t.canvas.width;
-    t.ch = t.canvas.height;
-    t.rythm = 1;
-    t.DATA = [];
-    t.totalFrameForALoop = t.totalFps * t.createItemEvery;
-    t.group = new t.Group();
+    
+    if (execute) {
+        canvas.draw();
+    }
 };
 
 canvas.draw = function() {
@@ -302,8 +289,14 @@ function resize_canvas() {
         canvas.windowH = window.innerHeight;
         canvas.windowW = window.innerWidth;
 
-        canvas.setup2();
+        canvas.currentFps = 0;
+        
+        canvas.setup(false);
     }
 }
+
+setInterval(function() {
+    resize_canvas();
+}, 500);
 
 addEventListener('resize', (event) => resize_canvas());
