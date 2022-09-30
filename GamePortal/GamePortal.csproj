@@ -237,8 +237,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <!--<PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.2.3" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.2.3" />-->
+        <!--<PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.2.5" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.2.5" />-->
         <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0-rc.1.22427.2" />
     </ItemGroup>
     
@@ -249,9 +249,9 @@
         <Reference Include="Taiizor.Essentials.Maui.AppCenter">
             <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
         </Reference>
-        <PackageReference Include="Microsoft.AppCenter" Version="4.5.3" />
-        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.3" />
-        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.3" />
+        <PackageReference Include="Microsoft.AppCenter" Version="5.0.0-preview.1" />
+        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.0-preview.1" />
+        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.0-preview.1" />
     </ItemGroup>
 
 </Project>
