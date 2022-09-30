@@ -2481,7 +2481,7 @@ class Timer extends Animation {
 
         if (this.converted != old) {
 
-            SetLocalStorage('thecube_time', this.deltaTime);
+            Taiizor.SetLocalStorage('thecube_time', this.deltaTime);
             this.setText();
 
         }
@@ -3138,14 +3138,14 @@ class Storage {
 
         this.game = game;
 
-        const userVersion = GetLocalStorage('thecube_version');
+        const userVersion = Taiizor.GetLocalStorage('thecube_version');
 
         if (!userVersion || userVersion !== window.gameVersion) {
 
             this.clearGame();
             this.clearPreferences();
             this.migrateScores();
-            SetLocalStorage('thecube_version', window.gameVersion);
+            Taiizor.SetLocalStorage('thecube_version', window.gameVersion);
 
         }
 
@@ -3162,12 +3162,12 @@ class Storage {
 
         try {
 
-            const gameInProgress = GetLocalStorage('thecube_playing') === 'true';
+            const gameInProgress = Taiizor.GetLocalStorage('thecube_playing') === 'true';
 
             if (!gameInProgress) throw new Error();
 
-            const gameCubeData = JSON.parse(GetLocalStorage('thecube_savedState'));
-            const gameTime = parseInt(GetLocalStorage('thecube_time'));
+            const gameCubeData = JSON.parse(Taiizor.GetLocalStorage('thecube_savedState'));
+            const gameTime = parseInt(Taiizor.GetLocalStorage('thecube_time'));
 
             if (!gameCubeData || gameTime === null) throw new Error();
             if (gameCubeData.size !== this.game.cube.sizeGenerated) throw new Error();
@@ -3206,17 +3206,17 @@ class Storage {
 
         });
 
-        SetLocalStorage('thecube_playing', gameInProgress);
-        SetLocalStorage('thecube_savedState', JSON.stringify(gameCubeData));
-        SetLocalStorage('thecube_time', gameTime);
+        Taiizor.SetLocalStorage('thecube_playing', gameInProgress);
+        Taiizor.SetLocalStorage('thecube_savedState', JSON.stringify(gameCubeData));
+        Taiizor.SetLocalStorage('thecube_time', gameTime);
 
     }
 
     clearGame() {
 
-        DeleteLocalStorage('thecube_playing');
-        DeleteLocalStorage('thecube_savedState');
-        DeleteLocalStorage('thecube_time');
+        Taiizor.DeleteLocalStorage('thecube_playing');
+        Taiizor.DeleteLocalStorage('thecube_savedState');
+        Taiizor.DeleteLocalStorage('thecube_time');
 
     }
 
@@ -3224,7 +3224,7 @@ class Storage {
 
         try {
 
-            const scoresData = JSON.parse(GetLocalStorage('thecube_scores'));
+            const scoresData = JSON.parse(Taiizor.GetLocalStorage('thecube_scores'));
 
             if (!scoresData) throw new Error();
 
@@ -3238,13 +3238,13 @@ class Storage {
 
         const scoresData = this.game.scores.data;
 
-        SetLocalStorage('thecube_scores', JSON.stringify(scoresData));
+        Taiizor.SetLocalStorage('thecube_scores', JSON.stringify(scoresData));
 
     }
 
     clearScores() {
 
-        DeleteLocalStorage('thecube_scores');
+        Taiizor.DeleteLocalStorage('thecube_scores');
 
     }
 
@@ -3252,10 +3252,10 @@ class Storage {
 
         try {
 
-            const scoresData = JSON.parse(GetLocalStorage('thecube_scoresData'));
-            const scoresBest = parseInt(GetLocalStorage('thecube_scoresBest'));
-            const scoresWorst = parseInt(GetLocalStorage('thecube_scoresWorst'));
-            const scoresSolves = parseInt(GetLocalStorage('thecube_scoresSolves'));
+            const scoresData = JSON.parse(Taiizor.GetLocalStorage('thecube_scoresData'));
+            const scoresBest = parseInt(Taiizor.GetLocalStorage('thecube_scoresBest'));
+            const scoresWorst = parseInt(Taiizor.GetLocalStorage('thecube_scoresWorst'));
+            const scoresSolves = parseInt(Taiizor.GetLocalStorage('thecube_scoresSolves'));
 
             if (!scoresData || !scoresBest || !scoresSolves || !scoresWorst) return false;
 
@@ -3264,10 +3264,10 @@ class Storage {
             this.game.scores.data[3].solves = scoresSolves;
             this.game.scores.data[3].worst = scoresWorst;
 
-            DeleteLocalStorage('thecube_scoresData');
-            DeleteLocalStorage('thecube_scoresBest');
-            DeleteLocalStorage('thecube_scoresWorst');
-            DeleteLocalStorage('thecube_scoresSolves');
+            Taiizor.DeleteLocalStorage('thecube_scoresData');
+            Taiizor.DeleteLocalStorage('thecube_scoresBest');
+            Taiizor.DeleteLocalStorage('thecube_scoresWorst');
+            Taiizor.DeleteLocalStorage('thecube_scoresSolves');
 
         } catch (e) { }
 
@@ -3277,7 +3277,7 @@ class Storage {
 
         try {
 
-            const preferences = JSON.parse(GetLocalStorage('thecube_preferences'));
+            const preferences = JSON.parse(Taiizor.GetLocalStorage('thecube_preferences'));
 
             if (!preferences) throw new Error();
 
@@ -3323,13 +3323,13 @@ class Storage {
             colors: this.game.themes.colors,
         };
 
-        SetLocalStorage('thecube_preferences', JSON.stringify(preferences));
+        Taiizor.SetLocalStorage('thecube_preferences', JSON.stringify(preferences));
 
     }
 
     clearPreferences() {
 
-        DeleteLocalStorage('thecube_preferences');
+        Taiizor.DeleteLocalStorage('thecube_preferences');
 
     }
 
@@ -4064,7 +4064,7 @@ class Game {
                 }
 
                 this.game(SHOW);
-                SetLocalStorage('thecube', 'play');
+                Taiizor.SetLocalStorage('thecube', 'play');
 
             } else if (this.state === STATE.Complete) {
 
@@ -4119,7 +4119,7 @@ class Game {
 
         };
         
-        this.dom.buttons.exit.onclick = event => GoLocation('');
+        this.dom.buttons.exit.onclick = event => Taiizor.GoLocation('');
 
         this.dom.buttons.prefs.onclick = event => this.prefs(SHOW);
 
@@ -4254,7 +4254,7 @@ class Game {
             setTimeout(() => this.transition.preferences(SHOW), 1000);
             setTimeout(() => {
 
-                const gameCubeData = JSON.parse(GetLocalStorage('thecube_savedState'));
+                const gameCubeData = JSON.parse(Taiizor.GetLocalStorage('thecube_savedState'));
 
                 if (!gameCubeData) {
 
@@ -4354,5 +4354,5 @@ class Game {
 
 }
 
-window.gameVersion = '0.99.4';
+window.gameVersion = '0.99.5';
 window.game = new Game();

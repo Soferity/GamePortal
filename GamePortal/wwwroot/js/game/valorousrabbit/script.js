@@ -1539,7 +1539,7 @@ function init(event) {
     loop();
     audio.play();
 
-    SetLocalStorage('valorousrabbit', 'play');
+    Taiizor.SetLocalStorage('valorousrabbit', 'play');
     
     /*setInterval(hero.blink.bind(hero), 3000);*/
 }

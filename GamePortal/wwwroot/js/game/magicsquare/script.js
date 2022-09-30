@@ -213,7 +213,7 @@ function CheckEntry(cell) { //Check to see if the row and column containing the 
     }
 
 
-    SetLocalStorage('magicsquare', 'play');
+    Taiizor.SetLocalStorage('magicsquare', 'play');
 }
 
 function SymbolToChar(s) {
