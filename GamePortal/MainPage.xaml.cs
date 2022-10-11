@@ -18,10 +18,12 @@ namespace GamePortal
 
             blazorWebView.BlazorWebViewInitializing += (sender, args) =>
             {
+#if WINDOWS
                 args.EnvironmentOptions = new()
                 {
                     AdditionalBrowserArguments = "--enable-features=enable-unsafe-webgpu",
                 };
+#endif
             };
         }
     }
