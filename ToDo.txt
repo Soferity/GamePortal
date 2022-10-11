@@ -1,0 +1,24 @@
+GoLocation haltının düzeltilmesi gerek
+	çünkü tetiklendiği an bazen arkaplan beyaz (ya da girilen sayfanın rengini alıyor) oluyor
+	buna mantıklı bir çözüm bulmak gerek
+
+	golocation refreshli tetiklenmediyse preloaderli tetiklensin
+	önce preloader, daha sonra href. fakat href yönlendirmesinde
+	uygulama sayfayı yeniden açmayacak, yönlendirecek
+
+SetLocalStorage('classic2048', 'play');
+
+InvokeMethodAsync("GamePortal", "TrackEventNormal", "NORMAL", "KEY", "VALUE");
+
+winui fullscren
+
+mac-ios tarafında lobi resize olayı çalışmamakta. altta boş kısım gorunmekte
+	titlebar yüzünden. titlebarın yüksekliğini yoksayıp en üst noktadan başlatıyor
+
+süreli js veya css include etmelerinde
+	navigationmanager ile mi ne haltla yapılıyorsa şuanki sayfanın urlsini
+	al uyuşuyorsa include ettirt
+		aksi taktirde gecikmeli include ederken kullanıcı hızlıca başka sayfaya geçerse include
+		ettiği için hatalar meydana geliyor
+			bunun için fonksiyon (helper) yapılabilir
+			fonksiyona script ve url bilgisi gider. kendisi gerisini halleder
