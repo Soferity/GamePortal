@@ -8,6 +8,8 @@ namespace GamePortal.Manage
     {
         public static bool First = true;
 
+        public static string Path = "/";
+
         public static Random Random = new();
 
         public const int WindowWidth = 1460;

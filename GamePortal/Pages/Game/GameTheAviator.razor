@@ -10,15 +10,17 @@
     {
         AppCenterService.TrackEvent("Game-TheAviator", "JoinGame", "Joined");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.Stylesheet("css/game/theaviator/playfair.400-700.css");
-        await Include.Stylesheet("css/game/theaviator/custom.css");
-        await Include.Stylesheet("css/game/theaviator/game.css");
+        await Include.StylesheetProtected("css/game/theaviator/playfair.400-700.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/theaviator/custom.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/theaviator/game.css", HelperPath.Path);
 
-        await Include.Script("js/game/theaviator/three.min.js");
+        await Include.ScriptProtected("js/game/theaviator/three.min.js", HelperPath.Path);
 
-        await Include.Script("js/game/theaviator/tweenmax.min.js");
+        await Include.ScriptProtected("js/game/theaviator/tweenmax.min.js", HelperPath.Path);
 
         await GetRender();
     }
@@ -29,11 +31,11 @@
 
         if (General.Random.Next(0, 2) == 0)
         {
-            await Include.Script("js/game/theaviator/gamesea.js");
+            await Include.ScriptProtected("js/game/theaviator/gamesea.js", HelperPath.Path);
         }
         else
         {
-            await Include.Script("js/game/theaviator/gameforest.js");
+            await Include.ScriptProtected("js/game/theaviator/gameforest.js", HelperPath.Path);
         }
     }
 }

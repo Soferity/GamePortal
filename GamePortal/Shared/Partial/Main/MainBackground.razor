@@ -18,23 +18,25 @@ else
 {
     protected override async Task OnInitializedAsync()
     {
+        HelperPath.Path = await Location.GetPathname();
+        
         if (AppValue.Platform == PlatformEnum.MacCatalyst || AppValue.Platform == PlatformEnum.iOS)
         {
-            await Include.Stylesheet("css/main/apple/style.css");
+            await Include.StylesheetProtected("css/main/apple/style.css", HelperPath.Path);
             
-            await Include.Script("js/main/apple/script.js");
+            await Include.ScriptProtected("js/main/apple/script.js", HelperPath.Path);
         }
         else if (AppValue.Platform == PlatformEnum.Android)
         {
-            await Include.Stylesheet("css/main/android/styles.css");
+            await Include.StylesheetProtected("css/main/android/styles.css", HelperPath.Path);
             
-            await Include.Script("js/main/android/jquery.min.js");
+            await Include.ScriptProtected("js/main/android/jquery.min.js", HelperPath.Path);
         }
         else
         {
-            await Include.Stylesheet("css/main/winui/custom.css");
+            await Include.StylesheetProtected("css/main/winui/custom.css", HelperPath.Path);
             
-            await Include.Script("js/main/winui/three.min.js");
+            await Include.ScriptProtected("js/main/winui/three.min.js", HelperPath.Path);
         }
 
         await GetRender();
@@ -51,12 +53,12 @@ else
         else if (AppValue.Platform == PlatformEnum.Android)
         {
 
-            await Include.Script("js/main/android/script.js");
+            await Include.ScriptProtected("js/main/android/script.js", HelperPath.Path);
         }
         else
         {
-            await Include.Script("js/main/winui/orbitcontrols.js");
-            await Include.Script("js/main/winui/custom.js");
+            await Include.ScriptProtected("js/main/winui/orbitcontrols.js", HelperPath.Path);
+            await Include.ScriptProtected("js/main/winui/custom.js", HelperPath.Path);
         }
     }
 }

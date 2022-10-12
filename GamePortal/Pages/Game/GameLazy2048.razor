@@ -8,9 +8,11 @@
     {
         AppCenterService.TrackEvent("Game-Lazy2048", "JoinGame", "Joined");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.Stylesheet("css/game/lazy2048/style.css");
+        await Include.StylesheetProtected("css/game/lazy2048/style.css", HelperPath.Path);
         
         await GetRender();
     }
@@ -19,6 +21,6 @@
     {
         await Task.Delay(DelayValue.Render);
         
-        await Include.Script("js/game/lazy2048/script.js");
+        await Include.ScriptProtected("js/game/lazy2048/script.js", HelperPath.Path);
     }
 }

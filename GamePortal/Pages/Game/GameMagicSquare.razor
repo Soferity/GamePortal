@@ -10,12 +10,14 @@
     {
         AppCenterService.TrackEvent("Game-MagicSquare", "JoinGame", "Joined");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.Stylesheet("css/game/magicsquare/baloo.400.css");
-        await Include.Stylesheet("css/game/magicsquare/style.css");
+        await Include.StylesheetProtected("css/game/magicsquare/baloo.400.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/magicsquare/style.css", HelperPath.Path);
 
-        await Include.Script("js/game/magicsquare/jquery.min.js");
+        await Include.ScriptProtected("js/game/magicsquare/jquery.min.js", HelperPath.Path);
 
         await GetRender();
     }
@@ -24,6 +26,6 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.Script("js/game/magicsquare/script.js");
+        await Include.ScriptProtected("js/game/magicsquare/script.js", HelperPath.Path);
     }
 }

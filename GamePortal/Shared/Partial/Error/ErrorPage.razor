@@ -25,11 +25,13 @@
     {
         AppCenterService.TrackEvent("Page-Error");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.Stylesheet("css/error/quicksand.700.css");
+        await Include.StylesheetProtected("css/error/quicksand.700.css", HelperPath.Path);
 
-        await Include.Stylesheet("css/error/font-awesome.min.css");
-        await Include.Stylesheet("css/error/style.css");
+        await Include.StylesheetProtected("css/error/font-awesome.min.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/error/style.css", HelperPath.Path);
     }
 }

@@ -11,14 +11,16 @@
     protected override async Task OnInitializedAsync()
     {
         AppCenterService.TrackEvent("Game-ValorousRabbit", "JoinGame", "Joined");
+
+        HelperPath.Path = await Location.GetPathname();
         
         await Task.Delay(DelayValue.Initialize);
         
-        await Include.Stylesheet("css/game/valorousrabbit/reset.min.css");
-        await Include.Stylesheet("css/game/valorousrabbit/style.css");
+        await Include.StylesheetProtected("css/game/valorousrabbit/reset.min.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/valorousrabbit/style.css", HelperPath.Path);
 
-        await Include.Script("js/game/valorousrabbit/three.js");
-        await Include.Script("js/game/valorousrabbit/tweenmax.min.js");
+        await Include.ScriptProtected("js/game/valorousrabbit/three.js", HelperPath.Path);
+        await Include.ScriptProtected("js/game/valorousrabbit/tweenmax.min.js", HelperPath.Path);
 
         await GetRender();
     }
@@ -27,7 +29,7 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.Script("js/game/valorousrabbit/orbitcontrols.js");
-        await Include.Script("js/game/valorousrabbit/script.js");
+        await Include.ScriptProtected("js/game/valorousrabbit/orbitcontrols.js", HelperPath.Path);
+        await Include.ScriptProtected("js/game/valorousrabbit/script.js", HelperPath.Path);
     }
 }

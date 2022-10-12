@@ -10,15 +10,9 @@ SetLocalStorage('classic2048', 'play');
 
 InvokeMethodAsync("GamePortal", "TrackEventNormal", "NORMAL", "KEY", "VALUE");
 
+HelperPath.Path = await Location.GetPathname();
+
 winui fullscren
 
 mac-ios tarafında lobi resize olayı çalışmamakta. altta boş kısım gorunmekte
 	titlebar yüzünden. titlebarın yüksekliğini yoksayıp en üst noktadan başlatıyor
-
-süreli js veya css include etmelerinde
-	navigationmanager ile mi ne haltla yapılıyorsa şuanki sayfanın urlsini
-	al uyuşuyorsa include ettirt
-		aksi taktirde gecikmeli include ederken kullanıcı hızlıca başka sayfaya geçerse include
-		ettiği için hatalar meydana geliyor
-			bunun için fonksiyon (helper) yapılabilir
-			fonksiyona script ve url bilgisi gider. kendisi gerisini halleder

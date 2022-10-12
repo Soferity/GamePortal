@@ -9,16 +9,18 @@
     {
         AppCenterService.TrackEvent("Game-TowerOfHanoi", "JoinGame", "Joined");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.Stylesheet("css/game/towerofhanoi/font-awesome.min.css");
+        await Include.StylesheetProtected("css/game/towerofhanoi/font-awesome.min.css", HelperPath.Path);
         
-        await Include.Stylesheet("css/game/towerofhanoi/coda.400.css");
+        await Include.StylesheetProtected("css/game/towerofhanoi/coda.400.css", HelperPath.Path);
 
-        await Include.Stylesheet("css/game/towerofhanoi/sweetalert2.min.css");
-        await Include.Stylesheet("css/game/towerofhanoi/style.css");
+        await Include.StylesheetProtected("css/game/towerofhanoi/sweetalert2.min.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/towerofhanoi/style.css", HelperPath.Path);
 
-        await Include.Script("js/game/towerofhanoi/jquery.min.js");
+        await Include.ScriptProtected("js/game/towerofhanoi/jquery.min.js", HelperPath.Path);
 
         await GetRender();
     }
@@ -27,8 +29,8 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.Script("js/game/towerofhanoi/sweetalert2.min.js");
-        await Include.Script("js/game/towerofhanoi/script.js");
+        await Include.ScriptProtected("js/game/towerofhanoi/sweetalert2.min.js", HelperPath.Path);
+        await Include.ScriptProtected("js/game/towerofhanoi/script.js", HelperPath.Path);
 
         await Task.Delay(DelayValue.Localization);
         

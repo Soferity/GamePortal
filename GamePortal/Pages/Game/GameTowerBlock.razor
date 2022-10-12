@@ -8,13 +8,15 @@
     {
         AppCenterService.TrackEvent("Game-TowerBlock", "JoinGame", "Joined");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
         
-        await Include.Stylesheet("css/game/towerblock/style.css");
+        await Include.StylesheetProtected("css/game/towerblock/style.css", HelperPath.Path);
 
-        await Include.Script("js/game/towerblock/three.min.js");
+        await Include.ScriptProtected("js/game/towerblock/three.min.js", HelperPath.Path);
 
-        await Include.Script("js/game/towerblock/tweenmax.min.js");
+        await Include.ScriptProtected("js/game/towerblock/tweenmax.min.js", HelperPath.Path);
         
         await GetRender();
     }
@@ -23,6 +25,6 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.Script("js/game/towerblock/script.js");
+        await Include.ScriptProtected("js/game/towerblock/script.js", HelperPath.Path);
     }
 }

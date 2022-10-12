@@ -8,11 +8,13 @@
     {
         AppCenterService.TrackEvent("Game-TheCube", "JoinGame", "Joined");
 
+        HelperPath.Path = await Location.GetPathname();
+
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.Stylesheet("css/game/thecube/style.css");
+        await Include.StylesheetProtected("css/game/thecube/style.css", HelperPath.Path);
 
-        await Include.Script("js/game/thecube/three.min.js");
+        await Include.ScriptProtected("js/game/thecube/three.min.js", HelperPath.Path);
 
         await GetRender();
     }
@@ -21,6 +23,6 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.Script("js/game/thecube/script.js");
+        await Include.ScriptProtected("js/game/thecube/script.js", HelperPath.Path);
     }
 }
