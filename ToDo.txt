@@ -6,9 +6,10 @@ GoLocation haltının düzeltilmesi gerek
 	önce preloader, daha sonra href. fakat href yönlendirmesinde
 	uygulama sayfayı yeniden açmayacak, yönlendirecek
 
-SetLocalStorage('classic2048', 'play');
+Taiizor.SetLocalStorage('classic2048', 'play');
 
-InvokeMethodAsync("GamePortal", "TrackEventNormal", "NORMAL", "KEY", "VALUE");
+AppCenter.TrackEventNormal("NORMAL", "KEY", "VALUE");
+AppCenter.WatchEventNormal("NORMAL", "KEY", "VALUE");
 
 HelperPath.Path = await Location.GetPathname();
 
