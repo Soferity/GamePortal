@@ -37,7 +37,7 @@ namespace GamePortal.Manage
             { AppEnum.iOS, "a5426920-4aa0-4975-9dd7-b392cd74c155" },
             { AppEnum.macOS, "20f56902-b6a6-4929-80c8-cdd7610b836f" },
             { AppEnum.Android, "31f534fe-751e-4a93-87b8-c3a5bd138f32" },
-            { AppEnum.Windows, "10eb5ced-47bb-497c-b626-e34765c06641" }
+            { AppEnum.Windows, "6fbf1f84-1894-4e38-a5e5-a9300de34ba4" }
 #else
             { AppEnum.iOS, "ffc05807-63e2-4b61-bd43-778ad0e9754f" },
             { AppEnum.macOS, "debb9383-5378-46f1-870b-f5607f0a0bc5" },
