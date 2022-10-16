@@ -237,8 +237,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.3" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.3" />
+        <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.3.2" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.3.1" />
         <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0-rc.2.22476.2" />
     </ItemGroup>
     
@@ -249,6 +249,10 @@
         <Reference Include="Taiizor.Essentials.Maui.AppCenter">
             <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
         </Reference>
+        <Reference Include="Taiizor.Essentials.Maui.Conforyon">
+            <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.Conforyon\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.Conforyon.dll</HintPath>
+        </Reference>
+        <PackageReference Include="Conforyon" Version="2.0.0.2" />
         <PackageReference Include="Microsoft.AppCenter" Version="5.0.0-preview.1" />
         <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.0-preview.1" />
         <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.0-preview.1" />
