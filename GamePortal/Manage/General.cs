@@ -1,5 +1,6 @@
 ﻿using Taiizor.Essentials.Maui.AppCenter.Enum;
 using Taiizor.Essentials.Maui.AppCenter.Struct;
+using Taiizor.Essentials.Maui.Enum;
 using Taiizor.Essentials.Maui.Extension;
 
 namespace GamePortal.Manage
@@ -45,6 +46,14 @@ namespace GamePortal.Manage
             { AppEnum.Windows, "94e00ae3-353a-48dc-af80-f4e81be9f817" }
 #endif
 
+        };
+
+        public static Dictionary<JavascriptEnum, bool> JavascriptFiles = new()
+        {
+            { JavascriptEnum.Custom, true },
+            { JavascriptEnum.Taiizor, true },
+            { JavascriptEnum.AppCenter, true },
+            { JavascriptEnum.Conforyon, false }
         };
 
     }
