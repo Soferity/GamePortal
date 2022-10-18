@@ -35,18 +35,18 @@ namespace GamePortal
 
 #if WINDOWS
 			events.AddWindows(windows => windows
-			   .OnActivated((window, args) => LogEvent("OnActivated"))
-			   .OnClosed((window, args) => LogEvent("OnClosed")) //End
-			   .OnLaunched((window, args) => LogEvent("OnLaunched"))
-			   .OnLaunching((window, args) => AppCenter()) //Start //LogEvent("OnLaunching")
-			   .OnWindowCreated((window) => LogEvent("OnWindowCreated"))
-			   .OnResumed((window) => LogEvent("OnResumed"))
-			   .OnVisibilityChanged((window, args) => LogEvent("OnVisibilityChanged")));
+                .OnActivated((window, args) => LogEvent("OnActivated", $"{args}"))
+                .OnClosed((window, args) => LogEvent("OnClosed", $"{args}")) //End
+                .OnLaunched((window, args) => LogEvent("OnLaunched", $"{args}"))
+                .OnLaunching((window, args) => AppCenter()) //Start //LogEvent("OnLaunching", $"{args}")
+                .OnWindowCreated((window) => LogEvent("OnWindowCreated"))
+                .OnResumed((window) => LogEvent("OnResumed"))
+                .OnVisibilityChanged((window, args) => LogEvent("OnVisibilityChanged", $"{args}")));
 #elif ANDROID
             events.AddAndroid(android => android
-                .OnActivityResult((activity, requestCode, resultCode, data) => LogEvent("OnActivityResult", requestCode.ToString()))
+                .OnActivityResult((activity, requestCode, resultCode, data) => LogEvent("OnActivityResult", $"{requestCode}, {resultCode}, {data}"))
                 .OnStart((activity) => LogEvent("OnStart"))
-                .OnCreate((activity, bundle) => AppCenter()) //Start //LogEvent("OnCreate")
+                .OnCreate((activity, bundle) => AppCenter()) //Start //LogEvent("OnCreate", $"{bundle}")
                 .OnBackPressed((activity) => LogEvent("OnBackPressed"))
                 .OnStop((activity) => LogEvent("OnStop"))); //End
 #elif IOS || MACCATALYST
