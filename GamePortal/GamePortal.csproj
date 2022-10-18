@@ -238,7 +238,7 @@
 
     <ItemGroup>
         <PackageReference Include="Taiizor.Essentials.Maui" Version="1.0.3.2" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.3.2" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="1.0.3.3" />
         <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0-rc.2.22476.2" />
     </ItemGroup>
     
