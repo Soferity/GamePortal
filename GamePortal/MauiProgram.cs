@@ -54,7 +54,7 @@ namespace GamePortal
                 .OnActivated((app) => LogEvent("OnActivated"))
                 .OnResignActivation((app) => LogEvent("OnResignActivation"))
                 .DidEnterBackground((app) => LogEvent("DidEnterBackground"))
-                .FinishedLaunching((app, dict) => LogEvent("FinishedLaunching", $"{dict}")) //Start
+                .FinishedLaunching((app, dict) => AppCenter()) //Start //LogEvent("FinishedLaunching", $"{dict}")
                 .WillTerminate((app) => LogEvent("WillTerminate"))); //End
 #endif
 
