@@ -3,9 +3,9 @@
 <section class="guide clearfix">
     <h2>@Localizer["HowDoPlay"]</h2>
     <p>@Localizer["HowDescriptionOne"]</p>
-    <p>@Localizer[$"HowDescriptionTwo{Taiizor.Essentials.Maui.Helper.Device.GetDeviceType}"]</p>
+    <p>@Localizer[$"HowDescriptionTwo{Device.KindTypeString}"]</p>
 
-    @if (Taiizor.Essentials.Maui.Helper.Device.GetDeviceType == DeviceTypeEnum.Desktop)
+    @if (Device.KindType == DeviceTypeEnum.Desktop)
     {
         <div class="guide_arrow-wrap">
             <span class="guide_arrow">&uHar;</span>
