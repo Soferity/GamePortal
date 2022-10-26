@@ -13,7 +13,5 @@ AppCenter.WatchEventNormal("NORMAL", "KEY", "VALUE");
 
 HelperPath.Path = await Location.GetPathname();
 
-winui fullscren
-
 mac-ios tarafında lobi resize olayı çalışmamakta. altta boş kısım gorunmekte
 	titlebar yüzünden. titlebarın yüksekliğini yoksayıp en üst noktadan başlatıyor
