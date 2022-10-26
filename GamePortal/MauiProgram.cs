@@ -1,7 +1,10 @@
-﻿using GamePortal.Manage;
+﻿using GamePortal.Helper;
+using GamePortal.Manage;
 using Taiizor.Essentials.Maui.AppCenter.Extension;
 using Taiizor.Essentials.Maui.AppCenter.Services;
 using Taiizor.Essentials.Maui.Cross;
+using Taiizor.Essentials.Maui.Enum;
+using Taiizor.Essentials.Maui.Extension;
 using Taiizor.Essentials.Maui.Interfaces;
 using Taiizor.Essentials.Maui.Services;
 
@@ -12,6 +15,7 @@ namespace GamePortal
         public static MauiApp CreateMauiApp()
         {
             MauiAppBuilder builder = MauiApp.CreateBuilder();
+
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -19,13 +23,16 @@ namespace GamePortal
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
+            builder.UseFullscreen();
+
             builder.Services.AddLocalization();
 
             builder.Services.AddMauiBlazorWebView();
 
-#if DEBUG
-            builder.Services.AddBlazorWebViewDeveloperTools();
-#endif
+            if (HelperBuild.GetBuild == BuildEnum.Develop)
+            {
+                builder.Services.AddBlazorWebViewDeveloperTools();
+            }
 
             builder.Services.AddSingleton<IDialogService, DialogService>();
 
