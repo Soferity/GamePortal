@@ -7,7 +7,7 @@ namespace GamePortal
         public MainPage()
         {
             InitializeComponent();
-            
+
             blazorWebView.UrlLoading += (sender, urlLoadingEventArgs) =>
             {
                 if (urlLoadingEventArgs.Url.Host != "0.0.0.0")
