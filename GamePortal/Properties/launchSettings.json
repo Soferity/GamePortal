@@ -1,10 +1,10 @@
 {
     "profiles": {
-        "Windows Machine": {
+        "GamePortal (Package)": {
             "commandName": "MsixPackage",
             "nativeDebugging": false
         },
-        "Project": {
+        "GamePortal (Unpackaged)": {
             "commandName": "Project",
             "nativeDebugging": false
         }
