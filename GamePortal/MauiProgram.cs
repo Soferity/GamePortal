@@ -23,11 +23,11 @@ namespace GamePortal
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
-            builder.UseFullscreen();
-
             builder.Services.AddLocalization();
 
             builder.Services.AddMauiBlazorWebView();
+
+            builder.UseFullscreen(General.Fullscreen);
 
             if (HelperBuild.GetBuild == BuildEnum.Develop)
             {
