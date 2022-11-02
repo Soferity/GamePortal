@@ -1,4 +1,4 @@
-GoLocation haltının düzeltilmesi gerek
+Redirect.Location haltının düzeltilmesi gerek
 	çünkü tetiklendiği an bazen arkaplan beyaz (ya da girilen sayfanın rengini alıyor) oluyor
 	buna mantıklı bir çözüm bulmak gerek
 
