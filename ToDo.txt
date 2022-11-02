@@ -6,7 +6,8 @@ GoLocation haltının düzeltilmesi gerek
 	önce preloader, daha sonra href. fakat href yönlendirmesinde
 	uygulama sayfayı yeniden açmayacak, yönlendirecek
 
-Taiizor.SetLocalStorage('classic2048', 'play');
+Taiizor.Storage.Local.Set('classic2048', 'play');
+Taiizor.Storage.Session.Set('classic2048', 'play');
 
 AppCenter.Track.Event.Normal("NORMAL", "KEY", "VALUE");
 AppCenter.Watch.Event.Normal("NORMAL", "KEY", "VALUE");
