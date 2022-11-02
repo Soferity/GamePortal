@@ -56,10 +56,25 @@ namespace GamePortal.Manage
 
         public static Dictionary<EAE, bool> Fullscreen = new()
         {
+        
+#if DEBUG
+            { EAE.iOS, true },
+            { EAE.macOS, true },
+            { EAE.Android, true },
+            { EAE.Windows, false }
+#else
             { EAE.iOS, true },
             { EAE.macOS, true },
             { EAE.Android, true },
             { EAE.Windows, true }
+#endif
+
+        };
+
+        public static Dictionary<AssemblyEnum, bool> Assembly = new()
+        {
+            { AssemblyEnum.AppCenter, false },
+            { AssemblyEnum.Conforyon, false }
         };
 
         public static Dictionary<JavascriptEnum, bool> Javascript = new()

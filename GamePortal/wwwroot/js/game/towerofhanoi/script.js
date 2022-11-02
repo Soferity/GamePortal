@@ -125,7 +125,7 @@ function tower(tower) {
             tower.append($('<li class="disk disk-' + holding[0] + '" data-value="' + holding[0] + '"></li>'));
             countMove();
 
-            Taiizor.SetLocalStorage('towerofhanoi', 'play');
+            Taiizor.Storage.Local.Set('towerofhanoi', 'play');
         }
     } else if ($topDisk.length !== 0) {
         $topDisk.addClass('hold');
@@ -174,7 +174,7 @@ $exit.on('click', function () {
         confirmButtonText: exitConfirm
     }).then(function (isConfirm) {
         if (isConfirm) {
-            Taiizor.GoLocation('');
+            Taiizor.Redirect.Location('');
         }
     })
 });

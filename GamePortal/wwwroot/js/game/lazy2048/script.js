@@ -186,7 +186,7 @@
     }
 
     function a() {
-        D.removeChild(W), x.play("new"), (y || I > 1) && document.body.requestFullscreen && document.body.requestFullscreen(), Taiizor.SetLocalStorage('lazy2048', 'play');
+        D.removeChild(W), x.play("new"), (y || I > 1) && document.body.requestFullscreen && document.body.requestFullscreen(), Taiizor.Storage.Local.Set('lazy2048', 'play');
     }
 
     function c() {

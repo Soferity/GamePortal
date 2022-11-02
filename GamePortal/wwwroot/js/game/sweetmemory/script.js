@@ -166,7 +166,7 @@ $exit.on('click', function () {
         confirmButtonText: exitConfirm
     }).then(function (isConfirm) {
         if (isConfirm) {
-            Taiizor.GoLocation('');
+            Taiizor.Redirect.Location('');
         }
     })
 });
@@ -214,7 +214,7 @@ $deck.on('click', '.card:not(".match, .open")', function() {
         }, 500);
     }
 
-    Taiizor.SetLocalStorage('sweetmemory', 'play');
+    Taiizor.Storage.Local.Set('sweetmemory', 'play');
 });
 
 function SetLocalization(WinTitle, WinText, WinConfirm, RestartTitle, RestartText, RestartConfirm, RestartCancel, ExitTitle, ExitText, ExitConfirm, ExitCancel) {

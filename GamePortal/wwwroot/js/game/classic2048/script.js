@@ -11,7 +11,7 @@
 function gameStart() {
     window.game = new Game(4);
     window.game.initialize();
-    Taiizor.SetLocalStorage('classic2048', 'play');
+    Taiizor.Storage.Local.Set('classic2048', 'play');
 }
 /*$(document).ready(gameStart);*/
 setTimeout(gameStart, 250);

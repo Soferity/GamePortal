@@ -1,9 +1,7 @@
-﻿using GamePortal.Helper;
-using GamePortal.Manage;
+﻿using GamePortal.Manage;
 using Taiizor.Essentials.Maui.AppCenter.Extension;
 using Taiizor.Essentials.Maui.AppCenter.Services;
 using Taiizor.Essentials.Maui.Cross;
-using Taiizor.Essentials.Maui.Enum;
 using Taiizor.Essentials.Maui.Extension;
 using Taiizor.Essentials.Maui.Interfaces;
 using Taiizor.Essentials.Maui.Services;
@@ -29,14 +27,13 @@ namespace GamePortal
 
             builder.UseFullscreen(General.Fullscreen);
 
-            if (HelperBuild.GetBuild == BuildEnum.Develop)
-            {
-                builder.Services.AddBlazorWebViewDeveloperTools();
-            }
+            builder.UseAppCenter(General.Keys, General.Watch);
+
+#if DEBUG
+            builder.Services.AddBlazorWebViewDeveloperTools();
+#endif
 
             builder.Services.AddSingleton<IDialogService, DialogService>();
-
-            builder.UseAppCenter(General.Keys, General.Watch);
 
             CrossException.UnhandledException += (sender, args) =>
             {

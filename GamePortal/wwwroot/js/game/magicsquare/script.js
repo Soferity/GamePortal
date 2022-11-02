@@ -212,8 +212,7 @@ function CheckEntry(cell) { //Check to see if the row and column containing the 
         $("#winner").addClass("show"); //🎉 they deserved it, or they cheated and get a slap on the wrists - I was going to check for people opening the console then geo-locate them and turn up at their doors to slap their wrists but there's probably legal issues and effort.
     }
 
-
-    Taiizor.SetLocalStorage('magicsquare', 'play');
+    Taiizor.Storage.Local.Set('magicsquare', 'play');
 }
 
 function SymbolToChar(s) {

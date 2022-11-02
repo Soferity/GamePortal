@@ -9,23 +9,23 @@
                 <div id="@Game.Address-Star" style="display: none">
                     <div id="full-stars-example">
                         <div class="rating-group">
-                            <input class="rating__input rating__input--none" name="rating-@Game.Address" id="rating-none-@Game.Address" value="0" type="radio" @onclick="(() => Set(Game.Address, 0))">
+                            <input class="rating__input rating__input--none" name="rating-@Game.Address" id="rating-none-@Game.Address" value="0" type="radio" @onclick="(() => Set(Game.Address, Game.Title, 0))">
                             <label aria-label="No rating" class="rating__label" for="rating-none-@Game.Address"><i class="rating__icon rating__icon--none fa fa-ban"></i></label>
 
                             <label aria-label="1 star" class="rating__label" for="rating-1-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                            <input class="rating__input" name="rating-@Game.Address" id="rating-1-@Game.Address" value="1" type="radio" @onclick="(() => Set(Game.Address, 1))">
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-1-@Game.Address" value="1" type="radio" @onclick="(() => Set(Game.Address, Game.Title, 1))">
 
                             <label aria-label="2 stars" class="rating__label" for="rating-2-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                            <input class="rating__input" name="rating-@Game.Address" id="rating-2-@Game.Address" value="2" type="radio" @onclick="(() => Set(Game.Address, 2))">
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-2-@Game.Address" value="2" type="radio" @onclick="(() => Set(Game.Address, Game.Title, 2))">
 
                             <label aria-label="3 stars" class="rating__label" for="rating-3-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                            <input class="rating__input" name="rating-@Game.Address" id="rating-3-@Game.Address" value="3" type="radio" @onclick="(() => Set(Game.Address, 3))">
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-3-@Game.Address" value="3" type="radio" @onclick="(() => Set(Game.Address, Game.Title, 3))">
 
                             <label aria-label="4 stars" class="rating__label" for="rating-4-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                            <input class="rating__input" name="rating-@Game.Address" id="rating-4-@Game.Address" value="4" type="radio" @onclick="(() => Set(Game.Address, 4))">
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-4-@Game.Address" value="4" type="radio" @onclick="(() => Set(Game.Address, Game.Title, 4))">
 
                             <label aria-label="5 stars" class="rating__label" for="rating-5-@Game.Address"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-                            <input class="rating__input" name="rating-@Game.Address" id="rating-5-@Game.Address" value="5" type="radio" @onclick="(() => Set(Game.Address, 5))">
+                            <input class="rating__input" name="rating-@Game.Address" id="rating-5-@Game.Address" value="5" type="radio" @onclick="(() => Set(Game.Address, Game.Title, 5))">
                         </div>
                     </div>
                 </div>
@@ -35,14 +35,14 @@
             </div>
             <div class="bg-image hover-zoom hover-overlay ripple" data-mdb-ripple-color="dark">
                 <img src="@Localizer[$"Image{Game.Title}"]" class="img-fluid" />
-                <a @onclick="(() => Redirect.GoLocation(Game.Address))" style="cursor: pointer">
+                <a @onclick="(() => Redirect.Location(Game.Address))" style="cursor: pointer">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
             </div>
             <div class="card-body">
                 <h5 class="card-title">@Localizer[$"Title{Game.Title}"]</h5>
                 <p class="card-text">@Localizer[$"Description{Game.Title}"]</p>
-                <a @onclick="(() => Redirect.GoLocation(Game.Address))" class="btn btn-danger">@Localizer["PlayGame"]</a>
+                <a @onclick="(() => Redirect.Location(Game.Address))" class="btn btn-danger">@Localizer["PlayGame"]</a>
                 @if (Game.State != null)
                 {
                     <span class="badge rounded-pill badge-notification bg-warning">@Localizer[$"State{Game.State}"]</span>
@@ -118,8 +118,10 @@
         }
     }
 
-    private async void Set(string Address, int Value)
+    private async void Set(string Address, string Title, int Value)
     {
         await Local.Set($"{Address}-rating", $"{Value}");
+        
+        AppCenterService.TrackEvent($"Game-{Title}", "Rating", $"{Value} Star");
     }
 }

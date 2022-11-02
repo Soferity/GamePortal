@@ -8,8 +8,8 @@ GoLocation haltının düzeltilmesi gerek
 
 Taiizor.SetLocalStorage('classic2048', 'play');
 
-AppCenter.TrackEventNormal("NORMAL", "KEY", "VALUE");
-AppCenter.WatchEventNormal("NORMAL", "KEY", "VALUE");
+AppCenter.Track.Event.Normal("NORMAL", "KEY", "VALUE");
+AppCenter.Watch.Event.Normal("NORMAL", "KEY", "VALUE");
 
 HelperPath.Path = await Location.GetPathname();
 

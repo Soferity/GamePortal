@@ -1539,7 +1539,7 @@ function init(event) {
     loop();
     audio.play();
 
-    Taiizor.SetLocalStorage('valorousrabbit', 'play');
+    Taiizor.Storage.Local.Set('valorousrabbit', 'play');
     
     /*setInterval(hero.blink.bind(hero), 3000);*/
 }

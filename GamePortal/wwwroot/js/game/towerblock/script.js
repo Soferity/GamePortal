@@ -213,7 +213,7 @@ class Game {
         switch (this.state) {
             case this.STATES.READY:
                 this.startGame();
-                Taiizor.SetLocalStorage('towerblock', 'play');
+                Taiizor.Storage.Local.Set('towerblock', 'play');
                 break;
             case this.STATES.PLAYING:
                 this.placeBlock();

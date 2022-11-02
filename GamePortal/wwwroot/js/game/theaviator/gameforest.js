@@ -1266,7 +1266,7 @@ function init(event) {
 
     loop();
 
-    Taiizor.SetLocalStorage('theaviator', 'play');
+    Taiizor.Storage.Local.Set('theaviator', 'play');
 }
 
 //window.addEventListener('load', init, false);
