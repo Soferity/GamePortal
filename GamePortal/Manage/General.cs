@@ -71,12 +71,6 @@ namespace GamePortal.Manage
 
         };
 
-        public static Dictionary<AssemblyEnum, bool> Assembly = new()
-        {
-            { AssemblyEnum.AppCenter, false },
-            { AssemblyEnum.Conforyon, false }
-        };
-
         public static Dictionary<JavascriptEnum, bool> Javascript = new()
         {
             { JavascriptEnum.Custom, true },
