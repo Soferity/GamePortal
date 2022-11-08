@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFrameworks>net6.0-android</TargetFrameworks>
-        <!--<TargetFrameworks>net6.0-ios;net6.0-maccatalyst</TargetFrameworks>-->
+        <TargetFrameworks>net7.0-android</TargetFrameworks>
+        <!--<TargetFrameworks>net7.0-ios;net7.0-maccatalyst</TargetFrameworks>-->
 
         <!-- Targets possible from Windows OS -->
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-        <!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+        <!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 
         <!-- .NET MAUI -->
         <UseMaui>true</UseMaui>
@@ -237,9 +237,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Taiizor.Essentials.Maui" Version="2.0.0.3" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="2.0.0.3" />
-        <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0-rc.2.22476.2" />
+        <PackageReference Include="Taiizor.Essentials.Maui" Version="2.0.0.4" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="2.0.0.4" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0" />
     </ItemGroup>
     
     <!--<ItemGroup>
