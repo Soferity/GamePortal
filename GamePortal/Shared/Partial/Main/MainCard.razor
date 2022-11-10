@@ -118,10 +118,29 @@
         }
     }
 
-    private async void Set(string Address, string Title, int Value)
+    private async void Set(string Address, string Title, int Star)
     {
-        await Local.Set($"{Address}-rating", $"{Value}");
-        
-        AppCenterService.TrackEvent($"Game-{Title}", "Rating", $"{Value} Star");
+        string Key = $"{Address}-rating";
+        string Value = $"{Star}";
+
+        bool End = true;
+        bool State = await Local.Check(Key);
+
+        if (State)
+        {
+            string Result = await Local.Get(Key);
+
+            if (Result == Value)
+            {
+                End = false;
+            }
+        }
+
+        if (End)
+        {
+            await Local.Set(Key, Value);
+
+            AppCenterService.TrackEvent($"Game-{Title}", "Rating", $"{Star} Star");
+        }
     }
 }
