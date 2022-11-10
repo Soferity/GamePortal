@@ -1,5 +1,4 @@
 ﻿@page "/"
-@using System.Globalization;
 
 <MainBackground />
 
@@ -25,17 +24,14 @@
 
     private async Task GetLocalization()
     {
+        CultureInfo Current = Culture.Get(GetCultureEnum.Culture);
+
         string Key = "Display-Localization";
+        string Value = $"{Current.Name}-{Current.DisplayName}";
 
-        bool State = await Session.Check(Key);
-
-        if (!State)
+        if (!await Local.Check(Key, Value))
         {
-            CultureInfo Current = Culture.Get(Taiizor.Essentials.Maui.Enum.GetCultureEnum.Culture);
-            
-            string Value = $"{Current.Name}-{Current.DisplayName}";
-
-            await Session.Set(Key, Value);
+            await Local.Set(Key, Value);
 
             AppCenterService.TrackEvent(Key, Current.Name, Current.DisplayName);
         }

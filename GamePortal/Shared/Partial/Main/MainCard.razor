@@ -123,20 +123,7 @@
         string Key = $"{Address}-rating";
         string Value = $"{Star}";
 
-        bool End = true;
-        bool State = await Local.Check(Key);
-
-        if (State)
-        {
-            string Result = await Local.Get(Key);
-
-            if (Result == Value)
-            {
-                End = false;
-            }
-        }
-
-        if (End)
+        if (!await Local.Check(Key, Value))
         {
             await Local.Set(Key, Value);
 
