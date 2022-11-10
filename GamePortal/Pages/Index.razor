@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using System.Globalization;
 
 <MainBackground />
 
@@ -9,7 +10,7 @@
     protected override async Task OnInitializedAsync()
     {
         AppCenterService.TrackEvent("Page-Main");
-        
+
         await Include.Font("css/main/font-awesome.css");
 
         await Include.Stylesheet("css/main/roboto.300-900.css");
@@ -18,5 +19,25 @@
         await Include.Stylesheet("css/main/stars.css");
 
         await Include.Script("js/main/mdb.min.js");
+
+        await GetLocalization();
+    }
+
+    private async Task GetLocalization()
+    {
+        string Key = "Display-Localization";
+
+        bool State = await Session.Check(Key);
+
+        if (!State)
+        {
+            CultureInfo Current = Culture.Get(Taiizor.Essentials.Maui.Enum.GetCultureEnum.Culture);
+            
+            string Value = $"{Current.Name}-{Current.DisplayName}";
+
+            await Session.Set(Key, Value);
+
+            AppCenterService.TrackEvent(Key, Current.Name, Current.DisplayName);
+        }
     }
 }
