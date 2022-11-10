@@ -80,7 +80,7 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
-        <AndroidPackageFormat>apk;aab</AndroidPackageFormat>
+        <AndroidPackageFormat>aab</AndroidPackageFormat>
         <AndroidKeyStore>True</AndroidKeyStore>
         <AndroidSigningKeyStore>..\Soferity.keystore</AndroidSigningKeyStore>
         <AndroidSigningKeyAlias>GamePortal</AndroidSigningKeyAlias>
