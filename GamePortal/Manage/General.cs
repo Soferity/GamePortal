@@ -15,6 +15,10 @@ namespace GamePortal.Manage
 
         public static Random Random = new();
 
+        public const int WindowX = 230;
+
+        public const int WindowY = 205;
+
         public const int WindowWidth = 1460;
 
         public const int WindowHeight = 670;
