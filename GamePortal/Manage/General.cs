@@ -48,6 +48,8 @@ namespace GamePortal.Manage
             Minimizable = true,
             Maximizable = true,
             AlwaysOnTop = false,
+
+#if DEBUG
             MoveAndResize = new()
             {
                 X = WindowX,
@@ -55,6 +57,8 @@ namespace GamePortal.Manage
                 Width = WindowWidth,
                 Height = WindowHeight
             }
+#endif
+
         };
 
         public static Dictionary<ACEAE, string> Keys = new()
