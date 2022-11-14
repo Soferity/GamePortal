@@ -27,6 +27,8 @@ namespace GamePortal
 
             builder.UseFullscreen(General.Fullscreen);
 
+            builder.UseProperties(General.Properties);
+
             builder.UseAppCenter(General.Keys, General.Watch);
 
 #if DEBUG

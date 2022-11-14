@@ -2,6 +2,7 @@
 using Taiizor.Essentials.Maui.AppCenter.Struct;
 using Taiizor.Essentials.Maui.Enum;
 using Taiizor.Essentials.Maui.Extension;
+using Taiizor.Essentials.Maui.Struct;
 using ACEAE = Taiizor.Essentials.Maui.AppCenter.Enum.AppEnum;
 using EAE = Taiizor.Essentials.Maui.Enum.AppEnum;
 
@@ -41,6 +42,21 @@ namespace GamePortal.Manage
             Name = "Watch"
         };
 
+        private static readonly PropertyStruct Property = new()
+        {
+            Resizable = true,
+            Minimizable = true,
+            Maximizable = true,
+            AlwaysOnTop = false,
+            MoveAndResize = new()
+            {
+                X = WindowX,
+                Y = WindowY,
+                Width = WindowWidth,
+                Height = WindowHeight
+            }
+        };
+
         public static Dictionary<ACEAE, string> Keys = new()
         {
         
@@ -75,6 +91,14 @@ namespace GamePortal.Manage
 
         };
 
+        public static Dictionary<EAE, PropertyStruct> Properties = new()
+        {
+            { EAE.iOS, Property },
+            { EAE.macOS, Property },
+            { EAE.Android, Property },
+            { EAE.Windows, Property }
+        };
+
         public static Dictionary<JavascriptEnum, bool> Javascript = new()
         {
             { JavascriptEnum.Custom, true },
@@ -82,6 +106,5 @@ namespace GamePortal.Manage
             { JavascriptEnum.AppCenter, true },
             { JavascriptEnum.Conforyon, false }
         };
-
     }
 }
