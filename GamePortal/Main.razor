@@ -5,6 +5,7 @@
 		<Load />
 	</Found>
 	<NotFound>
+		@*<PageTitle>Not found</PageTitle>*@
 		<LayoutView Layout="@typeof(Route)">
 			<p style="color: white">Sorry, there's nothing at this address.</p>
 			<a style="color: white;cursor: pointer;text-decoration: underline;font-weight: bold;" @onclick="(() => Redirect.Location())">Return Home</a>
