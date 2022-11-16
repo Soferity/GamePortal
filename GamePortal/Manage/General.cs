@@ -39,7 +39,7 @@ namespace GamePortal.Manage
             Suffix = "Suffix",
             EventName = "Event",
             ErrorName = "Error",
-            Name = "Watch"
+            Name = "Trace" //Watch
         };
 
         private static readonly PropertyStruct Property = new()
