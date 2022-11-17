@@ -242,7 +242,7 @@
 
     <ItemGroup>
         <PackageReference Include="Taiizor.Essentials.Maui" Version="22.11.17.2301" />
-        <PackageReference Include="Taiizor.Essentials.Blazor" Version="22.11.17.2317" />
+        <PackageReference Include="Taiizor.Essentials.Blazor" Version="22.11.18.52" />
         <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="22.11.17.2301" />
     </ItemGroup>
     
@@ -256,8 +256,8 @@
         <Reference Include="Taiizor.Essentials.Maui.AppCenter">
             <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
         </Reference>
-        <Reference Include="Taiizor.Essentials.Maui.Conforyon">
-            <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.Conforyon\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.Conforyon.dll</HintPath>
+        <Reference Include="Taiizor.Essentials.Blazor.Conforyon">
+            <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor.Conforyon\bin\Release\net7.0\Taiizor.Essentials.Blazor.Conforyon.dll</HintPath>
         </Reference>
         <PackageReference Include="Conforyon" Version="2.0.0.3" />
         <PackageReference Include="Microsoft.AppCenter" Version="5.0.0-preview.1" />
