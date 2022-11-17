@@ -1,6 +1,6 @@
-﻿using Taiizor.Essentials.Maui.AppCenter.Enum;
+﻿using Taiizor.Essentials.Blazor.Enum;
+using Taiizor.Essentials.Maui.AppCenter.Enum;
 using Taiizor.Essentials.Maui.AppCenter.Struct;
-using Taiizor.Essentials.Maui.Enum;
 using Taiizor.Essentials.Maui.Extension;
 using Taiizor.Essentials.Maui.Struct;
 using ACEAE = Taiizor.Essentials.Maui.AppCenter.Enum.AppEnum;

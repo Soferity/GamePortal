@@ -1,4 +1,4 @@
-﻿using Taiizor.Essentials.Maui.Enum;
+﻿using Taiizor.Essentials.Blazor.Enum;
 
 namespace GamePortal.Helper
 {

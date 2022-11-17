@@ -1,6 +1,7 @@
 ﻿using GamePortal.Enum;
 using System.Runtime.InteropServices;
 using Taiizor.Essentials.Maui.Enum;
+using Taiizor.Essentials.Blazor.Enum;
 
 namespace GamePortal.Struct
 {
