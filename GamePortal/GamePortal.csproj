@@ -237,9 +237,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Taiizor.Essentials.Maui" Version="2.0.0.7" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="2.0.0.7" />
         <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Taiizor.Essentials.Maui" Version="22.11.17.2034" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="22.11.17.2034" />
     </ItemGroup>
     
     <!--<ItemGroup>
