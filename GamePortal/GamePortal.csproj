@@ -241,9 +241,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Taiizor.Essentials.Maui" Version="22.11.23.1515" />
+        <PackageReference Include="Taiizor.Essentials.Maui" Version="22.12.4.1849" />
         <PackageReference Include="Taiizor.Essentials.Blazor" Version="22.12.4.1759" />
-        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="22.11.23.1515" />
+        <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="22.12.4.1849" />
     </ItemGroup>
     
     <!--<ItemGroup>
@@ -260,9 +260,9 @@
             <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor.Conforyon\bin\Release\net7.0\Taiizor.Essentials.Blazor.Conforyon.dll</HintPath>
         </Reference>
         <PackageReference Include="Conforyon" Version="2.0.0.3" />
-        <PackageReference Include="Microsoft.AppCenter" Version="5.0.0" />
-        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.0" />
-        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.0" />
+        <PackageReference Include="Microsoft.AppCenter" Version="5.0.1" />
+        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.1" />
+        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.1" />
     </ItemGroup>-->
 
 </Project>
