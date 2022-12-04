@@ -242,7 +242,7 @@
 
     <ItemGroup>
         <PackageReference Include="Taiizor.Essentials.Maui" Version="22.11.23.1515" />
-        <PackageReference Include="Taiizor.Essentials.Blazor" Version="22.11.27.145" />
+        <PackageReference Include="Taiizor.Essentials.Blazor" Version="22.12.4.1759" />
         <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="22.11.23.1515" />
     </ItemGroup>
     
