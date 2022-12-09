@@ -63,12 +63,12 @@
 
   <summary>Daha Fazla Ekran Görüntüsü Görüntüle</summary>
 
-  ![TheCube](.screenshots/TheCube.EN.png)
-  ![ValorousRabbit](.screenshots/ValorousRabbit.EN.png)
-  ![TowerBlock](.screenshots/TowerBlock.EN.png)
-  ![SweetMemory](.screenshots/SweetMemory.EN.png)
-  ![TowerOfHanoi](.screenshots/TowerOfHanoi.EN.png)
-  ![TheAviator](.screenshots/TheAviator.EN.png)
+  ![TheCube](.screenshots/TheCube.TR.png)
+  ![ValorousRabbit](.screenshots/ValorousRabbit.TR.png)
+  ![TowerBlock](.screenshots/TowerBlock.TR.png)
+  ![SweetMemory](.screenshots/SweetMemory.TR.png)
+  ![TowerOfHanoi](.screenshots/TowerOfHanoi.TR.png)
+  ![TheAviator](.screenshots/TheAviator.TR.png)
 
 </details>
 
