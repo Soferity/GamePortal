@@ -72,7 +72,18 @@
 
 </details>
 
-GamePortal şu anda yoğun bir geliştirme aşamasındadır. Öneri ve görüşlerinizi [Tartışmalar](https://github.com/Soferity/GamePortal/discussions) sayfamızdan iletebilirsiniz. C# (.NET) kullanarak kod yazarken kendinizi rahat hissediyorsanız, [bu projeye katkıda bulunmanızı](https://github.com/Soferity/GamePortal/graphs/contributors) şiddetle tavsiye ederiz.
+Soferity: Game Portal'ın sunduğu çeşitli oyun türleri ile eğlenceli ve güzel vakit geçirmenizi sağlar. Özetle bazı GamePortal oyun türleri şunlardır:
+
+-   Spor
+-   Yarış
+-   Macera
+-   Bulmaca
+-   Aksiyon
+-   Platform
+-   Strateji
+-   Ve daha birçok oyun türü!
+
+Soferity: Game Portal şu anda yoğun bir geliştirme aşamasındadır. Öneri ve görüşlerinizi [Tartışmalar](https://github.com/Soferity/GamePortal/discussions) sayfamızdan iletebilirsiniz. C# (.NET) kullanarak kod yazarken kendinizi rahat hissediyorsanız, [bu projeye katkıda bulunmanızı](https://github.com/Soferity/GamePortal/graphs/contributors) şiddetle tavsiye ederiz.
 
 ---
 
@@ -85,7 +96,7 @@ GamePortal şu anda yoğun bir geliştirme aşamasındadır. Öneri ve görüşl
 
 ## Kurulum
 
-GamePortal, [Microsoft Store](https://www.microsoft.com/store/apps/9P1JZMGT34M2), [GitHub](https://github.com/Soferity/GamePortal/releases/latest) üzerinden yüklenebilir.
+Soferity: Game Portal, [Microsoft Store](https://www.microsoft.com/store/apps/9P1JZMGT34M2), [GitHub](https://github.com/Soferity/GamePortal/releases/latest) üzerinden yüklenebilir.
 
 Yukarıda belirtilen tüm dağıtım yöntemleri desteklenir, ancak kurulumu daha kolay olduğu ve otomatik olarak güncel kalacağı için uygulamanın **Microsoft Store**'dan yüklenmesi **önerilir**.
 
