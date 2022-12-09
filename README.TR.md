@@ -72,7 +72,7 @@
 
 </details>
 
-Soferity: Game Portal'ın sunduğu çeşitli oyun türleri ile eğlenceli ve güzel vakit geçirmenizi sağlar. Özetle bazı GamePortal oyun türleri şunlardır:
+Soferity: Game Portal'ın sunduğu çeşitli oyun türleri ile eğlenceli ve güzel vakit geçirmenizi sağlar. Özetle bazı Soferity: Game Portal oyun türleri şunlardır:
 
 -   Spor
 -   Yarış
