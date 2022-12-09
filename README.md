@@ -74,11 +74,14 @@
 
 Soferity: Game Portal it allows you to have a fun and good time with the various types of games it offers. Some Soferity: Game Portal's game types in summary are:
 
--   It looks modern
--   Wide variety
--   Customizable
--   Easy to use
--   Most importantly, It's an Open Source Software (OSS)!
+-   Race
+-   Sport
+-   Puzzle
+-   Action
+-   Platform
+-   Strategy
+-   Adventure
+-   And many more game types!
 
 Soferity: Game Portal is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/Soferity/GamePortal/discussions) page. If you feel comfortable in writing code using C# (.NET), we highly encourage you to [contribute to this project](https://github.com/Soferity/GamePortal/graphs/contributors).
 
