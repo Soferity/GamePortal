@@ -1,9 +1,9 @@
 ﻿using Taiizor.Essentials.Blazor.Enum;
 using Taiizor.Essentials.Maui.AppCenter.Enum;
+using Taiizor.Essentials.Maui.AppCenter.Helper;
 using Taiizor.Essentials.Maui.AppCenter.Struct;
 using Taiizor.Essentials.Maui.Extension;
 using Taiizor.Essentials.Maui.Struct;
-using Taiizor.Essentials.Maui.AppCenter.Helper;
 using ACEAE = Taiizor.Essentials.Maui.AppCenter.Enum.AppEnum;
 using EAE = Taiizor.Essentials.Maui.Enum.AppEnum;
 
@@ -26,6 +26,10 @@ namespace GamePortal.Manage
         public const int WindowHeight = 670;
 
         public static string Title = Project.Name;
+
+        public const string DebugToken = "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN";
+
+        public const string ReleaseToken = "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN";
 
         public static WatchStruct Watch = new()
         {
@@ -66,15 +70,15 @@ namespace GamePortal.Manage
         {
         
 #if DEBUG
-            { ACEAE.iOS, Key.GetVariable(ACEAE.iOS, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") },
-            { ACEAE.macOS, Key.GetVariable(ACEAE.macOS, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") },
-            { ACEAE.Android, Key.GetVariable(ACEAE.Android, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") },
-            { ACEAE.Windows, Key.GetVariable(ACEAE.Windows, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") }
+            { ACEAE.iOS, Key.GetVariable(ACEAE.iOS, DebugToken) },
+            { ACEAE.macOS, Key.GetVariable(ACEAE.macOS, DebugToken) },
+            { ACEAE.Android, Key.GetVariable(ACEAE.Android, DebugToken) },
+            { ACEAE.Windows, Key.GetVariable(ACEAE.Windows, DebugToken) }
 #else
-            { ACEAE.iOS, Key.GetVariable(ACEAE.iOS, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") },
-            { ACEAE.macOS, Key.GetVariable(ACEAE.macOS, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") },
-            { ACEAE.Android, Key.GetVariable(ACEAE.Android, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") },
-            { ACEAE.Windows, Key.GetVariable(ACEAE.Windows, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") }
+            { ACEAE.iOS, Key.GetVariable(ACEAE.iOS, ReleaseToken) },
+            { ACEAE.macOS, Key.GetVariable(ACEAE.macOS, ReleaseToken) },
+            { ACEAE.Android, Key.GetVariable(ACEAE.Android, ReleaseToken) },
+            { ACEAE.Windows, Key.GetVariable(ACEAE.Windows, ReleaseToken) }
 #endif
 
         };
