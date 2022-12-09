@@ -39,18 +39,17 @@
   [![Code Size](https://img.shields.io/github/languages/code-size/Soferity/GamePortal?style=for-the-badge)](https://github.com/Soferity/GamePortal/archive/refs/heads/develop.zip)
   [![Repo Size](https://img.shields.io/github/repo-size/Soferity/GamePortal?style=for-the-badge)](https://github.com/Soferity/GamePortal/archive/refs/heads/develop.zip)
 
-  [![Build](https://img.shields.io/visual-studio-app-center/builds/Soferity/GamePortal-Store/develop/d2b0955197957ea68a10db87b87f1892063258b9?style=for-the-badge)](https://github.com/Soferity/GamePortal)
+  [![Build](https://img.shields.io/visual-studio-app-center/builds/Soferity/GamePortal-Windows/develop/d2b0955197957ea68a10db87b87f1892063258b9?style=for-the-badge)](https://github.com/Soferity/GamePortal)
 
-  [![Windows Support](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/store/apps/9PC06S6LW868)
-  [![Xbox Support](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white)](https://www.microsoft.com/store/apps/9PC06S6LW868)
-
-  <!--
-  [![iOS Support](https://img.shields.io/badge/iOS-A3AAAE?style=for-the-badge&logo=ios&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
-  [![Android Support](https://img.shields.io/badge/Android-32DE84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
-  [![Ubuntu Support](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
-  [![Arch Linux Support](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
+  [![Windows Support](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/store/apps/9P1JZMGT34M2)
+  [![Xbox Support](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white)](https://www.microsoft.com/store/apps/9P1JZMGT34M2)
   [![MacOS Support](https://img.shields.io/badge/MACOS-adb8c5?style=for-the-badge&logo=macos&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
-  -->
+
+  <!--[![Ubuntu Support](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
+  [![Arch Linux Support](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)-->
+  
+  [![Android Support](https://img.shields.io/badge/Android-32DE84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
+  [![iOS Support](https://img.shields.io/badge/iOS-A3AAAE?style=for-the-badge&logo=ios&logoColor=white)](https://github.com/Soferity/GamePortal/releases/latest)
 
 </div>
 
@@ -58,15 +57,18 @@
 
 # What is Lunox?
 
-![Demo](.screenshots/Lunox.EN.png)
+![Home](.screenshots/Home.EN.png)
 
 <details>
 
   <summary>View More Screenshots</summary>
 
-  ![Settings](.screenshots/Settings.EN.png)
-  ![Help](.screenshots/Help.EN.png)
-  ![404](.screenshots/404.EN.png)
+  ![TheCube](.screenshots/TheCube.EN.png)
+  ![ValorousRabbit](.screenshots/ValorousRabbit.EN.png)
+  ![TowerBlock](.screenshots/TowerBlock.EN.png)
+  ![SweetMemory](.screenshots/SweetMemory.EN.png)
+  ![TowerOfHanoi](.screenshots/TowerOfHanoi.EN.png)
+  ![TheAviator](.screenshots/TheAviator.EN.png)
 
 </details>
 
