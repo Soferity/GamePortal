@@ -247,14 +247,14 @@
     </ItemGroup>
     
     <!--<ItemGroup>
-        <Reference Include="Taiizor.Essentials.Blazor">
-            <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor\bin\Release\net7.0\Taiizor.Essentials.Blazor.dll</HintPath>
-        </Reference>
         <Reference Include="Taiizor.Essentials.Maui">
             <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.dll</HintPath>
         </Reference>
         <Reference Include="Taiizor.Essentials.Maui.AppCenter">
             <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
+        </Reference>
+        <Reference Include="Taiizor.Essentials.Blazor">
+            <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor\bin\Release\net7.0\Taiizor.Essentials.Blazor.dll</HintPath>
         </Reference>
         <Reference Include="Taiizor.Essentials.Blazor.Conforyon">
             <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor.Conforyon\bin\Release\net7.0\Taiizor.Essentials.Blazor.Conforyon.dll</HintPath>
