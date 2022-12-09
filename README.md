@@ -58,12 +58,13 @@
 
 # What is Lunox?
 
-![TheCube](.screenshots/TheCube.EN.png)
+![Home](.screenshots/Home.TR.png)
 
 <details>
 
   <summary>View More Screenshots</summary>
 
+  ![TheCube](.screenshots/TheCube.EN.png)
   ![ValorousRabbit](.screenshots/ValorousRabbit.EN.png)
   ![TowerBlock](.screenshots/TowerBlock.EN.png)
   ![SweetMemory](.screenshots/SweetMemory.EN.png)
