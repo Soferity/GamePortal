@@ -64,9 +64,12 @@
 
   <summary>View More Screenshots</summary>
 
-  ![Settings](.screenshots/Settings.EN.png)
-  ![Help](.screenshots/Help.EN.png)
-  ![404](.screenshots/404.EN.png)
+  ![TheCube](.screenshots/TheCube.EN.png)
+  ![ValorousRabbit](.screenshots/ValorousRabbit.EN.png)
+  ![TowerBlock](.screenshots/TowerBlock.EN.png)
+  ![SweetMemory](.screenshots/SweetMemory.EN.png)
+  ![TowerOfHanoi](.screenshots/TowerOfHanoi.EN.png)
+  ![TheAviator](.screenshots/TheAviator.EN.png)
 
 </details>
 
@@ -97,7 +100,7 @@ All the distribution methods mentioned above are supported, however installing t
 
 **Microsoft Store**
 
-<a href='https://www.microsoft.com/store/apps/9PC06S6LW868'>
+<a href='https://www.microsoft.com/store/apps/9P1JZMGT34M2'>
   <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Microsoft Store' width='160'/>
 </a>
 
@@ -105,7 +108,10 @@ All the distribution methods mentioned above are supported, however installing t
 
 **GitHub**
 
-<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.16.0/Lunox_1.0.16.0_x86_x64_arm_arm64.msixbundle'>
+<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x64.msix'>
+  <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
+</a>
+<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x86.msix'>
   <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
 </a>
 
