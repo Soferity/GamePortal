@@ -1,4 +1,4 @@
-<svg id="svblock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<svg id="areasvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
     <style type="text/css">
 	.st0{fill:none;}
 	.st1{fill:#FF6465;}
@@ -33,7 +33,7 @@
 
 <span id="download_png_url">
 	<input type="text" value="data:image/svg+xml," style="width: 1111px" id="savetext">
-	<button onclick="SaveText()">Kaydet</button>
+	<button onclick="SaveText()">Save</button>
 </span>
 
 <script language="JavaScript">
@@ -68,7 +68,7 @@
 
 	var converter = new SVGtoPNGData();
 
-	var mySVG = document.querySelector('#svblock'),
+	var mySVG = document.querySelector('#areasvg'),
 	tgtImage = document.querySelector('#diagram_png'),
 	tgtLink = document.querySelector('#download_png_url input');
 
