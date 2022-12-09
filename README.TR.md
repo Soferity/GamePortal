@@ -55,7 +55,7 @@
 
 ---
 
-# Soferity: Game Portal Görüntüleri
+# Soferity: Game Portal Nedir?
 
 ![Home](.screenshots/Home.TR.png)
 
