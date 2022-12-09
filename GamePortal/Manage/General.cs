@@ -15,8 +15,6 @@ namespace GamePortal.Manage
 
         public static string Path = "/";
 
-        public static Random Random = new();
-
         public const int WindowX = 230;
 
         public const int WindowY = 205;
@@ -24,6 +22,8 @@ namespace GamePortal.Manage
         public const int WindowWidth = 1460;
 
         public const int WindowHeight = 670;
+
+        public static Random Random = new();
 
         public static string Title = Project.Name;
 
@@ -33,7 +33,7 @@ namespace GamePortal.Manage
 
         public static WatchStruct Watch = new()
         {
-            Format = "{1}{2}-{3}",
+            Format = "{1}{2}-{3}", //"{0}-{1}{2}-{3}-{4}"
             Attachments = "Attachments",
             Properties = "Properties",
             PropertiesError = "Error",
