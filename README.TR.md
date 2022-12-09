@@ -39,7 +39,7 @@
   [![Code Size](https://img.shields.io/github/languages/code-size/Soferity/GamePortal?style=for-the-badge)](https://github.com/Soferity/GamePortal/archive/refs/heads/develop.zip)
   [![Repo Size](https://img.shields.io/github/repo-size/Soferity/GamePortal?style=for-the-badge)](https://github.com/Soferity/GamePortal/archive/refs/heads/develop.zip)
 
-  [![Build](https://img.shields.io/visual-studio-app-center/builds/Soferity/GamePortal-Store/develop/e35051a0289ae2e9786643c8816d8f9e6f18512b?style=for-the-badge)](https://github.com/Soferity/GamePortal)
+  [![Build](https://img.shields.io/visual-studio-app-center/builds/Soferity/GamePortal-Windows/develop/ee25633f6115339b308260d817b2f961d10e0b86?style=for-the-badge)](https://github.com/Soferity/GamePortal)
 
   [![Windows Support](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/store/apps/9P1JZMGT34M2)
   [![Xbox Support](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white)](https://www.microsoft.com/store/apps/9P1JZMGT34M2)
