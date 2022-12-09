@@ -61,7 +61,7 @@
 
 <details>
 
-  <summary>View More Screenshots</summary>
+  <summary>Daha Fazla Ekran Görüntüsü Görüntüle</summary>
 
   ![TheCube](.screenshots/TheCube.EN.png)
   ![ValorousRabbit](.screenshots/ValorousRabbit.EN.png)
@@ -72,15 +72,7 @@
 
 </details>
 
-Lunox allows you to easily perform unit conversions, file conversions, OCR operations, QR operations, HTML-CSS-JS-JSON operations and many other leading operations with the various infrastructure it offers. Some Lunox's features in summary are:
-
--   It looks modern
--   Wide variety
--   Customizable
--   Easy to use
--   Most importantly, It's an Open Source Software (OSS)!
-
-Lunox is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/Soferity/GamePortal/discussions) page. If you feel comfortable in writing code using C# (.NET), we highly encourage you to [contribute to this project](https://github.com/Soferity/GamePortal/graphs/contributors).
+GamePortal şu anda yoğun bir geliştirme aşamasındadır. Öneri ve görüşlerinizi [Tartışmalar](https://github.com/Soferity/GamePortal/discussions) sayfamızdan iletebilirsiniz. C# (.NET) kullanarak kod yazarken kendinizi rahat hissediyorsanız, [bu projeye katkıda bulunmanızı](https://github.com/Soferity/GamePortal/graphs/contributors) şiddetle tavsiye ederiz.
 
 ---
 
