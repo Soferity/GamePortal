@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <span><b>Lunox</b> es un Kit de Herramientas de Utilidad Universal personalizable, moderno y avanzado.</span>
+  <span><b>Soferity: Game Portal</b> es un portal de juegos. Te permite pasar un rato divertido y bueno con los diversos tipos de juegos que ofrece.</span>
 </p>
 
 <h4 align="center">
@@ -55,7 +55,7 @@
 
 ---
 
-# ¿Qué es Lunox?
+# ¿Qué es Soferity: Game Portal?
 
 ![Home](.screenshots/Home.ES.png)
 
@@ -72,7 +72,7 @@
 
 </details>
 
-Lunox le permite realizar fácilmente conversiones de unidades, conversiones de archivos, operaciones OCR, operaciones QR, operaciones HTML-CSS-JS-JSON y muchas otras operaciones líderes con la diversa infraestructura que ofrece. Algunas características de Lunox en resumen son:
+Soferity: Game Portal te permite pasar un rato divertido y bueno con los diversos tipos de juegos que ofrece. Algunos tipos de juegos de Soferity: Game Portal en resumen son:
 
 -   Se ve moderno
 -   Amplia variedad
@@ -80,35 +80,38 @@ Lunox le permite realizar fácilmente conversiones de unidades, conversiones de 
 -   Fácil de usar
 -   Lo más importante, ¡Es un Software de Código Abierto (OSS)!
 
-Lunox se encuentra actualmente en un fuerte desarrollo. Puede dar sus sugerencias y comentarios en nuestra página de [Discusiones](https://github.com/Soferity/GamePortal/discussions). Si se siente cómodo escribiendo código usando C# (.NET), le recomendamos encarecidamente que [contribuya a este proyecto](https://github.com/Soferity/GamePortal/graphs/contributors).
+Soferity: Game Portal se encuentra actualmente en un fuerte desarrollo. Puede dar sus sugerencias y comentarios en nuestra página de [Discusiones](https://github.com/Soferity/GamePortal/discussions). Si se siente cómodo escribiendo código usando C# (.NET), le recomendamos encarecidamente que [contribuya a este proyecto](https://github.com/Soferity/GamePortal/graphs/contributors).
 
 ---
 
 ## Requisitos del Sistema
 
 - **Windows 11**
-- **Windows 10 1809 y superior**
+- **Windows 10 2004 y superior**
 
 ---
 
 ## Instalación
 
-Lunox está disponible para que lo instales a través de [Microsoft Store](https://www.microsoft.com/store/apps/9PC06S6LW868), [GitHub](https://github.com/Soferity/GamePortal/releases/latest).
+Soferity: Game Portal está disponible para que lo instales a través de [Microsoft Store](https://www.microsoft.com/store/apps/9P1JZMGT34M2), [GitHub](https://github.com/Soferity/GamePortal/releases/latest).
 
 Todos los métodos de distribución mencionados anteriormente son compatibles, sin embargo, se **recomienda** instalar la aplicación desde **Microsoft Store**, ya que es más fácil de instalar y se mantendrá actualizada automáticamente.
 
 **Microsoft Store**
 
-<a href='https://www.microsoft.com/store/apps/9PC06S6LW868'>
-  <img src='.images/Badges/Microsoft/Spanish_get it from MS_864X312.png' alt='Microsoft Store' width='160'/>
+<a href='https://www.microsoft.com/store/apps/9P1JZMGT34M2'>
+  <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Microsoft Store' width='160'/>
 </a>
 
 <p></p>
 
 **GitHub**
 
-<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.16.0/Lunox_1.0.16.0_x86_x64_arm_arm64.msixbundle'>
-  <img src='.images/Badges/GitHub/Spanish_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
+<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x64.msix'>
+  <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
+</a>
+<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x86.msix'>
+  <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
 </a>
 
 <p></p>
@@ -123,6 +126,6 @@ Todos los métodos de distribución mencionados anteriormente son compatibles, s
 * En el siguiente paso, seleccione Máquina Local (Si aparece una solicitud de cuenta de usuario, haga clic en Sí)
 * Seleccione Colocar todos los certificados en el siguiente almacén y haga clic en Examinar, seleccione Personas de confianza y haga clic en Aceptar y Siguiente
 * Haga clic en Finalizar
-* Aparecerán ventanas de confirmación Después de eso, Intente Instalar MSIXBUNDLE
+* Aparecerán ventanas de confirmación Después de eso, Intente Instalar MSIX
 
 ---

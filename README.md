@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <span><b>Lunox</b> is a customizable, modern and advanced Universal Utility Toolkit.</span>
+  <span><b>Soferity: Game Portal</b> is a game hub. It allows you to have a fun and good time with the various types of games it offers.</span>
 </p>
 
 <h4 align="center">
@@ -55,7 +55,7 @@
 
 ---
 
-# What is Lunox?
+# What is Soferity: Game Portal?
 
 ![Home](.screenshots/Home.EN.png)
 
@@ -72,7 +72,7 @@
 
 </details>
 
-Lunox allows you to easily perform unit conversions, file conversions, OCR operations, QR operations, HTML-CSS-JS-JSON operations and many other leading operations with the various infrastructure it offers. Some Lunox's features in summary are:
+Soferity: Game Portal it allows you to have a fun and good time with the various types of games it offers. Some Soferity: Game Portal's game types in summary are:
 
 -   It looks modern
 -   Wide variety
@@ -80,26 +80,26 @@ Lunox allows you to easily perform unit conversions, file conversions, OCR opera
 -   Easy to use
 -   Most importantly, It's an Open Source Software (OSS)!
 
-Lunox is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/Soferity/GamePortal/discussions) page. If you feel comfortable in writing code using C# (.NET), we highly encourage you to [contribute to this project](https://github.com/Soferity/GamePortal/graphs/contributors).
+Soferity: Game Portal is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/Soferity/GamePortal/discussions) page. If you feel comfortable in writing code using C# (.NET), we highly encourage you to [contribute to this project](https://github.com/Soferity/GamePortal/graphs/contributors).
 
 ---
 
 ## System Requirements
 
 - **Windows 11**
-- **Windows 10 1809 and above**
+- **Windows 10 2004 and above**
 
 ---
 
 ## Installation
 
-Lunox is available for you to install via [Microsoft Store](https://www.microsoft.com/store/apps/9PC06S6LW868), [GitHub](https://github.com/Soferity/GamePortal/releases/latest).
+Soferity: Game Portal is available for you to install via [Microsoft Store](https://www.microsoft.com/store/apps/9P1JZMGT34M2), [GitHub](https://github.com/Soferity/GamePortal/releases/latest).
 
 All the distribution methods mentioned above are supported, however installing the app from the **Microsoft Store** is **recommended** as it is easier to install and will automatically remain up to date.
 
 **Microsoft Store**
 
-<a href='https://www.microsoft.com/store/apps/9PC06S6LW868'>
+<a href='https://www.microsoft.com/store/apps/9P1JZMGT34M2'>
   <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Microsoft Store' width='160'/>
 </a>
 
@@ -107,7 +107,10 @@ All the distribution methods mentioned above are supported, however installing t
 
 **GitHub**
 
-<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.16.0/Lunox_1.0.16.0_x86_x64_arm_arm64.msixbundle'>
+<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x64.msix'>
+  <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
+</a>
+<a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x86.msix'>
   <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
 </a>
 
@@ -123,6 +126,6 @@ All the distribution methods mentioned above are supported, however installing t
 * In next step select Local machine (If a user account prompt appear click yes)
 * Select Place all certificates in Following store and click browse select Trusted People and click OK and Next
 * Click Finish
-* Confirmation windows will appear After that Try Installing the MSIXBUNDLE
+* Confirmation windows will appear After that Try Installing the MSIX
 
 ---
