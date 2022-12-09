@@ -42,7 +42,7 @@ namespace GamePortal
                 AppCenterService.Exception(args);
             };
 
-            //Culture.Set("en-GB");
+            //Taiizor.Essentials.Blazor.Extension.Culture.Set("en-GB");
 
             return builder.Build();
         }
