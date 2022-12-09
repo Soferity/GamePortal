@@ -3,6 +3,7 @@ using Taiizor.Essentials.Maui.AppCenter.Enum;
 using Taiizor.Essentials.Maui.AppCenter.Struct;
 using Taiizor.Essentials.Maui.Extension;
 using Taiizor.Essentials.Maui.Struct;
+using Taiizor.Essentials.Maui.AppCenter.Helper;
 using ACEAE = Taiizor.Essentials.Maui.AppCenter.Enum.AppEnum;
 using EAE = Taiizor.Essentials.Maui.Enum.AppEnum;
 
@@ -65,15 +66,15 @@ namespace GamePortal.Manage
         {
         
 #if DEBUG
-            { ACEAE.iOS, "a5426920-4aa0-4975-9dd7-b392cd74c155" },
-            { ACEAE.macOS, "20f56902-b6a6-4929-80c8-cdd7610b836f" },
-            { ACEAE.Android, "31f534fe-751e-4a93-87b8-c3a5bd138f32" },
-            { ACEAE.Windows, "6fbf1f84-1894-4e38-a5e5-a9300de34ba4" }
+            { ACEAE.iOS, Key.GetVariable(ACEAE.iOS, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") },
+            { ACEAE.macOS, Key.GetVariable(ACEAE.macOS, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") },
+            { ACEAE.Android, Key.GetVariable(ACEAE.Android, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") },
+            { ACEAE.Windows, Key.GetVariable(ACEAE.Windows, "GAMEPORTAL_DEBUG_{0}_TARGET_TOKEN") }
 #else
-            { ACEAE.iOS, "ffc05807-63e2-4b61-bd43-778ad0e9754f" },
-            { ACEAE.macOS, "debb9383-5378-46f1-870b-f5607f0a0bc5" },
-            { ACEAE.Android, "0293e0cc-117d-43de-839e-8728cbaef553" },
-            { ACEAE.Windows, "94e00ae3-353a-48dc-af80-f4e81be9f817" }
+            { ACEAE.iOS, Key.GetVariable(ACEAE.iOS, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") },
+            { ACEAE.macOS, Key.GetVariable(ACEAE.macOS, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") },
+            { ACEAE.Android, Key.GetVariable(ACEAE.Android, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") },
+            { ACEAE.Windows, Key.GetVariable(ACEAE.Windows, "GAMEPORTAL_RELEASE_{0}_TARGET_TOKEN") }
 #endif
 
         };
