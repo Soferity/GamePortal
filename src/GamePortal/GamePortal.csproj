@@ -123,6 +123,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <EmbeddedResource Include="Resources\Raw\AppCenter.json" />
+    </ItemGroup>
+
+    <ItemGroup>
         <Compile Update="Resources\Languages\Error\ErrorLocalization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>

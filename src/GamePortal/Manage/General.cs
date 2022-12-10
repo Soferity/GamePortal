@@ -1,4 +1,6 @@
-﻿using Taiizor.Essentials.Blazor.Enum;
+﻿using GamePortal.Helper;
+using System.Reflection;
+using Taiizor.Essentials.Blazor.Enum;
 using Taiizor.Essentials.Maui.AppCenter.Enum;
 using Taiizor.Essentials.Maui.AppCenter.Struct;
 using Taiizor.Essentials.Maui.Extension;
@@ -25,6 +27,10 @@ namespace GamePortal.Manage
         public static Random Random = new();
 
         public static string Title = Project.Name;
+
+        public static readonly string Config = "AppCenter.json";
+
+        public static Assembly Assembly = Assembly.GetExecutingAssembly();
 
         public static WatchStruct Watch = new()
         {
@@ -63,19 +69,10 @@ namespace GamePortal.Manage
 
         public static Dictionary<ACEAE, string> Keys = new()
         {
-        
-#if DEBUG
-            { ACEAE.iOS, "" },
-            { ACEAE.macOS, "" },
-            { ACEAE.Android, "" },
-            { ACEAE.Windows, "" }
-#else
-            { ACEAE.iOS, "" },
-            { ACEAE.macOS, "" },
-            { ACEAE.Android, "" },
-            { ACEAE.Windows, "" }
-#endif
-
+            { ACEAE.iOS, HelperKey.GetKey(ACEAE.iOS) },
+            { ACEAE.macOS, HelperKey.GetKey(ACEAE.macOS) },
+            { ACEAE.Android, HelperKey.GetKey(ACEAE.Android) },
+            { ACEAE.Windows, HelperKey.GetKey(ACEAE.Windows) }
         };
 
         public static Dictionary<EAE, bool> Fullscreen = new()
