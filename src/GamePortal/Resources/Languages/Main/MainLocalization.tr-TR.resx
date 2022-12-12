@@ -130,7 +130,7 @@
     <value>Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
   </data>
   <data name="DescriptionSweetMemory" xml:space="preserve">
-    <value>Sweet Memory bir hafıza oyunudur. Kareleri çevirin ve arkalarındaki simgeyi görün. Ardından aynı simgeyi bulmak için daha fazla karenin arkasına bakın. Aynı simgeyi bulursanız, bir puan alırsınız.</value>
+    <value>Tatlı Hafıza bir hafıza oyunudur. Kareleri çevirin ve arkalarındaki simgeyi görün. Ardından aynı simgeyi bulmak için daha fazla karenin arkasına bakın. Aynı simgeyi bulursanız, bir puan alırsınız.</value>
     <comment>Bunu yapmazsanız, kareler geri dönecektir. Mümkün olduğu kadar çok puan almaya çalışın.</comment>
   </data>
   <data name="DescriptionTheAviator" xml:space="preserve">
@@ -146,7 +146,7 @@
     <value>Gökdelen, blokları istifleme oyunudur. Blokları üst üste yığdıkça puan kazanıyorsunuz. Ne kadar yüksek yığın yaparsanız, o kadar çok puan kazanırsınız. Artık blok istifleyemediğiniz zaman oyun sona erer.</value>
   </data>
   <data name="DescriptionTowerOfHanoi" xml:space="preserve">
-    <value>Hanoi kulesi, bir bulmaca oyunudur. Üç direk ve farklı boyutlarda disklerden oluşur. Bu diskleri dilediğiniz direğe aktarabilirsiniz. Bulmaca bir direkte en küçük disk yukarıda olacak şekilde, küçükten büyüğe direk üstünde dizilmiş olarak başlar.</value>
+    <value>Hanoi Kulesi, bir bulmaca oyunudur. Üç direk ve farklı boyutlarda disklerden oluşur. Bu diskleri dilediğiniz direğe aktarabilirsiniz. Bulmaca bir direkte en küçük disk yukarıda olacak şekilde, küçükten büyüğe direk üstünde dizilmiş olarak başlar.</value>
   </data>
   <data name="DescriptionValorousRabbit" xml:space="preserve">
     <value>Yiğit Tavşan bir aksiyon macera oyunudur. Havuçları alarak kirpiden kaçmaya çalışın. En önemli şey asla bir kirpi tarafından yakalanmamaktır. Kirpiye yakalanırsan, oyun biter.</value>
