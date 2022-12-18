@@ -111,10 +111,10 @@ Todos los métodos de distribución mencionados anteriormente son compatibles, s
 **GitHub**
 
 <a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x64.msix'>
-  <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
+  <img src='.images/Badges/GitHub/Spanish_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
 </a>
 <a href='https://github.com/Soferity/GamePortal/releases/download/v1.0.8/GamePortal_1.0.8.0_x86.msix'>
-  <img src='.images/Badges/GitHub/English_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
+  <img src='.images/Badges/GitHub/Spanish_get it from GH_228X86.png' alt='GitHub Release' width='160'/>
 </a>
 
 <p></p>
