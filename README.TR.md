@@ -103,7 +103,7 @@ Yukarıda belirtilen tüm dağıtım yöntemleri desteklenir, ancak kurulumu dah
 **Microsoft Store**
 
 <a href='https://www.microsoft.com/store/apps/9P1JZMGT34M2'>
-  <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Microsoft Store' width='160'/>
+  <img src='.images/Badges/Microsoft/Turkish-Get-It-From-864x312.png' alt='Microsoft Store' width='160'/>
 </a>
 
 <p></p>
