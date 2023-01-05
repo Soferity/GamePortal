@@ -7,11 +7,11 @@
 </p>
 
 <h4 align="center">
-  <span><a href="https://github.com/Soferity/GamePortal/issues">Issues</a></span>
+  <span><a href="https://github.com/Soferity/GamePortal/issues">Sorunlar</a></span>
   •
-  <span><a href="https://github.com/Soferity/GamePortal/discussions">Discussions</a></span>
+  <span><a href="https://github.com/Soferity/GamePortal/discussions">Tartışmalar</a></span>
   •
-  <span><a href="https://github.com/Soferity/GamePortal/wiki">Documentation</a></span>
+  <span><a href="https://github.com/Soferity/GamePortal/wiki">Dökümantasyon</a></span>
   •
   <span><a href="https://discord.gg/nxG977byXb">Discord</a></span>
 </h4>
