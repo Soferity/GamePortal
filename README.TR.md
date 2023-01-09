@@ -27,7 +27,7 @@
 
   [![Issues Count](https://img.shields.io/github/issues/Soferity/GamePortal.svg?style=for-the-badge)](https://github.com/Soferity/GamePortal/issues)
   [![Pull Request Count](https://img.shields.io/github/issues-pr/Soferity/GamePortal.svg?style=for-the-badge)](https://github.com/Soferity/GamePortal/pulls)
-  [![Follow](https://img.shields.io/github/followers/Soferity.svg?style=for-the-badge&label=Follow)](https://github.com/Taiizor)
+  [![Follow](https://img.shields.io/github/followers/Soferity.svg?style=for-the-badge&label=Follow)](https://github.com/Soferity)
   [![Discord Server](https://img.shields.io/discord/932386235538878534?label=Discord&style=for-the-badge)](https://discord.gg/nxG977byXb)
 
   [![Pre-Release](https://img.shields.io/github/v/release/Soferity/GamePortal?include_prereleases&label=Pre-Release&style=for-the-badge)](https://github.com/Soferity/GamePortal/releases/latest)
