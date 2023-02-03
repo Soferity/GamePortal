@@ -121,7 +121,7 @@
     <value>Classic 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
   </data>
   <data name="DescriptionColoron" xml:space="preserve">
-    <value>Coloron is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
+    <value>Coloron bir platform oyunudur. Zıplayan top renk değiştirir. Zıplayan topun rengine göre çubukların rengini değiştirin. Renkler aynı olduğu sürece oyun devam eder.</value>
   </data>
   <data name="DescriptionHextris" xml:space="preserve">
     <value>Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>

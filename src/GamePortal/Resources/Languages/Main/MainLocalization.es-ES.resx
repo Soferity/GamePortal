@@ -120,6 +120,9 @@
   <data name="DescriptionClassic2048" xml:space="preserve">
     <value>Classic 2048 is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
   </data>
+  <data name="DescriptionColoron" xml:space="preserve">
+    <value>Coloron es un juego de plataformas. La pelota que rebota cambia de color. Cambia el color de las barras según el color de la pelota que rebota. Mientras los colores sean los mismos, el juego continúa.</value>
+  </data>
   <data name="DescriptionHextris" xml:space="preserve">
     <value>Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
   </data>
@@ -153,6 +156,9 @@
   </data>
   <data name="ImageClassic2048" xml:space="preserve">
     <value>img/game/classic2048.es.jpg</value>
+  </data>
+  <data name="ImageColoron" xml:space="preserve">
+    <value>img/game/Coloron.es.jpg</value>
   </data>
   <data name="ImageHextris" xml:space="preserve">
     <value>img/game/hextris.es.jpg</value>
@@ -201,6 +207,9 @@
   </data>
   <data name="TitleClassic2048" xml:space="preserve">
     <value>Clásico 2048</value>
+  </data>
+  <data name="TitleColoron" xml:space="preserve">
+    <value>Coloron</value>
   </data>
   <data name="TitleHextris" xml:space="preserve">
     <value>Hextris</value>

@@ -745,6 +745,8 @@ var userAgent = window.navigator.userAgent;
 Animation.generateSmallGlows(20);
 
 function gameStart() {
+    Taiizor.Style.Add("coloroner", "background-color", "#28DAD4");
+
     //game.showResult();
     game.scaleScreen();
     game.intro();

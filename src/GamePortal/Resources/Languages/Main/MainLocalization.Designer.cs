@@ -70,7 +70,7 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
-        ///   Coloron is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home. benzeri yerelleştirilmiş bir dize arar.
+        ///   Coloron is a platform game. The bouncing ball changes color. Change the color of the bars according to the color of the bouncing ball. As long as the colors are the same, the game continues. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionColoron {
             get {
