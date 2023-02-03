@@ -81,7 +81,7 @@ class Game {
             let left = $(window).width() / 2 - 300;
             let uri = new URL("https://twitter.com/intent/tweet?url=https://github.com/Soferity/GamePortal&text=" + String.format(this.tweettext, this.score) + "&hashtags=soferity,gameportal,coloron&via=ReaLTaiizor")
             /*window.open(uri, "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);*/
-            Taiizor.Invoke.MethodAsync("GamePortal", "OpenBrowser", uri);
+            Taiizor.Invoke.MethodAsync("GamePortal", "BrowserOpen", uri);
         }
         catch (err) { }
     }

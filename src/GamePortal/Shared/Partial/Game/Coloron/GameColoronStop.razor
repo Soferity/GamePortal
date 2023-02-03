@@ -15,17 +15,3 @@
         </div>
     </div>
 </div>
-
-@code {
-    [JSInvokable("OpenBrowser")]
-    //[JSInvokableAttribute("OpenBrowser")]
-    public static async void OpenBrowser(string Uri)
-    {
-        try
-        {
-            Uri uri = new Uri(Uri);
-            await Browser.Default.OpenAsync(uri, BrowserLaunchMode.External);
-        }
-        catch {}
-    }
-}
