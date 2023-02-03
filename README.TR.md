@@ -69,6 +69,7 @@
   ![SweetMemory](.screenshots/SweetMemory.TR.png)
   ![TowerOfHanoi](.screenshots/TowerOfHanoi.TR.png)
   ![TheAviator](.screenshots/TheAviator.TR.png)
+  ![Coloron](.screenshots/Coloron.TR.png)
 
 </details>
 
