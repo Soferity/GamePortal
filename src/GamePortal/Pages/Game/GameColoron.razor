@@ -29,7 +29,7 @@
     {
         await Task.Delay(DelayValue.Render);
 
-        await Include.ScriptProtected("js/game/coloron/script.js", HelperPath.Path);
+        await Include.ScriptProtected($"js/game/coloron/script{Device.KindTypeString}.js", HelperPath.Path);
 
         await Task.Delay(DelayValue.Localization);
 

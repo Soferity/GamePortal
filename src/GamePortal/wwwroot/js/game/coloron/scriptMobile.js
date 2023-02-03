@@ -29,7 +29,7 @@ class Game {
 
     SetLocalization(TweetText, Point0, Point5, Point10, Point13, Point15, Point20, Point25, Point30) {
         this.tweettext = TweetText;
-        
+
         this.point0 = Point0;
         this.point5 = Point5;
         this.point10 = Point10;
@@ -99,28 +99,28 @@ class Game {
             delay: 3
         });
         introTl.
-        fromTo('.start-game .logo-holder', 0.9, {
-            opacity: 0
-        }, {
-            opacity: 1
-        }).
-        staggerFromTo('.start-game .logo span', 0.5, {
-            opacity: 0
-        }, {
-            opacity: 1
-        }, 0.08).
-        staggerFromTo('.start-game .bar', 1.6, {
-            y: '+100%'
-        }, {
-            y: '0%',
-            ease: Elastic.easeOut.config(1, 0.3)
-        }, 0.08).
-        staggerFromTo('.start-game .ball-demo', 1, {
-            scale: 0
-        }, {
-            scale: 1,
-            ease: Elastic.easeOut.config(1, 0.3)
-        }, 0.8, 2);
+            fromTo('.start-game .logo-holder', 0.9, {
+                opacity: 0
+            }, {
+                opacity: 1
+            }).
+            staggerFromTo('.start-game .logo span', 0.5, {
+                opacity: 0
+            }, {
+                opacity: 1
+            }, 0.08).
+            staggerFromTo('.start-game .bar', 1.6, {
+                y: '+100%'
+            }, {
+                y: '0%',
+                ease: Elastic.easeOut.config(1, 0.3)
+            }, 0.08).
+            staggerFromTo('.start-game .ball-demo', 1, {
+                scale: 0
+            }, {
+                scale: 1,
+                ease: Elastic.easeOut.config(1, 0.3)
+            }, 0.8, 2);
 
 
         ball.fromTo('.start-game .section-1 .ball-demo', 0.5, {
@@ -131,21 +131,21 @@ class Game {
             transformOrigin: "bottom",
             ease: Power2.easeIn
         }).
-        to('.start-game .section-1 .ball-demo', 0.5, {
-            y: "0px",
-            scaleY: 1,
-            transformOrigin: "bottom",
-            ease: Power2.easeOut,
-            onStart: () => {
-                while (this.prevColor == this.color) {
-                    this.color = new Color().getRandomColor();
+            to('.start-game .section-1 .ball-demo', 0.5, {
+                y: "0px",
+                scaleY: 1,
+                transformOrigin: "bottom",
+                ease: Power2.easeOut,
+                onStart: () => {
+                    while (this.prevColor == this.color) {
+                        this.color = new Color().getRandomColor();
+                    }
+                    this.prevColor = this.color;
+                    TweenMax.to('.start-game .section-1 .ball-demo', 0.5, {
+                        backgroundColor: this.color
+                    });
                 }
-                this.prevColor = this.color;
-                TweenMax.to('.start-game .section-1 .ball-demo', 0.5, {
-                    backgroundColor: this.color
-                });
-            }
-        });
+            });
 
     }
 
@@ -161,26 +161,26 @@ class Game {
 
         let resultTimeline = new TimelineMax();
         resultTimeline.
-        fromTo('.stop-game .score-container', 0.7, {
-            opacity: 0,
-            scale: 0.3
-        }, {
-            opacity: 1,
-            scale: 1,
-            ease: Elastic.easeOut.config(1.25, 0.5)
-        }).
-        fromTo('.stop-game .final-score', 2, {
-            scale: 0.5
-        }, {
-            scale: 1,
-            ease: Elastic.easeOut.config(2, 0.5)
-        }, 0).
-        fromTo('.stop-game .result', 1, {
-            scale: 0.5
-        }, {
-            scale: 1,
-            ease: Elastic.easeOut.config(1.5, 0.5)
-        }, 0.3);
+            fromTo('.stop-game .score-container', 0.7, {
+                opacity: 0,
+                scale: 0.3
+            }, {
+                opacity: 1,
+                scale: 1,
+                ease: Elastic.easeOut.config(1.25, 0.5)
+            }).
+            fromTo('.stop-game .final-score', 2, {
+                scale: 0.5
+            }, {
+                scale: 1,
+                ease: Elastic.easeOut.config(2, 0.5)
+            }, 0).
+            fromTo('.stop-game .result', 1, {
+                scale: 0.5
+            }, {
+                scale: 1,
+                ease: Elastic.easeOut.config(1.5, 0.5)
+            }, 0.3);
 
 
     }
@@ -256,10 +256,10 @@ class Game {
         this.calculateScale();
 
         $('.container').
-        css('transform', 'scale(' + this.scale + ')').
-        css('height', height / this.scale).
-        css('width', width / this.scale).
-        css('transformOrigin', 'left top');
+            css('transform', 'scale(' + this.scale + ')').
+            css('height', height / this.scale).
+            css('width', width / this.scale).
+            css('transformOrigin', 'left top');
 
         $('#sticks').width(this.screen / this.scale + 3 * this.stickWidth / this.scale);
 
@@ -294,22 +294,22 @@ class Game {
         });
 
         tip.
-        fromTo('.learn-to-play', 1, {
-            scale: 0
-        }, {
-            scale: 1,
-            opacity: 1,
-            ease: Elastic.easeOut.config(1.25, 0.5)
-        }).
-        to('.learn-to-play', 1, {
-            scale: 0,
-            opacity: 0,
-            ease: Elastic.easeOut.config(1.25, 0.5)
-        }, 3);
+            fromTo('.learn-to-play', 1, {
+                scale: 0
+            }, {
+                scale: 1,
+                opacity: 1,
+                ease: Elastic.easeOut.config(1.25, 0.5)
+            }).
+            to('.learn-to-play', 1, {
+                scale: 0,
+                opacity: 0,
+                ease: Elastic.easeOut.config(1.25, 0.5)
+            }, 3);
 
         TweenMax.fromTo('#ball', this.time, {
-                scale: 0
-            },
+            scale: 0
+        },
 
             {
                 scale: 1,
@@ -379,18 +379,18 @@ class Game {
         if (this.score > 15) {
             return 1.5;
         } else
-        if (this.score > 12) {
-            return 1.4;
-        } else
-        if (this.score > 10) {
-            return 1.3;
-        } else
-        if (this.score > 8) {
-            return 1.2;
-        } else
-        if (this.score > 5) {
-            return 1.1;
-        }
+            if (this.score > 12) {
+                return 1.4;
+            } else
+                if (this.score > 10) {
+                    return 1.3;
+                } else
+                    if (this.score > 8) {
+                        return 1.2;
+                    } else
+                        if (this.score > 5) {
+                            return 1.1;
+                        }
         return 1;
     }
 
@@ -402,34 +402,34 @@ class Game {
     bounce() {
 
         this.balltween.
-        to('#ball', this.time / 2, {
-            y: '+=250px',
-            scaleY: 0.7,
-            transformOrigin: "bottom",
-            ease: Power2.easeIn,
-            onComplete: () => {
-                this.checkColor();
-            }
-        }).
-        to('#ball', this.time / 2, {
-            y: '-=250px',
-            scaleY: 1.1,
-            transformOrigin: "bottom",
-            ease: Power2.easeOut,
-            onStart: () => {
-                while (this.prevColor == this.color) {
-                    this.color = new Color().getRandomColor();
+            to('#ball', this.time / 2, {
+                y: '+=250px',
+                scaleY: 0.7,
+                transformOrigin: "bottom",
+                ease: Power2.easeIn,
+                onComplete: () => {
+                    this.checkColor();
                 }
-                this.prevColor = this.color;
-                TweenMax.to('#ball', 0.5, {
-                    backgroundColor: this.color
-                });
-                $('#ball').removeClass('red').
-                removeClass('yellow').
-                removeClass('purple').
-                addClass(new Color().colorcodeToName(this.color));
-            }
-        });
+            }).
+            to('#ball', this.time / 2, {
+                y: '-=250px',
+                scaleY: 1.1,
+                transformOrigin: "bottom",
+                ease: Power2.easeOut,
+                onStart: () => {
+                    while (this.prevColor == this.color) {
+                        this.color = new Color().getRandomColor();
+                    }
+                    this.prevColor = this.color;
+                    TweenMax.to('#ball', 0.5, {
+                        backgroundColor: this.color
+                    });
+                    $('#ball').removeClass('red').
+                        removeClass('yellow').
+                        removeClass('purple').
+                        addClass(new Color().colorcodeToName(this.color));
+                }
+            });
 
     }
 
@@ -439,7 +439,7 @@ class Game {
         let stickWidth = $('.stick').width();
         let score = this.score;
 
-        $('#sticks .stick').each(function() {
+        $('#sticks .stick').each(function () {
             if ($(this).offset().left < ballPos && $(this).offset().left > ballPos - stickWidth) {
 
                 if (Color.getColorFromClass($(this)) == Color.getColorFromClass('#ball')) {
@@ -453,10 +453,8 @@ class Game {
                         ease: Elastic.easeOut.config(1.5, 0.5)
                     });
                 } else {
-
                     // you loose
                     game.stop();
-
                 }
 
             }
@@ -517,13 +515,13 @@ class Color {
         }
         if (index == 3) index = 0;
         el.
-        css('background-color', this.colors[index]).
-        data('index', index);
+            css('background-color', this.colors[index]).
+            data('index', index);
 
         el.removeClass('red').
-        removeClass('yellow').
-        removeClass('purple').
-        addClass(this.colorcodeToName(this.colors[index]));
+            removeClass('yellow').
+            removeClass('purple').
+            addClass(this.colorcodeToName(this.colors[index]));
 
         if (el.hasClass('inactive')) {
             this.setEffect(el);
@@ -632,7 +630,7 @@ class Animation {
         }, {
             scale: 1
         }, 0.03).
-        staggerTo(el.find('.triangle'), 1.5, {
+            staggerTo(el.find('.triangle'), 1.5, {
                 cycle: {
                     rotationY: [0, 360],
                     rotationX: [360, 0]
@@ -641,7 +639,7 @@ class Animation {
                 repeat: -1,
                 repeatDelay: 0.1
             },
-            0.1);
+                0.1);
     }
 
     playBlock(el) {
@@ -655,7 +653,7 @@ class Animation {
         }, {
             scale: 1
         }, 0.03).
-        staggerTo(el.find('.block .inner:not(.inner-2)'), 1, {
+            staggerTo(el.find('.block .inner:not(.inner-2)'), 1, {
                 cycle: {
                     x: ["+200%", "-200%"]
                 },
@@ -663,24 +661,24 @@ class Animation {
                 repeat: -1,
                 repeatDelay: 0.6
             },
-            0.1);
+                0.1);
         block2.staggerTo(el.find('.block .inner-2'), 1, {
-                cycle: {
-                    x: ["+200%", "-200%"]
-                },
-
-                repeat: -1,
-                repeatDelay: 0.6
+            cycle: {
+                x: ["+200%", "-200%"]
             },
+
+            repeat: -1,
+            repeatDelay: 0.6
+        },
             0.1);
     }
 
     static sceneAnimation() {
 
-        const speed = 15; // uses it's local speed
+        const speed = 100; // uses it's local speed
 
         // animates the small glows in a circular motion
-        $('.small-glow').each(function() {
+        $('.small-glow').each(function () {
             let speedDelta = Math.floor(Math.random() * 8);
             let radius = Math.floor(Math.random() * 20) + 20;
             TweenMax.to($(this), speed + speedDelta, {
@@ -738,13 +736,12 @@ class Animation {
 }
 
 
-
 var game = new Game();
 var animation = new Animation();
 var color = new Color();
 var userAgent = window.navigator.userAgent;
 
-Animation.generateSmallGlows(20);
+Animation.generateSmallGlows(3);
 
 function gameStart() {
     Taiizor.Style.Add("coloroner", "background-color", "#28DAD4");
@@ -762,30 +759,30 @@ function gameStart() {
 /*$(document).ready(gameStart);*/
 setTimeout(gameStart, 250);
 
-$(document).on('click', '.stick', function() {
+$(document).on('click', '.stick', function () {
     color.changeColor($(this));
     if ($(this).hasClass('no-effect')) {
         if ($(this).hasClass('bubble-stick')) {
-            animation.playBubble($(this));
+            //animation.playBubble($(this));
         } else if ($(this).hasClass('triangle-stick')) {
-            animation.playTriangle($(this));
+            //animation.playTriangle($(this));
         } else if ($(this).hasClass('block-stick')) {
-            animation.playBlock($(this));
+            //animation.playBlock($(this));
         }
         $(this).removeClass('no-effect');
     }
 });
 
-$(document).on('click', '.section-2 .bar', function() {
+$(document).on('click', '.section-2 .bar', function () {
     color.changeColor($(this));
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
     if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) {
         game.scaleScreenAndRun();
     }
 });
 
-$(window).on("orientationchange", function() {
+$(window).on("orientationchange", function () {
     game.scaleScreenAndRun();
 });
