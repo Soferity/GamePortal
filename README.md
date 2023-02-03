@@ -70,6 +70,7 @@
   ![TowerOfHanoi](.screenshots/TowerOfHanoi.EN.png)
   ![TheAviator](.screenshots/TheAviator.EN.png)
   ![Coloron](.screenshots/Coloron.EN.png)
+  ![Menja](.screenshots/Menja.EN.png)
 
 </details>
 

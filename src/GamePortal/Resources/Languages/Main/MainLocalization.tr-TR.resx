@@ -132,6 +132,9 @@
   <data name="DescriptionMagicSquare" xml:space="preserve">
     <value>Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
   </data>
+  <data name="DescriptionMenja" xml:space="preserve">
+    <value>Menja bir aksiyon arkada oyunudur. Havada süzülen küpler parçalanabilir. Bü küpleri parçalamaya devam ettikçe oyun devam eder. Küpleri parçalayamazsan oyun biter.</value>
+  </data>
   <data name="DescriptionSweetMemory" xml:space="preserve">
     <value>Tatlı Hafıza bir hafıza oyunudur. Kareleri çevirin ve arkalarındaki simgeyi görün. Ardından aynı simgeyi bulmak için daha fazla karenin arkasına bakın. Aynı simgeyi bulursanız, bir puan alırsınız.</value>
     <comment>Bunu yapmazsanız, kareler geri dönecektir. Mümkün olduğu kadar çok puan almaya çalışın.</comment>
@@ -168,6 +171,9 @@
   </data>
   <data name="ImageMagicSquare" xml:space="preserve">
     <value>img/game/magicsquare.tr.jpg</value>
+  </data>
+  <data name="ImageMenja" xml:space="preserve">
+    <value>img/game/menja.tr.jpg</value>
   </data>
   <data name="ImageSweetMemory" xml:space="preserve">
     <value>img/game/sweetmemory.tr.jpg</value>
@@ -220,6 +226,9 @@
   <data name="TitleMagicSquare" xml:space="preserve">
     <value>Sihirli Kare</value>
   </data>
+  <data name="TitleMenja" xml:space="preserve">
+    <value>Menja</value>
+  </data>
   <data name="TitleSweetMemory" xml:space="preserve">
     <value>Tatlı Hafıza</value>
   </data>
@@ -246,6 +255,9 @@
   </data>
   <data name="TypeAdventure" xml:space="preserve">
     <value>Macera</value>
+  </data>
+  <data name="TypeArcade" xml:space="preserve">
+    <value>Arkada</value>
   </data>
   <data name="TypeEducation" xml:space="preserve">
     <value>Eğitim</value>

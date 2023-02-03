@@ -176,6 +176,20 @@ namespace GamePortal.Value
                     Address = "coloron",
                     State = GameStateEnum.Hit
                 }
+            },
+            {
+                GameEnum.Menja,
+                new()
+                {
+                    Visibility = true,
+                    Build = BuildEnum.Release,
+                    Type = new[] { GameTypeEnum.Action, GameTypeEnum.Arcade },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Menja",
+                    Star = 5,
+                    Address = "menja",
+                    State = GameStateEnum.Hit
+                }
             }
         };
     }

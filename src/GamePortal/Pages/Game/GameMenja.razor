@@ -1,0 +1,31 @@
+﻿@page "/menja"
+@inject IStringLocalizer<MenjaLocalization> Localizer
+
+<GameMenjaPaper />
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        AppCenterService.TrackEvent("Game-Menja", "JoinGame", "Joined");
+
+        HelperPath.Path = await Location.GetPathname();
+
+        await Task.Delay(DelayValue.Initialize);
+
+        await Include.StylesheetProtected("css/game/menja/style.css", HelperPath.Path);
+
+        await GetRender();
+    }
+
+    private async Task GetRender()
+    {
+        await Task.Delay(DelayValue.Render);
+
+        await Include.ScriptProtected("js/game/menja/script.js", HelperPath.Path);
+
+        await Task.Delay(DelayValue.Localization);
+
+        await Interop.Call("SetLocalization", Localizer["NewScore"].Value, Localizer["HighScore"].Value, Localizer["LiveScore"].Value, Localizer["CubeSmash"].Value);
+    }
+}

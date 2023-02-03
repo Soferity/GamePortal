@@ -132,6 +132,9 @@
   <data name="DescriptionMagicSquare" xml:space="preserve">
     <value>Magic Square is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home.</value>
   </data>
+  <data name="DescriptionMenja" xml:space="preserve">
+    <value>Menja is an action arcade game. Cubes that float in the air can crumble. As you continue to smash these cubes, the game continues. If you can't smash the cubes, the game is over.</value>
+  </data>
   <data name="DescriptionSweetMemory" xml:space="preserve">
     <value>Sweet Memory is a memory game. Flip the squares and see the icon behind them. Then look behind more squares to find the same icon. If you find the same icon, you get a point.</value>
     <comment>If you don't, the squares will flip back over. Try to get as many points as you can.</comment>
@@ -168,6 +171,9 @@
   </data>
   <data name="ImageMagicSquare" xml:space="preserve">
     <value>img/game/magicsquare.jpg</value>
+  </data>
+  <data name="ImageMenja" xml:space="preserve">
+    <value>img/game/menja.jpg</value>
   </data>
   <data name="ImageSweetMemory" xml:space="preserve">
     <value>img/game/sweetmemory.jpg</value>
@@ -220,6 +226,9 @@
   <data name="TitleMagicSquare" xml:space="preserve">
     <value>Magic Square</value>
   </data>
+  <data name="TitleMenja" xml:space="preserve">
+    <value>Menja</value>
+  </data>
   <data name="TitleSweetMemory" xml:space="preserve">
     <value>Sweet Memory</value>
   </data>
@@ -246,6 +255,9 @@
   </data>
   <data name="TypeAdventure" xml:space="preserve">
     <value>Adventure</value>
+  </data>
+  <data name="TypeArcade" xml:space="preserve">
+    <value>Arcade</value>
   </data>
   <data name="TypeEducation" xml:space="preserve">
     <value>Education</value>

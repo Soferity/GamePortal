@@ -3,6 +3,7 @@
     public enum GameEnum
     {
         Cube,
+        Menja,
         Coloron,
         Hextris,
         Lazy2048,
@@ -27,6 +28,7 @@
         Music,
         Lucky,
         Action,
+        Arcade,
         Racing,
         Puzzle,
         Sports,

@@ -152,6 +152,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>MagicSquareLocalization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\Menja\MenjaLocalization.Designer.cs">
+          <DependentUpon>MenjaLocalization.resx</DependentUpon>
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+        </Compile>
         <Compile Update="Resources\Languages\Game\SweetMemory\SweetMemoryLocalization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
@@ -214,6 +219,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\MagicSquare\MagicSquareLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>MagicSquareLocalization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\Menja\MenjaLocalization.resx">
+          <LastGenOutput>MenjaLocalization.Designer.cs</LastGenOutput>
+          <Generator>ResXFileCodeGenerator</Generator>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Game\SweetMemory\SweetMemoryLocalization.resx">
           <Generator>ResXFileCodeGenerator</Generator>

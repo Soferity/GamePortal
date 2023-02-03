@@ -106,6 +106,15 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
+        ///   Menja is an action arcade game. Cubes that float in the air can crumble. As you continue to smash these cubes, the game continues. If you can&apos;t smash the cubes, the game is over. benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string DescriptionMenja {
+            get {
+                return ResourceManager.GetString("DescriptionMenja", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sweet Memory is a memory game. Flip the squares and see the icon behind them. Then look behind more squares to find the same icon. If you find the same icon, you get a point. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionSweetMemory {
@@ -210,6 +219,15 @@ namespace GamePortal.Resources.Languages.Main {
         internal static string ImageMagicSquare {
             get {
                 return ResourceManager.GetString("ImageMagicSquare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/menja.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageMenja {
+            get {
+                return ResourceManager.GetString("ImageMenja", resourceCulture);
             }
         }
         
@@ -367,6 +385,15 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
+        ///   Menja benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string TitleMenja {
+            get {
+                return ResourceManager.GetString("TitleMenja", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sweet Memory benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string TitleSweetMemory {
@@ -444,6 +471,15 @@ namespace GamePortal.Resources.Languages.Main {
         internal static string TypeAdventure {
             get {
                 return ResourceManager.GetString("TypeAdventure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Arcade benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string TypeArcade {
+            get {
+                return ResourceManager.GetString("TypeArcade", resourceCulture);
             }
         }
         
