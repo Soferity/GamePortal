@@ -158,7 +158,7 @@
     <value>img/game/classic2048.tr.jpg</value>
   </data>
   <data name="ImageColoron" xml:space="preserve">
-    <value>img/game/Coloron.tr.jpg</value>
+    <value>img/game/coloron.tr.jpg</value>
   </data>
   <data name="ImageHextris" xml:space="preserve">
     <value>img/game/hextris.tr.jpg</value>
