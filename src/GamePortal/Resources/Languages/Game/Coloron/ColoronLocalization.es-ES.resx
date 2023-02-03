@@ -118,79 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AlwaysMatch" xml:space="preserve">
-    <value>Always match the</value>
+    <value>Siempre haga coincidir los colores</value>
   </data>
   <data name="Ball" xml:space="preserve">
-    <value>(Red, Yellow, Purple).</value>
+    <value>(Roja, Amarilla, Púrpura).</value>
   </data>
   <data name="BallBar" xml:space="preserve">
-    <value>ball and bar colors.</value>
+    <value>de la bola y la barra.</value>
   </data>
   <data name="BouncingBall" xml:space="preserve">
-    <value>Bouncing ball</value>
+    <value>La pelota que rebota</value>
   </data>
   <data name="ChangesColor" xml:space="preserve">
-    <value>changes color.</value>
+    <value>cambia de color.</value>
   </data>
   <data name="Game" xml:space="preserve">
     <value>Coloron</value>
   </data>
   <data name="GuideDesktop" xml:space="preserve">
-    <value>Click on the bar to switch the colors</value>
+    <value>Haga clic en la barra para cambiar los colores</value>
   </data>
   <data name="GuideMobile" xml:space="preserve">
-    <value>Tap on the bar to switch the colors</value>
+    <value>Toque en la barra para cambiar los colores</value>
   </data>
   <data name="Hint" xml:space="preserve">
-    <value>Hint</value>
+    <value>Pista</value>
   </data>
   <data name="HintDescription" xml:space="preserve">
-    <value>color always comes first.</value>
+    <value>siempre es lo primero.</value>
   </data>
   <data name="LearnDesktop" xml:space="preserve">
-    <value>Click on the bars to change the color!</value>
+    <value>¡Haz clic en las barras para cambiar el color!</value>
   </data>
   <data name="LearnMobile" xml:space="preserve">
-    <value>Tap on the bars to change the color!</value>
+    <value>¡Toca las barras para cambiar el color!</value>
   </data>
   <data name="Menu" xml:space="preserve">
-    <value>Menu</value>
+    <value>Menú</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Soferity: Game Portal</value>
+    <value>Soferity: Portal de Juegos</value>
   </data>
   <data name="Play" xml:space="preserve">
-    <value>Play</value>
+    <value>Jugar</value>
   </data>
   <data name="PlayAgain" xml:space="preserve">
-    <value>Play Again</value>
+    <value>Juega de Nuevo</value>
   </data>
   <data name="Point0" xml:space="preserve">
-    <value>Poor...</value>
+    <value>Pobre...</value>
   </data>
   <data name="Point10" xml:space="preserve">
-    <value>Good Job!</value>
+    <value>¡Buen Trabajo!</value>
   </data>
   <data name="Point13" xml:space="preserve">
-    <value>Nice!</value>
+    <value>¡Bonita!</value>
   </data>
   <data name="Point15" xml:space="preserve">
-    <value>Great!</value>
+    <value>¡Magnífico!</value>
   </data>
   <data name="Point20" xml:space="preserve">
-    <value>Wonderful!</value>
+    <value>¡Maravillosa!</value>
   </data>
   <data name="Point25" xml:space="preserve">
-    <value>Horror!</value>
+    <value>¡Horror!</value>
   </data>
   <data name="Point30" xml:space="preserve">
-    <value>Savage!</value>
+    <value>¡Salvaje!</value>
   </data>
   <data name="Point5" xml:space="preserve">
-    <value>Really?</value>
+    <value>¿En serio?</value>
   </data>
   <data name="Red" xml:space="preserve">
-    <value>Red</value>
+    <value>El color rojo</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Coloron</value>
@@ -199,9 +199,9 @@
     <value>Tweet</value>
   </data>
   <data name="TweetChallenge" xml:space="preserve">
-    <value>Tweet to challenge friends:</value>
+    <value>Tweet para desafiar a amigas:</value>
   </data>
   <data name="TweetText" xml:space="preserve">
-    <value>I scored {0} points on Coloron! Can you beat my score?</value>
+    <value>¡Obtuve {0} puntos en Coloron! ¿Puedes superar mi puntuación?</value>
   </data>
 </root>

@@ -205,6 +205,78 @@ namespace GamePortal.Resources.Languages.Game.Coloron {
         }
         
         /// <summary>
+        ///   Poor... benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point0 {
+            get {
+                return ResourceManager.GetString("Point0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Good Job! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point10 {
+            get {
+                return ResourceManager.GetString("Point10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Nice! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point13 {
+            get {
+                return ResourceManager.GetString("Point13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Great! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point15 {
+            get {
+                return ResourceManager.GetString("Point15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Wonderful! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point20 {
+            get {
+                return ResourceManager.GetString("Point20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Horror! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point25 {
+            get {
+                return ResourceManager.GetString("Point25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Savage! benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point30 {
+            get {
+                return ResourceManager.GetString("Point30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Really? benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string Point5 {
+            get {
+                return ResourceManager.GetString("Point5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Red benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string Red {
@@ -232,11 +304,20 @@ namespace GamePortal.Resources.Languages.Game.Coloron {
         }
         
         /// <summary>
-        ///   Tweet to challenge friends benzeri yerelleştirilmiş bir dize arar.
+        ///   Tweet to challenge friends: benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string TweetChallenge {
             get {
                 return ResourceManager.GetString("TweetChallenge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   I scored {0} points on Coloron! Can you beat my score? benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string TweetText {
+            get {
+                return ResourceManager.GetString("TweetText", resourceCulture);
             }
         }
     }

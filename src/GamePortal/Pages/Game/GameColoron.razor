@@ -1,4 +1,5 @@
 ﻿@page "/coloron"
+@inject IStringLocalizer<ColoronLocalization> Localizer
 
 <GameExit />
 <GameColoronContainer />
@@ -29,5 +30,9 @@
         await Task.Delay(DelayValue.Render);
 
         await Include.ScriptProtected("js/game/coloron/script.js", HelperPath.Path);
+        
+        await Task.Delay(DelayValue.Localization);
+
+        await Interop.Call("game.SetLocalization", Localizer["TweetText"].Value, Localizer["Point0"].Value, Localizer["Point5"].Value, Localizer["Point10"].Value, Localizer["Point13"].Value, Localizer["Point15"].Value, Localizer["Point20"].Value, Localizer["Point25"].Value, Localizer["Point30"].Value);
     }
 }

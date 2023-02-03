@@ -14,6 +14,30 @@ class Game {
         this.colorsRGBA = ["rgba(255, 69, 113, 1)", "rgba(255, 69, 113, 1)", "rgba(255, 69, 113, 1)"];
         this.color = this.colors[0]; // the intial color of the ball
         this.prevColor = null; // used as a holder to prevent ball colors from repeating
+
+        this.tweettext = null;
+
+        this.point0 = null;
+        this.point5 = null;
+        this.point10 = null;
+        this.point13 = null;
+        this.point15 = null;
+        this.point20 = null;
+        this.point25 = null;
+        this.point30 = null;
+    }
+
+    SetLocalization(TweetText, Point0, Point5, Point10, Point13, Point15, Point20, Point25, Point30) {
+        this.tweettext = TweetText;
+        
+        this.point0 = Point0;
+        this.point5 = Point5;
+        this.point10 = Point10;
+        this.point13 = Point13;
+        this.point15 = Point15;
+        this.point20 = Point20;
+        this.point25 = Point25;
+        this.point30 = Point30;
     }
 
     /**
@@ -54,7 +78,7 @@ class Game {
     generateTweet() {
         let top = $(window).height() / 2 - 150;
         let left = $(window).width() / 2 - 300;
-        window.open("https://twitter.com/intent/tweet?url=https://github.com/Soferity/GamePortal&text=I scored " + this.score + " points on Coloron! Can you beat my score?&hashtags=soferity,gameportal,coloron&via=ReaLTaiizor", "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);
+        window.open("https://twitter.com/intent/tweet?url=https://github.com/Soferity/GamePortal&text=" + String.format(this.tweettext, this.score) + "&hashtags=soferity,gameportal,coloron&via=ReaLTaiizor", "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);
     }
 
     /**
@@ -165,21 +189,15 @@ class Game {
      * @return {string} grade
      */
     showGrade(score) {
-        if (score > 30) return "Chuck Norris?";
+        if (score > 30) return this.point30;
+        else if (score > 25) return this.point25;
+        else if (score > 20) return this.point20;
+        else if (score > 15) return this.point15;
+        else if (score > 13) return this.point13;
+        else if (score > 10) return this.point10;
+        else if (score > 5) return this.point5;
         else
-        if (score > 25) return "You're da man";
-        else
-        if (score > 20) return "Awesome";
-        else
-        if (score > 15) return "Great!";
-        else
-        if (score > 13) return "Nice!";
-        else
-        if (score > 10) return "Good Job!";
-        else
-        if (score > 5) return "Really?";
-        else
-            return "Poor...";
+            return this.point0;
     }
 
     start() {
