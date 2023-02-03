@@ -70,6 +70,15 @@ namespace GamePortal.Resources.Languages.Main {
         }
         
         /// <summary>
+        ///   Coloron is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home. benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string DescriptionColoron {
+            get {
+                return ResourceManager.GetString("DescriptionColoron", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Hextris is a 2D action platformer with a focus on exploration and combat. You play as a cat who has been separated from their owner and must find their way home. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         internal static string DescriptionHextris {
@@ -165,6 +174,15 @@ namespace GamePortal.Resources.Languages.Main {
         internal static string ImageClassic2048 {
             get {
                 return ResourceManager.GetString("ImageClassic2048", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   img/game/coloron.jpg benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string ImageColoron {
+            get {
+                return ResourceManager.GetString("ImageColoron", resourceCulture);
             }
         }
         
@@ -309,6 +327,15 @@ namespace GamePortal.Resources.Languages.Main {
         internal static string TitleClassic2048 {
             get {
                 return ResourceManager.GetString("TitleClassic2048", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Coloron benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        internal static string TitleColoron {
+            get {
+                return ResourceManager.GetString("TitleColoron", resourceCulture);
             }
         }
         

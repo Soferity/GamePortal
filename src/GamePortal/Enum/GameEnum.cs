@@ -3,6 +3,7 @@
     public enum GameEnum
     {
         Cube,
+        Coloron,
         Hextris,
         Lazy2048,
         TicTacToe,

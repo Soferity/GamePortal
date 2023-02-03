@@ -137,6 +137,11 @@
           <AutoGen>True</AutoGen>
           <DependentUpon>Classic2048Localization.resx</DependentUpon>
         </Compile>
+        <Compile Update="Resources\Languages\Game\Coloron\ColoronLocalization.Designer.cs">
+          <DependentUpon>ColoronLocalization.resx</DependentUpon>
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+        </Compile>
         <Compile Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.Designer.cs">
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
@@ -197,6 +202,10 @@
         <EmbeddedResource Update="Resources\Languages\Game\Classic2048\Classic2048Localization.resx">
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Classic2048Localization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages\Game\Coloron\ColoronLocalization.resx">
+          <LastGenOutput>ColoronLocalization.Designer.cs</LastGenOutput>
+          <Generator>ResXFileCodeGenerator</Generator>
         </EmbeddedResource>
         <EmbeddedResource Update="Resources\Languages\Game\Lazy2048\Lazy2048Localization.resx">
           <Generator>ResXFileCodeGenerator</Generator>

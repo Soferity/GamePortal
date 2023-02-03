@@ -1,0 +1,17 @@
+﻿<div class="stop-game game-full-flex">
+    <div class="score-container">
+        <h1>@Localizer["Title"]</h1>
+        <div class="final-score"></div>
+        <div class="result"></div>
+        <h4>@Localizer["TweetChallenge"]</h4>
+        <p>
+            <a class="tweet" onclick="game.generateTweet()">
+                <i class="fa fa-twitter" aria-hidden="true"></i> @Localizer["Tweet"]
+            </a>
+        </p>
+        <div>
+            <a class="play-again" onclick="game.start()">@Localizer["PlayAgain"]</a>
+            <a class="main-menu" onclick="game.intro()">@Localizer["Menu"]</a>
+        </div>
+    </div>
+</div>

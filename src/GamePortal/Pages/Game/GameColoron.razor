@@ -1,0 +1,33 @@
+﻿@page "/coloron"
+
+<GameExit />
+<GameColoronContainer />
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        AppCenterService.TrackEvent("Game-Coloron", "JoinGame", "Joined");
+
+        HelperPath.Path = await Location.GetPathname();
+
+        await Task.Delay(DelayValue.Initialize);
+
+        await Include.StylesheetProtected("https://fonts.googleapis.com/css?family=Roboto:400,700,900", HelperPath.Path);
+        await Include.StylesheetProtected("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/coloron/style.css", HelperPath.Path);
+        
+        await Include.ScriptProtected("js/game/coloron/jquery.min.js", HelperPath.Path);
+        
+        await Include.ScriptProtected("js/game/coloron/tweenmax.min.js", HelperPath.Path);
+        
+        await GetRender();
+    }
+
+    private async Task GetRender()
+    {
+        await Task.Delay(DelayValue.Render);
+
+        await Include.ScriptProtected("js/game/coloron/script.js", HelperPath.Path);
+    }
+}

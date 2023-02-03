@@ -162,6 +162,20 @@ namespace GamePortal.Value
                     Address = "towerofhanoi",
                     State = GameStateEnum.New
                 }
+            },
+            {
+                GameEnum.Coloron,
+                new()
+                {
+                    Visibility = true,
+                    Build = BuildEnum.Develop,
+                    Type = new[] { GameTypeEnum.Platform, GameTypeEnum.Puzzle },
+                    Platform = new[] { PlatformEnum.MacCatalyst, PlatformEnum.WinUI, PlatformEnum.Android, PlatformEnum.iOS },
+                    Title = "Coloron",
+                    Star = 5,
+                    Address = "coloron",
+                    State = GameStateEnum.Hit
+                }
             }
         };
     }
