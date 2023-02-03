@@ -14,8 +14,8 @@
 
         await Task.Delay(DelayValue.Initialize);
 
-        await Include.StylesheetProtected("https://fonts.googleapis.com/css?family=Roboto:400,700,900", HelperPath.Path);
-        await Include.StylesheetProtected("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/coloron/roboto.400-700-900.css", HelperPath.Path);
+        await Include.StylesheetProtected("css/game/coloron/font-awesome.min.css", HelperPath.Path);
         await Include.StylesheetProtected("css/game/coloron/style.css", HelperPath.Path);
 
         await Include.ScriptProtected("js/game/coloron/jquery.min.js", HelperPath.Path);
