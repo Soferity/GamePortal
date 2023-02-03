@@ -79,8 +79,9 @@ class Game {
         try {
             let top = $(window).height() / 2 - 150;
             let left = $(window).width() / 2 - 300;
-            let uri = "https://twitter.com/intent/tweet?url=https://github.com/Soferity/GamePortal&text=" + String.format(this.tweettext, this.score) + "&hashtags=soferity,gameportal,coloron&via=ReaLTaiizor"
-            window.open(Uri.parse(uri), "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);
+            let uri = new URL("https://twitter.com/intent/tweet?url=https://github.com/Soferity/GamePortal&text=" + String.format(this.tweettext, this.score) + "&hashtags=soferity,gameportal,coloron&via=ReaLTaiizor")
+            /*window.open(uri, "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);*/
+            Taiizor.Invoke.MethodAsync("GamePortal", "OpenBrowser", uri);
         }
         catch (err) { }
     }
