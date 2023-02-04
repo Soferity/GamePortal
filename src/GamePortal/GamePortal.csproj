@@ -36,7 +36,7 @@
         <ApplicationIdGuid>5482B078-A108-4D06-A2E0-08EB73226549</ApplicationIdGuid>
 
         <!-- Versions -->
-        <Version>1.0.9</Version>
+        <Version>1.1.0</Version>
         <FileVersion>$(Version)</FileVersion>
         <PackageVersion>$(Version)</PackageVersion>
         <AssemblyVersion>$(Version)</AssemblyVersion>
