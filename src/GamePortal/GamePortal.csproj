@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFrameworks>net7.0-android</TargetFrameworks>
-        <!--<TargetFrameworks>$(TargetFrameworks);net7.0-ios;net7.0-maccatalyst</TargetFrameworks>-->
+        <TargetFrameworks>net8.0-android</TargetFrameworks>
+        <!--<TargetFrameworks>$(TargetFrameworks);net8.0-ios;net8.0-maccatalyst</TargetFrameworks>-->
 
         <!-- Targets possible from Windows OS -->
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-        <!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+        <!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
 
         <!-- .NET MAUI -->
         <UseMaui>true</UseMaui>
@@ -259,7 +259,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.3" />
+        <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25300-preview" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.0-preview.1.23112.2" />
+        <PackageReference Update="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.0-preview.1.7762" />
     </ItemGroup>
 
     <ItemGroup>
@@ -267,24 +269,5 @@
         <PackageReference Include="Taiizor.Essentials.Blazor" Version="22.12.14.1321" />
         <PackageReference Include="Taiizor.Essentials.Maui.AppCenter" Version="22.12.14.1313" />
     </ItemGroup>
-    
-    <!--<ItemGroup>
-        <Reference Include="Taiizor.Essentials.Maui">
-            <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.dll</HintPath>
-        </Reference>
-        <Reference Include="Taiizor.Essentials.Maui.AppCenter">
-            <HintPath>..\..\Taiizor.Essentials.Maui\src\Taiizor.Essentials.Maui.AppCenter\bin\Release\$(TargetFramework)\Taiizor.Essentials.Maui.AppCenter.dll</HintPath>
-        </Reference>
-        <Reference Include="Taiizor.Essentials.Blazor">
-            <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor\bin\Release\net7.0\Taiizor.Essentials.Blazor.dll</HintPath>
-        </Reference>
-        <Reference Include="Taiizor.Essentials.Blazor.Conforyon">
-            <HintPath>..\..\Taiizor.Essentials.Blazor\src\Taiizor.Essentials.Blazor.Conforyon\bin\Release\net7.0\Taiizor.Essentials.Blazor.Conforyon.dll</HintPath>
-        </Reference>
-        <PackageReference Include="Conforyon" Version="2.0.0.3" />
-        <PackageReference Include="Microsoft.AppCenter" Version="5.0.1" />
-        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.1" />
-        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.1" />
-    </ItemGroup>-->
 
 </Project>
