@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <TargetFrameworks>net8.0-android</TargetFrameworks>
@@ -261,7 +261,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25300-preview" />
         <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.0-preview.2.23153.2" />
-        <PackageReference Update="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.0-preview.2.7871" />
+        <PackageReference Update="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.0-preview.3.8149" />
     </ItemGroup>
 
     <ItemGroup>
