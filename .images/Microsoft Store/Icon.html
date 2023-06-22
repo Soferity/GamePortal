@@ -59,8 +59,8 @@
 			pngname = this.loader.width + "x" + this.loader.height;
 			var self = this;
 			this.loader.onload = function() {
-			self.ctx.drawImage( self.loader, 0, 0, self.loader.width, self.loader.height );
-			callback(self.can.toDataURL());
+				self.ctx.drawImage( self.loader, 0, 0, self.loader.width, self.loader.height );
+				callback(self.can.toDataURL());
 			};
 			this.loader.src = 'data:image/svg+xml,' + encodeURIComponent( svgAsXML );
 		}
