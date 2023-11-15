@@ -260,7 +260,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25936-preview" />
-        <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.0-rc.2.23480.2" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.0" />
         <PackageReference Update="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.0-rc.2.9530" />
     </ItemGroup>
 
